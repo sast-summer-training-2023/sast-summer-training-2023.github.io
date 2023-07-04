@@ -7,6 +7,8 @@ theme:
   name: material
   language: zh
   custom_dir: theme/
+  logo: images/logo.png
+  favicon: images/favicon.png
   features:
     - navigation.top
     - navigation.tabs
