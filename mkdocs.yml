@@ -73,5 +73,7 @@ markdown_extensions:
 
 # Contents
 nav:
-  - 暑培:
+  - 首页:
     - index.md
+  - 基础:
+    - Linux & Git: basic/linux.md
