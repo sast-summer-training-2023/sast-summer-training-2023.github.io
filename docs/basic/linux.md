@@ -56,3 +56,7 @@ sudo apt install git
 
 - [Get Started | Docker](https://www.docker.com/get-started/)
 - 对于 WSL 用户：[在 Windows 10 中启动 WSL2 并安装 Linux（Ubuntu 为例）并运行 Docker - CSDN 博客](https://blog.csdn.net/yushuzhen2008/article/details/104944579)
+
+## 课程讲义 & 课后作业
+
+📄 [课程讲义](../pdfs/linux-handout.pdf)
