@@ -18,5 +18,7 @@
 
 ### 课程讲义 & 课后作业
 
-📄 [课程讲义](pdfs/linux-handout.pdf)
+📄 [Warmup 讲义](pdfs/warmup.pdf)
+
+📄 [Linux & Git 课程讲义](pdfs/linux-handout.pdf)
 
