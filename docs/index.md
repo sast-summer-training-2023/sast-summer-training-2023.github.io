@@ -18,6 +18,8 @@
 
 ### 课程讲义 & 课后作业
 
+🎥 [课程回放](https://www.bilibili.com/video/BV1DN411m74Q)
+
 📄 [Warmup 讲义](pdfs/warmup.pdf)
 
 📄 [Linux & Git 课程讲义](pdfs/linux-handout.pdf)
