@@ -76,4 +76,30 @@ nav:
   - 首页:
     - index.md
   - 基础:
+    - basic/index.md
     - Linux & Git: basic/linux.md
+    - Web: basic/web.md
+    - 数据库 & SQL: basic/sql.md
+    - Python: basic/python.md
+  - AI:
+    - ai/index.md
+    - 数据分析 & NumPy: ai/numpy.md
+    - 神经网络 & PyTorch: ai/pytorch.md
+    - NLP: ai/nlp.md
+    - CV: ai/cv.md
+  - 后端:
+    - backend/index.md
+    - Django: backend/django.md
+    - Rust: backend/rust.md
+    - Rust Web 生态: backend/rust-web.md
+    - Docker: backend/docker.md
+    - 爬虫: backend/crawler.md
+  - 前端:
+    - frontend/index.md
+    - Java: frontend/java.md
+    - Android: frontend/android.md
+    - JS & TS: frontend/js-ts.md
+    - React: frontend/react.md
+  - 游戏:
+    - game/index.md
+    - Unity: game/unity.md
