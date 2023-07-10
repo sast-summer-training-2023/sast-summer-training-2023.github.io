@@ -75,6 +75,7 @@ markdown_extensions:
 nav:
   - 首页:
     - index.md
+    - 资源链接: links.md
   - 基础:
     - basic/index.md
     - Linux & Git: basic/linux.md
