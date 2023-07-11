@@ -37,6 +37,7 @@ plugins:
       show_line_count: true
 
 markdown_extensions:
+  - attr_list
   - admonition
   - codehilite:
       guess_lang: false
@@ -58,6 +59,10 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
   - meta
   - pymdownx.highlight:

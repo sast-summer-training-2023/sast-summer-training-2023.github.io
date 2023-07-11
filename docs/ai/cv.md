@@ -1,10 +1,10 @@
 # CV
 
-🧀 前置知识：NumPy, PyTorch
+:cheese_wedge: 前置知识：NumPy, PyTorch
 
-🎓 讲师：张凯文 @Kevin
+:mortar_board: 讲师：张凯文 @Kevin
 
-📅 日期：7 月 30 日星期日
+:date: 日期：7 月 30 日星期日
 
 ---
 

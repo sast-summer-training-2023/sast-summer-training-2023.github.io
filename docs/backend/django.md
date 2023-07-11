@@ -1,10 +1,10 @@
 # Django
 
-🧀 前置知识：Web, Python
+:cheese_wedge: 前置知识：Web, Python
 
-🎓 讲师：高焕昂 @c7w
+:mortar_board: 讲师：高焕昂 @c7w
 
-📅 日期：7 月 22 日星期六
+:date: 日期：7 月 22 日星期六
 
 ---
 

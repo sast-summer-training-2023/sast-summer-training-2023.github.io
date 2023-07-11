@@ -1,10 +1,10 @@
 # Web
 
-🧀 前置知识：无
+:cheese_wedge: 前置知识：无
 
-🎓 讲师：李轶凡 @icera
+:mortar_board: 讲师：李轶凡 @icera
 
-📅 日期：7 月 11 日星期二
+:date: 日期：7 月 11 日星期二
 
 ---
 
@@ -18,8 +18,8 @@
 
 ### 课程讲义 & 课后作业
 
-⏳ DDL: 7 月 18 日星期二 23:59
+:hourglass_flowing_sand: DDL: 7 月 18 日星期二 23:59
 
-🎥 [课程回放](https://www.bilibili.com/video/BV1n8411D7TS/)
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1n8411D7TS/)
 
-📄 [讲义 & 作业](../pdfs/web-handout.pdf)
+:memo: [讲义 & 作业](../pdfs/web-handout.pdf)

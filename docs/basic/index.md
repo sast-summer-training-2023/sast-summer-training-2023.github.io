@@ -6,7 +6,7 @@
 
 ---
 
-## 🌏 7 月 11 日：Web
+## :earth_asia: 7 月 11 日：Web
 
 ### 课程形式
 
@@ -14,13 +14,13 @@
 
 ### 课程讲义 & 课后作业
 
-⏳ DDL: 7 月 18 日星期二 23:59
+:hourglass_flowing_sand: DDL: 7 月 18 日星期二 23:59
 
-🎥 [课程回放](https://www.bilibili.com/video/BV1n8411D7TS/)
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1n8411D7TS/)
 
-📄 [讲义 & 作业](../pdfs/web-handout.pdf)
+:memo: [讲义 & 作业](../pdfs/web-handout.pdf)
 
-## 🎉 7 月 8 日：Linux & Git
+## :tada: 7 月 8 日：Linux & Git
 
 ### 课前准备
 
@@ -28,6 +28,6 @@
 
 ### 课程讲义 & 课后作业
 
-🎥 [课程回放](https://www.bilibili.com/video/BV1DN411m74Q)
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1DN411m74Q)
 
-📄 [课程讲义](../pdfs/linux-handout.pdf)
+:memo: [课程讲义](../pdfs/linux-handout.pdf)

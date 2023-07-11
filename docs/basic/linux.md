@@ -1,10 +1,10 @@
 # Linux & Git
 
-🧀 前置知识：无
+:cheese_wedge: 前置知识：无
 
-🎓 讲师：虞皓翔 @jkjkmxmx
+:mortar_board: 讲师：虞皓翔 @jkjkmxmx
 
-📅 日期：7 月 9 日星期日
+:date: 日期：7 月 9 日星期日
 
 ---
 
@@ -59,6 +59,6 @@ sudo apt install git
 
 ## 课程讲义 & 课后作业
 
-🎥 [课程回放](https://www.bilibili.com/video/BV1DN411m74Q)
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1DN411m74Q)
 
-📄 [课程讲义](../pdfs/linux-handout.pdf)
+:memo: [课程讲义](../pdfs/linux-handout.pdf)

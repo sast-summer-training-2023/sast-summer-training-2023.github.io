@@ -1,10 +1,10 @@
 # Java
 
-🧀 前置知识：OOP
+:cheese_wedge: 前置知识：OOP
 
-🎓 讲师：朱煜章 @Clancy
+:mortar_board: 讲师：朱煜章 @Clancy
 
-📅 日期：7 月 26 日星期三
+:date: 日期：7 月 26 日星期三
 
 ---
 

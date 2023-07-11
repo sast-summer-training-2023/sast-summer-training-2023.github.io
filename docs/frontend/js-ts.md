@@ -1,10 +1,10 @@
 # JS & TS
 
-🧀 前置知识：简单 C/C++
+:cheese_wedge: 前置知识：简单 C/C++
 
-🎓 讲师：钱厚德 @Ashitemaru
+:mortar_board: 讲师：钱厚德 @Ashitemaru
 
-📅 日期：8 月 1 日星期二，8 月 4 日星期五
+:date: 日期：8 月 1 日星期二，8 月 4 日星期五
 
 ---
 

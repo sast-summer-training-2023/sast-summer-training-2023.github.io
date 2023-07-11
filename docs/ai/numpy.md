@@ -1,10 +1,10 @@
 # 数据分析 & NumPy
 
-🧀 前置知识：Python
+:cheese_wedge: 前置知识：Python
 
-🎓 讲师：田倍闻 @tb5zhh
+:mortar_board: 讲师：田倍闻 @tb5zhh
 
-📅 日期：7 月 21 日星期五
+:date: 日期：7 月 21 日星期五
 
 ---
 

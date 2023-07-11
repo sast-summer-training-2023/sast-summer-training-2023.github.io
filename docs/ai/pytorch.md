@@ -1,10 +1,10 @@
 # 神经网络 & PyTorch
 
-🧀 前置知识：NumPy
+:cheese_wedge: 前置知识：NumPy
 
-🎓 讲师：田倍闻 @tb5zhh
+:mortar_board: 讲师：田倍闻 @tb5zhh
 
-📅 日期：7 月 24 日星期一
+:date: 日期：7 月 24 日星期一
 
 ---
 

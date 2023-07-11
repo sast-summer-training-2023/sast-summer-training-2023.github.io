@@ -1,10 +1,10 @@
 # NLP
 
-🧀 前置知识：NumPy, PyTorch
+:cheese_wedge: 前置知识：NumPy, PyTorch
 
-🎓 讲师：宋曦轩 @数学系
+:mortar_board: 讲师：宋曦轩 @数学系
 
-📅 日期：7 月 27 日星期四
+:date: 日期：7 月 27 日星期四
 
 ---
 
