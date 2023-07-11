@@ -16,6 +16,12 @@
 
 本节课采用线上线下相结合的形式进行，如果你在清华大学，欢迎携带电脑到新水 325 线下听课。本节课程无需课前准备。
 
+### 课程讲义 & 课后作业
+
+🎥 [课程回放](https://www.bilibili.com/video/BV1n8411D7TS/)
+
+📄 [讲义 & 作业](pdfs/web-handout.pdf)
+
 ## 🎉 7 月 9 日：Warmup / Linux & Git
 
 ### 课前准备
