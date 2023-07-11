@@ -18,8 +18,9 @@
 
 ### 课程讲义 & 课后作业
 
-📄 [讲义 & 作业](pdfs/web-handout.pdf)
+🎥 [课程回放](https://www.bilibili.com/video/BV1n8411D7TS/)
 
+📄 [讲义 & 作业](pdfs/web-handout.pdf)
 
 ## 🎉 7 月 9 日：Warmup / Linux & Git
 
