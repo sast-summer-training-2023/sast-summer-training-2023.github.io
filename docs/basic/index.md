@@ -14,7 +14,7 @@
 
 ### 课前准备
 
-请参考 [数据库 & SQL](/basic/sql/#_1)。
+请参考 [数据库 & SQL](/basic/sql/#_2)。
 
 ## :earth_asia: 7 月 11 日：Web
 
