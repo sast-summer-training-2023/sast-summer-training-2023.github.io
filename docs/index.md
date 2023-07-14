@@ -20,6 +20,10 @@
 
 请参考 [数据库 & SQL](/basic/sql/#_2)。
 
+### 课程讲义
+
+:memo: [数据库 & SQL](/basic/sql)
+
 ## :earth_asia: 7 月 11 日：Web
 
 ### 课程形式
