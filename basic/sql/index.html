@@ -2005,13 +2005,18 @@
 
 
 <h1 id="sql">数据库 &amp; SQL<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h1>
-<p>Kaiming</p>
+<p><img alt="🧀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f9c0.svg" title=":cheese_wedge:" /> 前置知识：无</p>
+<p><img alt="🎓" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f393.svg" title=":mortar_board:" /> 讲师：刘铠铭 @kaiming</p>
+<p><img alt="📅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4c5.svg" title=":date:" /> 日期：7 月 14 日星期五</p>
+<hr />
+<p>在过去的一年中，我们接触的往往只有少量、临时的数据，因此数据可以以简单的文件形式直接进行存储。但随着数据的迅速膨胀，以文件存储数据的方式存在诸如可扩展性差、无法保证数据的完整性、一致性以及安全性等问题，因此数据库管理系统应运而生。而 SQL 作为当今管理数据库最常用的语言，也值得我们进行学习。</p>
+<p>通过本节课，你将了解数据库技术的相关知识，并初步掌握利用 SQL 进行数据库管理与查询的基本方法。在小学期与软件工程课程中，本节课的所学也将得以应用。</p>
 <h2 id="_1">一、课程概述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <h3 id="1">1. 为什么需要数据库？<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
 <p>日常生活中我们离不开数据，在过去我们保存数据最简单的方法是将数据写入文件中，例如将学生成绩记录在 Excel 表格中。然而在开发环境中，我们往往会面临成千上万的数据，此时考虑数据存储时便需要考虑到效率、便捷性、是否方便复用等问题。</p>
 <p>在此背景下，数据库作为一种专门管理数据的软件便出现了。应用程序只需调用数据库软件提供的 API 接口便可以实现数据的读写，而无需在意数据在文件中如何存储以及如何索引。同学们可在“数据库系统概论”课程深入学习数据的存储方式与检索方式。</p>
 <h3 id="2">2. 关系型数据库<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
-<p><img alt="" src="images/sql-1.png" /></p>
+<p><img alt="" src="/images/sql-1.png" /></p>
 <p>关系型数据库是建立在关系模型上的，其将数据看作若干个二维表格，我们可以将其看作一个个 Excel 表。其中：</p>
 <ul>
 <li>表的每一行称为一条记录（Record），即一条完整的数据；</li>
@@ -2198,7 +2203,7 @@ mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </sp
 </code></pre></div></td></tr></table></div>
 <h2 id="sql_1">三、SQL 入门<a class="headerlink" href="#sql_1" title="Permanent link">&para;</a></h2>
 <h3 id="1_2">1. 基本概念<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h3>
-<p><img alt="" src="images/sql-2.png" /></p>
+<p><img alt="" src="/images/sql-2.png" /></p>
 <p>SQL 语言特性：</p>
 <ul>
 <li>
@@ -2858,7 +2863,7 @@ mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </sp
 </code></pre></div></td></tr></table></div>
 <h5 id="5210-join">5.2.10 JOIN<a class="headerlink" href="#5210-join" title="Permanent link">&para;</a></h5>
 <p>JOIN 是我们可以对多个表的结果按照某些列的约束关系进行拼接，常见的模式由：</p>
-<p><img alt="" src="images/sql-3.png" /></p>
+<p><img alt="" src="/images/sql-3.png" /></p>
 <p>例如我们希望查看在选课记录中查看成绩的同时显示学生的名字：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -3292,7 +3297,7 @@ Record -&gt; Instance（实例）
 Column -&gt; Attribute（属性）
 </code></pre></div></td></tr></table></div>
 <p>实际上，<code>ORM</code> 在执行操作时依然会将对应的操作转换成数据库原生语句，但是其拥有如下优点：</p>
-<p><img alt="" src="images/sql-4.png" /></p>
+<p><img alt="" src="/images/sql-4.png" /></p>
 <h2 id="_5">五、参考资料<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <ul>
 <li>刘明道学长的暑培讲义</li>
@@ -3366,7 +3371,7 @@ Column -&gt; Attribute（属性）
     
         <div class="md-source-date">
             <small>
-                作者: <span class='git-page-authors git-authors'><a href='mailto:lkm20@mails.tsinghua.edu.cn'>kaiming</a> (99.43%), <a href='mailto:wangbw21@mails.tsinghua.edu.cn'>abmfy</a> (0.57%)</span>
+                作者: <span class='git-page-authors git-authors'><a href='mailto:lkm20@mails.tsinghua.edu.cn'>kaiming</a> (98.21%), <a href='mailto:wangbw21@mails.tsinghua.edu.cn'>abmfy</a> (1.79%)</span>
             </small>
         </div>
     
