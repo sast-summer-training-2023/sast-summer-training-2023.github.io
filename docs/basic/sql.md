@@ -907,7 +907,7 @@ SELECT Students.sid, COUNT(Association.student_id)
 
 ##### 5.2.11 Functions
 
-作为一门（编程）语言，MySQL 提供了 [极为丰富的函数库]([MySQL :: MySQL 8.0 Reference Manual :: 12 Functions and Operators](https://dev.mysql.com/doc/refman/8.0/en/functions.html))，下面举几个字符串函数的例子。
+作为一门（编程）语言，MySQL 提供了 [极为丰富的函数库](https://dev.mysql.com/doc/refman/8.0/en/functions.html)，下面举几个字符串函数的例子。
 
 ###### 5.2.11.1 SUBSTRING
 
