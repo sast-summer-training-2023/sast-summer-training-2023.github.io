@@ -16,6 +16,12 @@
 
 请参考 [数据库 & SQL](/basic/sql/#_2)。
 
+### 课程讲义
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1w8411Q7jA)
+
+:memo: [数据库 & SQL](/basic/sql)
+
 ## :earth_asia: 7 月 11 日：Web
 
 ### 课程形式
@@ -30,7 +36,7 @@
 
 :memo: [讲义 & 作业](../pdfs/web-handout.pdf)
 
-## :tada: 7 月 8 日：Linux & Git
+## :tada: 7 月 9 日：Linux & Git
 
 ### 课前准备
 

@@ -22,6 +22,8 @@
 
 ### 课程讲义
 
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1w8411Q7jA)
+
 :memo: [数据库 & SQL](/basic/sql)
 
 ## :earth_asia: 7 月 11 日：Web
