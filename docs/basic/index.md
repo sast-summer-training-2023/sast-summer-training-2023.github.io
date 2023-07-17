@@ -16,6 +16,11 @@
 
 请参考 [Python 基础](/basic/python/#_1)。
 
+### 课程讲义
+
+:memo: [讲义 & 作业](../pdfs/python-handout.pdf)
+
+
 ## :moneybag: 7 月 14 日：数据库 & SQL
 
 ### 课程形式
