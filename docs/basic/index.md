@@ -18,6 +18,10 @@
 
 ### 课程讲义 & 课后作业
 
+:hourglass_flowing_sand: DDL: 7 月 25 日星期二 23:59
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1kF411Q71M)
+
 :memo: [PDF](/pdfs/python-handout.pdf)
 
 :link: [在线版](python)

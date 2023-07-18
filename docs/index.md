@@ -6,6 +6,8 @@
 
 :tv: **直播链接：**所有课程均在 [哔哩哔哩](https://live.bilibili.com/22238700) 直播。
 
+:movie_camera: **回放合集：**所有课程的回放均会在 [哔哩哔哩](https://space.bilibili.com/588598994/channel/collectiondetail?sid=1543912) 上传。
+
 :clock3: **直播时间：**除 Unity 课程外，所有课程均在晚上 19:30 开始，Unity 课程在晚上 20:00 开始。
 
 -----
@@ -21,6 +23,10 @@
 请参考 [Python 基础](/basic/python/#_1)。
 
 ### 课程讲义 & 课后作业
+
+:hourglass_flowing_sand: DDL: 7 月 25 日星期二 23:59
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1kF411Q71M)
 
 :memo: [PDF](/pdfs/python-handout.pdf)
 

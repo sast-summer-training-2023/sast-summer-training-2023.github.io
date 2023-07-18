@@ -10,6 +10,11 @@
 
 Python 是当今最热门的编程语言，其编写简单、生态良好的特性使其成为各行各业的工作者的首选；对于计算机系的同学而言，Python 也是必备的技能之一。本节课程将从基础的 Python 语法讲起，展现 Python 强大的生态带来的便利，并介绍如何较为优雅地管理 Python 环境。
 
+:hourglass_flowing_sand: DDL: 7 月 25 日星期二 23:59
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1kF411Q71M)
+
+:memo: [讲义 PDF](/pdfs/python-handout.pdf)
 
 ## 一、课前准备
 
