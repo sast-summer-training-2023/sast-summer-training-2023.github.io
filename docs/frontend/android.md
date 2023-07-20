@@ -651,7 +651,7 @@ https://github.com/aritraroy/UltimateAndroidReference
 
 你需要在我们给定的框架上，根据我们的注释提示，完成单人跳棋 App 的代码。
 
-项目地址：https://github.com/Zhu-Yuzhang/Peg-Solitaire
+项目地址：https://github.com/sast-summer-training-2023/sast2023-java-and-android
 
 #### 扩展任务
 
