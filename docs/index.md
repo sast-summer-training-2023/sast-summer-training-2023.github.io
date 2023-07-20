@@ -4,6 +4,8 @@
 
 这里是 2023 酒井科协暑培的课程主页。日后，我们将在此集中发布所有课程的课前准备材料、课程讲义、课后作业等各种内容。敬请关注！:partying_face:
 
+:lollipop: **宣传推送：**[酒井科协暑培 4.0：贵系漫游指南](https://mp.weixin.qq.com/s/2b163EGSt4KyYjDavOPyzQ)
+
 :tv: **直播链接：**所有课程均在 [哔哩哔哩](https://live.bilibili.com/22238700) 直播。
 
 :movie_camera: **回放合集：**所有课程的回放均会在 [哔哩哔哩](https://space.bilibili.com/588598994/channel/collectiondetail?sid=1543912) 上传。
