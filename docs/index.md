@@ -12,6 +12,16 @@
 
 -----
 
+## :hammer_and_wrench: 7 月 20 日：数据分析 & NumPy
+
+### 课前准备
+
+请提前使用 `pip` 安装 `numpy` 与 `matplotlib` 包：
+
+```shell
+pip install numpy matplotlib
+```
+
 ## :snake: 7 月 18 日：Python 基础
 
 ### 课程形式
