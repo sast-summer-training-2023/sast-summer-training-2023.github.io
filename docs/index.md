@@ -14,6 +14,17 @@
 
 -----
 
+## :blue_heart: 7 月 22 日：Django
+
+### 课前准备
+
++ 安装测试工具 [Postman](https://www.postman.com/) 
++ 在安装了 Python 并学会了使用包管理工具安装包后，使用如下命令安装 `django` 环境：
+
+```shell
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django
+```
+
 ## :hammer_and_wrench: 7 月 21 日：数据分析 & NumPy
 
 ### 课前准备
