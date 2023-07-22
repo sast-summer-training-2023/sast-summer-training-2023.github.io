@@ -6,7 +6,7 @@
 
 在这里，经验丰富的学长会手把手教学，带领你一窥人工智能的奥秘，领略计算机世界的无限精彩！
 
-## :hammer_and_wrench: 7 月 20 日：数据分析 & NumPy
+## :hammer_and_wrench: 7 月 21 日：数据分析 & NumPy
 
 ### 课前准备
 
@@ -15,3 +15,11 @@
 ```shell
 pip install numpy matplotlib
 ```
+
+### 课程讲义
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1Pu411V7Gd)
+
+:memo: [NumPy](/pdfs/numpy.pdf)
+
+:memo: [Matplotlib](/pdfs/matplotlib.ipynb)

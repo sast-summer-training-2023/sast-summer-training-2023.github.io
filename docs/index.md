@@ -14,7 +14,7 @@
 
 -----
 
-## :hammer_and_wrench: 7 月 20 日：数据分析 & NumPy
+## :hammer_and_wrench: 7 月 21 日：数据分析 & NumPy
 
 ### 课前准备
 
@@ -23,6 +23,14 @@
 ```shell
 pip install numpy matplotlib
 ```
+
+### 课程讲义
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1Pu411V7Gd)
+
+:memo: [NumPy](/pdfs/numpy.pdf)
+
+:memo: [Matplotlib](/pdfs/matplotlib.ipynb)
 
 ## :snake: 7 月 18 日：Python 基础
 

@@ -19,3 +19,11 @@ NumPy 是 Python 科学计算的基础包，也是进行大规模数据处理和
 ```shell
 pip install numpy matplotlib
 ```
+
+## 课程讲义
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1Pu411V7Gd)
+
+:memo: [NumPy](/pdfs/numpy.pdf)
+
+:memo: [Matplotlib](/pdfs/matplotlib.ipynb)
