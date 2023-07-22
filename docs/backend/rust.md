@@ -1,7 +1,5 @@
 # Rust
 
-## 引言
-
 :cheese_wedge: 前置知识：建议提前修过 C++  语言的程序设计基础与面向对象程序设计基础 (OOP) 课程
 
 :mortar_board: 讲师：郑友捷 @Azure_Stars
@@ -30,7 +28,7 @@ Rust 可以带给你：
 
 下面放上一张 Rust 的可爱吉祥物 logo~
 
-<img src="../images/cuddlyferris.png" alt="avatar" style="zoom: 67%;" />
+<img src="/images/cuddlyferris.png" alt="avatar" style="zoom: 67%;" />
 
 
 
@@ -217,7 +215,7 @@ $ rustc 1.72.0-nightly (f0411ffce 2023-05-30)
 
 之后你可能会见到如下场景（其中用户名与路径会随不同机器的配置而发生改变，但影响不大）
 
-![avatar](../images/rust-1.png)
+![avatar](/images/rust-1.png)
 
 如果你<s>不想动脑子</s>没有特殊需求，可以直接选择默认安装，此时输入 `1` 并且回车，等待一段时间之后即可完成安装。
 
@@ -227,13 +225,13 @@ $ rustc 1.72.0-nightly (f0411ffce 2023-05-30)
 
 * 若出现下图情形
 
-  <img src="../images/rust-2.png" alt="image-20230629214717603" style="zoom: 80%;" />
+  <img src="/images/rust-2.png" alt="image-20230629214717603" style="zoom: 80%;" />
 
   则说明安装成功。
 
 * 若提示 `'cargo' 不是内部或外部命令，也不是可运行的程序`，则需要检查是否配置了环境变量。
 
-  <img src="../images/rust-3.png" alt="image-20230629214834334" style="zoom:50%;" />
+  <img src="/images/rust-3.png" alt="image-20230629214834334" style="zoom:50%;" />
 
   上图中蓝色部分即为 `rust` 相关文件的路径。该路径会在我们安装 `rust` 的时候进行确定，详细可以看步骤 2 的图片中定位的目录，即 `located at` 后面的路径。若你的电脑的环境变量选项中没有这一项，请检查文件资源管理器中是否存在这一路径。
 
@@ -248,7 +246,7 @@ VS Code 是后续课程中非常常见的一种开发工具，其支持的插件
 
 打开 VS Code，在扩展市场中搜索 `rust-analyzer`，选择安装对应的插件。
 
-<img src="../images/rust-4.png" alt="image-20230629220307380" style="zoom:50%;" />
+<img src="/images/rust-4.png" alt="image-20230629220307380" style="zoom:50%;" />
 
 
 
@@ -286,7 +284,7 @@ VS Code 是后续课程中非常常见的一种开发工具，其支持的插件
 
    当终端的工作目录切换到 `sample` 之后，我们打开 VS Code 界面，即可看到如下场景：
 
-   <img src="../images/rust-5.png" alt="image-20230629224410737" style="zoom: 80%;" />
+   <img src="/images/rust-5.png" alt="image-20230629224410737" style="zoom: 80%;" />
 
    这里的包已经预先给定了一个可以运行的 `main.rs`，另外还有 `Cargo.toml` 等文件。我们暂时不关注这些文件的具体作用，仅需要知道 `main.rs` 内包含了我们熟悉的 `main` 函数入口即可。
 
