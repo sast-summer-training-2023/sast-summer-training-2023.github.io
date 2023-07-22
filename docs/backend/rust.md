@@ -155,23 +155,23 @@ Homebrew 虽然与 rustup 的安装没有直接关系，但却可以为后续 ru
 
 1. 设置 Homebrew 镜像
 
-```shell
-export HOMEBREW_INSTALL_FROM_API=1
-export HOMEBREW_API_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api"
-export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
-export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
-export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
-```
+    ```shell
+    export HOMEBREW_INSTALL_FROM_API=1
+    export HOMEBREW_API_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api"
+    export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
+    export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
+    export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+    ```
 
 2. 从本镜像下载安装脚本并安装 Homebrew
 
-```shell
-git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install
-/bin/bash brew-install/install.sh
-rm -rf brew-install
+    ```shell
+    git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install
+    /bin/bash brew-install/install.sh
+    rm -rf brew-install
 
-brew update
-```
+    brew update
+    ```
 
 
 
@@ -254,54 +254,52 @@ VS Code 是后续课程中非常常见的一种开发工具，其支持的插件
 
 1. 建立工作目录
 
-   Rust 的工作目录建立比较特别。它不像 C++ 、Python 等语言可以在任何地方，使用对应的 cpp 文件或者 py 文件即可完成运行。Rust 的管理是通过 `Cargo` 包管理器来进行的，关于 `Cargo` 的详细作用我们也会在后续的课程讲解中进行介绍，此时我们只需要掌握其用法即可。
+    Rust 的工作目录建立比较特别。它不像 C++ 、Python 等语言可以在任何地方，使用对应的 cpp 文件或者 py 文件即可完成运行。Rust 的管理是通过 `Cargo` 包管理器来进行的，关于 `Cargo` 的详细作用我们也会在后续的课程讲解中进行介绍，此时我们只需要掌握其用法即可。
 
-   打开终端，切换到自己想要进行开发的目录下，输入如下指令：
+    打开终端，切换到自己想要进行开发的目录下，输入如下指令：
 
-   ```shell
-   $ cargo new sample
-   $ cd sample
-   ```
+    ```shell
+    $ cargo new sample
+    $ cd sample
+    ```
 
-   即会在当前目录下新建一个名称为 `sample` 的包，在这个包中我们便可以进行开发。
+    即会在当前目录下新建一个名称为 `sample` 的包，在这个包中我们便可以进行开发。
 
-   检查当前目录下的代码结构，运行指令：
+    检查当前目录下的代码结构，运行指令：
 
-   ```shell
-   $ tree -L 1 -a
-   .
-   ├── .git
-   ├── .gitignore
-   ├── Cargo.lock
-   ├── Cargo.toml
-   ├── src
-   └── target
-   ```
+    ```shell
+    $ tree -L 1 -a
+    .
+    ├── .git
+    ├── .gitignore
+    ├── Cargo.lock
+    ├── Cargo.toml
+    ├── src
+    └── target
+    ```
 
-   它甚至为你创建了 git 文件，方便你进行版本管理
+    它甚至为你创建了 git 文件，方便你进行版本管理
 
 2. 运行代码
 
-   当终端的工作目录切换到 `sample` 之后，我们打开 VS Code 界面，即可看到如下场景：
+    当终端的工作目录切换到 `sample` 之后，我们打开 VS Code 界面，即可看到如下场景：
 
-   <img src="/images/rust-5.png" alt="image-20230629224410737" style="zoom: 80%;" />
+    <img src="/images/rust-5.png" alt="image-20230629224410737" style="zoom: 80%;" />
 
-   这里的包已经预先给定了一个可以运行的 `main.rs`，另外还有 `Cargo.toml` 等文件。我们暂时不关注这些文件的具体作用，仅需要知道 `main.rs` 内包含了我们熟悉的 `main` 函数入口即可。
+    这里的包已经预先给定了一个可以运行的 `main.rs`，另外还有 `Cargo.toml` 等文件。我们暂时不关注这些文件的具体作用，仅需要知道 `main.rs` 内包含了我们熟悉的 `main` 函数入口即可。
 
-   我们可以在终端中执行如下指令（请保证当前目录为 `sample`）
+    我们可以在终端中执行如下指令（请保证当前目录为 `sample`）
 
-   ```sh
-   $ cargo run
-   Hello world!
-   ```
+    ```sh
+    $ cargo run
+    Hello world!
+    ```
 
-   这里的 `cargo run` 相当于运行这个包所构成的程序，发现它正常输出了 `Hello world!`，说明一切正常。
+    这里的 `cargo run` 相当于运行这个包所构成的程序，发现它正常输出了 `Hello world!`，说明一切正常。
 
 3. Cargo 的存在是 Rust 大受欢迎的一个原因。它是一个包管理工具，其最重要的意义即是**任何用拿到你的代码，都能运行起来，而不用去翻找十几年前的依赖版本**。它提供了一系列的工具，从项目的建立、构建到测试、运行直至部署，为 Rust 项目的管理提供尽可能完整的手段。
 
-   
-
-   如果大家没有较多的项目开发或者论文复现经验，可能无法体会那种导师要求你复现十几年前的代码，然后你发现连环境都配不动的痛苦。不过也许大家已经体验过配置如 WSL 等内容的痛苦了，所以一个全自动的管理工具绝对是你的不二之选。
+    如果大家没有较多的项目开发或者论文复现经验，可能无法体会那种导师要求你复现十几年前的代码，然后你发现连环境都配不动的痛苦。不过也许大家已经体验过配置如 WSL 等内容的痛苦了，所以一个全自动的管理工具绝对是你的不二之选。
 
 ## 一个简单的 Rust 程序
 
@@ -553,20 +551,20 @@ Rust 的条件语句与 C++ 十分相似，但有两个不同的地方：
 1. 条件语句中的条件不需要使用小括号括起来（比 C++ 方便多了）
 2. 我们可以使用条件语句作为一个表达式来求值，即条件语句本身可以像表达式一样拥有返回值，来绑定其他的变量。
 
-```rust
-let x = 10;
-let y = if x > 0 {
-    10
-} else if x == 0 {
-    0
-} else {
-    -10
-};
-```
+    ```rust
+    let x = 10;
+    let y = if x > 0 {
+        10
+    } else if x == 0 {
+        0
+    } else {
+        -10
+    };
+    ```
 
-此时 y 的值会随着 x 的取值变化而变化。
+    此时 y 的值会随着 x 的取值变化而变化。
 
-注意：若想使用这种用法，必须保证条件语句的**每一个分支的返回值的数据类型相同**。
+    注意：若想使用这种用法，必须保证条件语句的**每一个分支的返回值的数据类型相同**。
 
 ## 匹配语句
 
@@ -712,27 +710,27 @@ fn function_name(arg_name[0]: arg_type[0], arg_name[1]: arg_type[1], ...) -> T {
 2. 依据上述提到的语句块表达式的方式，让**最后一条执行的指令**是一个返回值即可
 3. 注意：函数可能有多个分支，用来返回不同的返回值，此时需要保证 不同地方返回的值类型与函数返回值类型相同。
 
-```rust
-fn f(x: i32) -> i32 {
-    if x > 1 {
-        return 1;
-    } else if x > 0 {
-        2
-    } else {
-        3
+    ```rust
+    fn f(x: i32) -> i32 {
+        if x > 1 {
+            return 1;
+        } else if x > 0 {
+            2
+        } else {
+            3
+        }
     }
-}
-```
+    ```
 
 4. 由于函数整体可以看成一个表达式，所以一定需要一个返回值。若我们没有显式指定返回值，则认为返回值为 `()`。
 
-   下面的函数返回值即为 `()`。
+    下面的函数返回值即为 `()`。
 
-```rust
-fn f() {
-    println!("Hello, world!");
-}
-```
+    ```rust
+    fn f() {
+        println!("Hello, world!");
+    }
+    ```
 
 
 
@@ -1424,112 +1422,112 @@ struct Genshin {
 
 1. 直接实例化
 
-   ```rust
-   let traveler = Genshin {
-       name: String::from("Traveler"),
-       element: String::from("Anemo"),
-       age: 16,
-       vision: 3.3,
-   };
-   ```
+    ```rust
+    let traveler = Genshin {
+        name: String::from("Traveler"),
+        element: String::from("Anemo"),
+        age: 16,
+        vision: 3.3,
+    };
+    ```
 
-   需要注意两点：
+    需要注意两点：
 
-   1. 每一个字段都需要初始化
-   2. 初始化的顺序可以和定义的顺序不一样
+    1. 每一个字段都需要初始化
+    2. 初始化的顺序可以和定义的顺序不一样
 
 2. 简化构建
 
-   可以通过传递已经构造好的变量进行初始化
+    可以通过传递已经构造好的变量进行初始化
 
-   ```rust
-   let now_name = String::from("Traveler");
-   let age = 16;
-   let element = String::from("Anemo");
-   let vision = 3.3;
-   let traveler = Genshin {
-       name: now_name,
-       age: age,
-       element: element,
-       vision: vision,
-   };
-   ```
+    ```rust
+    let now_name = String::from("Traveler");
+    let age = 16;
+    let element = String::from("Anemo");
+    let vision = 3.3;
+    let traveler = Genshin {
+        name: now_name,
+        age: age,
+        element: element,
+        vision: vision,
+    };
+    ```
 
-   当变量名称和结构体字段同名时，可以直接使用缩略的方式进行初始化。故上文可以简略为：
+    当变量名称和结构体字段同名时，可以直接使用缩略的方式进行初始化。故上文可以简略为：
 
-   ```rust
-   let now_name = String::from("Traveler");
-   let age = 16;
-   let element = String::from("Anemo");
-   let vision = 3.3;
-   let traveler = Genshin {
-       name: now_name,
-       age,
-       element,
-       vision,
-   };
-   ```
+    ```rust
+    let now_name = String::from("Traveler");
+    let age = 16;
+    let element = String::from("Anemo");
+    let vision = 3.3;
+    let traveler = Genshin {
+        name: now_name,
+        age,
+        element,
+        vision,
+    };
+    ```
 
 3. 通过已有结构体实例进行实例化
 
-   比如我们可以根据已有的 Genshin 实例 traveler 来构造新的实例 new_traveler。
+    比如我们可以根据已有的 Genshin 实例 traveler 来构造新的实例 new_traveler。
 
-   ```rust
-   let new_traveler = Genshin {
-       name: traveler.name,
-       age: traveler.age,
-       element: String::from("Geo"),
-       vision: traveler.vision,
-   };
-   ```
+    ```rust
+    let new_traveler = Genshin {
+        name: traveler.name,
+        age: traveler.age,
+        element: String::from("Geo"),
+        vision: traveler.vision,
+    };
+    ```
 
-   但这种写法不免显得过于冗余，仅在 `element` 字段进行修改，其他都保持不变，因此我们可以使用结构体更新语法：
+    但这种写法不免显得过于冗余，仅在 `element` 字段进行修改，其他都保持不变，因此我们可以使用结构体更新语法：
 
-   ```rust
-   let new_traveler = Genshin {
-       element: String::from("Geo"),
-       ..traveler
-   };
-   ```
+    ```rust
+    let new_traveler = Genshin {
+        element: String::from("Geo"),
+        ..traveler
+    };
+    ```
 
-   用已有的实例去实现新的实例，其实也相当于一种变量的绑定，那么就不可避免的会遇到所有权转移的情况。在上文中，我们使用了 traveler 去初始化 new_traveler，在初始化之后，traveler 的各个字段情况如下：
+    用已有的实例去实现新的实例，其实也相当于一种变量的绑定，那么就不可避免的会遇到所有权转移的情况。在上文中，我们使用了 traveler 去初始化 new_traveler，在初始化之后，traveler 的各个字段情况如下：
 
-   1. element：没有被用来进行绑定，因此可以访问
-   2. age、vision：被用来初始化 traveler，但是基本数据类型，因此发生了拷贝而不是转移，所以仍然可以访问
-   3. name：被用来初始化 traveler，发生了所有权转移，不可以访问。
+    1. element：没有被用来进行绑定，因此可以访问
+    2. age、vision：被用来初始化 traveler，但是基本数据类型，因此发生了拷贝而不是转移，所以仍然可以访问
+    3. name：被用来初始化 traveler，发生了所有权转移，不可以访问。
 
-   **只要有一个字段不可访问，那么整体的 traveler 就会失效，不过仍然可以访问 traveler 中未失效的字段。**
+    **只要有一个字段不可访问，那么整体的 traveler 就会失效，不过仍然可以访问 traveler 中未失效的字段。**
 
-   ```rust
-   [derive(Debug)]
-   struct Genshin {
-       name: String,
-       age: u8,
-       element: String,
-       vision: f64,
-   }
-   fn main() {
-       let now_name = String::from("Traveler");
-       let age = 16;
-       let element = String::from("Anemo");
-       let vision = 3.3;
-       let traveler = Genshin {
-           name: now_name,
-           age,
-           element,
-           vision,
-       };
-       // 用 traveler 实例来构造新的实例 new_traveler
-       let new_traveler = Genshin {
-           name: traveler.name,
-           age: traveler.age,
-           element: String::from("Geo"),
-           vision: traveler.vision,
-       };
-       println!("{} {}", traveler.age, traveler.vision);	// 虽然整体的 traveler 失效了，但是仍然可以访问局部字段。
-       println!("{:?}", traveler); // 这里会编译错误
-   }
-   ```
+    ```rust
+    [derive(Debug)]
+    struct Genshin {
+        name: String,
+        age: u8,
+        element: String,
+        vision: f64,
+    }
+    fn main() {
+        let now_name = String::from("Traveler");
+        let age = 16;
+        let element = String::from("Anemo");
+        let vision = 3.3;
+        let traveler = Genshin {
+            name: now_name,
+            age,
+            element,
+            vision,
+        };
+        // 用 traveler 实例来构造新的实例 new_traveler
+        let new_traveler = Genshin {
+            name: traveler.name,
+            age: traveler.age,
+            element: String::from("Geo"),
+            vision: traveler.vision,
+        };
+        println!("{} {}", traveler.age, traveler.vision);	// 虽然整体的 traveler 失效了，但是仍然可以访问局部字段。
+        println!("{:?}", traveler); // 这里会编译错误
+    }
+    ```
 
 
 
@@ -1933,7 +1931,7 @@ struct Point<T> {
 }
 
 fn main() {
-    let p = Point{x: 1, y :1};
+    let p = Point{x: 1, y: 1};
     let q = Point{x: 1, y: 2.2};	/// 会编译失败，因为类型不一致
 }
 ```
