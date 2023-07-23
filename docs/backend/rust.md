@@ -30,7 +30,7 @@ Rust 可以带给你：
 
 <img src="/images/cuddlyferris.png" alt="avatar" style="zoom: 67%;" />
 
-
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1sc411w7LP)
 
 ## 课前准备
 

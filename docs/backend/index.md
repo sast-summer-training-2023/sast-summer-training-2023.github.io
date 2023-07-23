@@ -14,6 +14,8 @@
 
 ### 课程讲义
 
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1sc411w7LP)
+
 :memo: [Rust](/backend/rust)
 
 ## :blue_heart: 7 月 22 日：Django
