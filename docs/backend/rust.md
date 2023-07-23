@@ -169,7 +169,7 @@ Homebrew 虽然与 rustup 的安装没有直接关系，但却可以为后续 ru
     git clone --depth=1 https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/install.git brew-install
     /bin/bash brew-install/install.sh
     rm -rf brew-install
-
+    
     brew update
     ```
 
@@ -2694,3 +2694,40 @@ fn main() {
     }
 }
 ```
+
+## 作业
+### 作业1
+> 本作业形式借鉴于cs61a，在此鸣谢
+
+代码地址：[SAST-4.0-Rust/hw1 at main · Azure-stars/SAST-4.0-Rust (github.com)](https://github.com/Azure-stars/SAST-4.0-Rust/tree/main/hw1)
+
+请在对应的region进行代码修改，使得可以正常通过编译并且输出预期想要达到的结果。
+
+示例：
+
+```rust
+fn task1() {
+    // region 1 start
+    // region 1 end
+
+    // 输出: x = 4
+    println!("x = {}", x);
+}
+```
+
+修改如下：
+
+```rust
+fn task1() {
+    // region 1 start
+    let x = 4;
+    // region 1 end
+
+    // 输出: x = 4
+    println!("x = {}", x);
+}
+```
+
+
+
+本次作业不设置DDL，并没有标准答案。大家只要能够通过编译并且输出预期值即算通过。若有问题欢迎随时在暑培群中提问~
