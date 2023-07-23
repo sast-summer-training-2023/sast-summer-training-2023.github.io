@@ -37,7 +37,7 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django
 
 ### 课程讲义
 
-:movie_camera: 课程回放：待上传
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1WV411L7mq)
 
 :memo: [课程讲义](/backend/django)
 

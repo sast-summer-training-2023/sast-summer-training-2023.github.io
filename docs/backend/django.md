@@ -16,6 +16,8 @@ Django: The web framework for perfectionists with deadlines.
 
 2. Django 框架中路由、模型、视图、单元测试的相关介绍
 
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1WV411L7mq)
+
 
 ## 课前准备
 
