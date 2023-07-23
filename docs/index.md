@@ -14,6 +14,16 @@
 
 -----
 
+## :crab: 7 月 23 日：Rust (1)
+
+### 课前准备
+
+请参考 [Rust](/backend/rust/#_1)。
+
+### 课程讲义
+
+:memo: [Rust](/backend/rust)
+
 ## :blue_heart: 7 月 22 日：Django
 
 ### 课前准备
@@ -24,6 +34,12 @@
 ```shell
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django
 ```
+
+### 课程讲义
+
+:movie_camera: 课程回放：待上传
+
+:memo: [课程讲义](/backend/django)
 
 ## :hammer_and_wrench: 7 月 21 日：数据分析 & NumPy
 

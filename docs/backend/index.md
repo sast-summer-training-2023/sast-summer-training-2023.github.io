@@ -6,6 +6,16 @@
 
 无论是想要在软工等课堂让自己的网站快人一步，亦或是将来纵横职场，还是单纯兴趣驱动，你，都值得拥有！
 
+## :crab: 7 月 23 日：Rust (1)
+
+### 课前准备
+
+请参考 [Rust](/backend/rust/#_1)。
+
+### 课程讲义
+
+:memo: [Rust](/backend/rust)
+
 ## :blue_heart: 7 月 22 日：Django
 
 ### 课前准备
@@ -16,3 +26,9 @@
 ```shell
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django
 ```
+
+### 课程讲义
+
+:movie_camera: 课程回放：待上传
+
+:memo: [课程讲义](/backend/django)
