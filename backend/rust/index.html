@@ -1817,6 +1817,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_94" class="md-nav__link">
+    作业
+  </a>
+  
+    <nav class="md-nav" aria-label="作业">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    作业 1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3151,6 +3171,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_94" class="md-nav__link">
+    作业
+  </a>
+  
+    <nav class="md-nav" aria-label="作业">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    作业 1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3202,7 +3242,8 @@
 </ol>
 <p>下面放上一张 Rust 的可爱吉祥物 logo~</p>
 <p><img src="/images/cuddlyferris.png" alt="avatar" style="zoom: 67%;" /></p>
-<p><img alt="🎥" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f3a5.svg" title=":movie_camera:" /> <a href="https://www.bilibili.com/video/BV1sc411w7LP">课程回放</a></p>
+<p><img alt="🎥" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f3a5.svg" title=":movie_camera:" /> <a href="https://www.bilibili.com/video/BV1sc411w7LP">课程回放 (1)</a></p>
+<p><img alt="📚" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4da.svg" title=":books:" /> <a href="#1">作业 (1)</a></p>
 <h2 id="_1">课前准备<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>听说成为贵系大佬的第一步是能够熟练地配置各种环境.jpg</p>
@@ -4994,7 +5035,7 @@ Hello<span class="w"> </span>world!
 <span class="w">    </span><span class="n">x</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-可以看到这里用 Copy 特征来约束泛型T，保证 T 泛型必须支持拷贝功能，就解决了上述矛盾。</p>
+可以看到这里用 Copy 特征来约束泛型 T，保证 T 泛型必须支持拷贝功能，就解决了上述矛盾。</p>
 <h3 id="_70">泛型的使用场景<a class="headerlink" href="#_70" title="Permanent link">&para;</a></h3>
 <h4 id="_71">结构体<a class="headerlink" href="#_71" title="Permanent link">&para;</a></h4>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -5742,6 +5783,46 @@ $<span class="w"> </span>cargo<span class="w"> </span>run<span class="w"> </span
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
+<h2 id="_94">作业<a class="headerlink" href="#_94" title="Permanent link">&para;</a></h2>
+<h3 id="1">作业 1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>本作业形式借鉴于 CS61A，在此鸣谢</p>
+</blockquote>
+<p>代码地址：<a href="https://github.com/sast-summer-training-2023/sast2023-rust/blob/main/hw1/src/main.rs">HW1</a></p>
+<p>请在对应的 region 进行代码修改，使得可以正常通过编译并且输出预期想要达到的结果。</p>
+<p>示例：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">fn</span> <span class="nf">task1</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// region 1 start</span>
+<span class="w">    </span><span class="c1">// region 1 end</span>
+
+<span class="w">    </span><span class="c1">// 输出：x = 4</span>
+<span class="w">    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&quot;x = {}&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>修改如下：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">fn</span> <span class="nf">task1</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// region 1 start</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// region 1 end</span>
+
+<span class="w">    </span><span class="c1">// 输出：x = 4</span>
+<span class="w">    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&quot;x = {}&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>本次作业不设置 DDL，并没有标准答案。大家只要能够通过编译并且输出预期值即算通过。若有问题欢迎随时在暑培群中提问~</p>
 
   <hr>
 <div class="md-source-file">
@@ -5810,7 +5891,7 @@ $<span class="w"> </span>cargo<span class="w"> </span>run<span class="w"> </span
     
         <div class="md-source-date">
             <small>
-                作者: <span class='git-page-authors git-authors'><a href='mailto:zyj578335934@gmail.com'>Azure_Stars</a> (76.41%), <a href='mailto:wangbw21@mails.tsinghua.edu.cn'>abmfy</a> (23.59%)</span>
+                作者: <span class='git-page-authors git-authors'><a href='mailto:zyj578335934@gmail.com'>Azure_Stars</a> (76.37%), <a href='mailto:wangbw21@mails.tsinghua.edu.cn'>abmfy</a> (23.63%)</span>
             </small>
         </div>
     
