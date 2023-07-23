@@ -12,11 +12,13 @@
 
 请参考 [Rust](/backend/rust/#_1)。
 
-### 课程讲义
+### 课程讲义 & 课后作业
 
 :movie_camera: [课程回放](https://www.bilibili.com/video/BV1sc411w7LP)
 
-:memo: [Rust](/backend/rust)
+:memo: [讲义](/backend/rust)
+
+:books: [作业](/backend/rust/#1)
 
 ## :blue_heart: 7 月 22 日：Django
 
