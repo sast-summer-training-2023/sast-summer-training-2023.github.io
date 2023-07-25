@@ -14,6 +14,12 @@
 
 -----
 
+## :coffee: 7 月 26 日：Java
+
+### 课前准备
+
+请参考 [Java](/frontend/java/#_1)。
+
 ## :crab: 7 月 25 日：Rust (2)
 
 ### 课前准备
