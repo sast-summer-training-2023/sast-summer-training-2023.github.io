@@ -833,9 +833,40 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Java
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Java
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    课前准备
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -975,6 +1006,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    课前准备
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -998,13 +1044,34 @@
 <p><img alt="📅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4c5.svg" title=":date:" /> 日期：7 月 26 日星期三</p>
 <hr />
 <p>尽管近年来面临一些新兴语言的挑战，Java 由于它的跨平台性、良好的安全性、前向兼容性以及不算差的性能，仍是一门历史地位和业界地位都极其崇高的语言。庞大的 Java 社区和海量的 Java 项目使得对任何想要接触业界的贵系同学来说，你也许可以不精通它，但至少应当对这门简单、强大、通用的语言有一些了解。此外，本课程还会简单介绍 Kotlin, Scala 等基于 Java 虚拟机的（更现代化的）语言。</p>
+<h2 id="_1">课前准备<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><strong>本课程需要先修《面向对象程序设计》（OOP）。</strong></p>
+<p>要运行 Java 程序，你需要先安装 Java Developer Kit (JDK) 。Windows 或 Mac 用户建议直接在 Oracle 官网下载 JDK17（<a href="https://www.oracle.com/java/technologies/downloads/#java17">Java Downloads | Oracle</a>）。而 Linux 用户（这里以 Ubuntu 为例，其余平台请自行百度 / Google）则可以使用如下命令：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>sudo<span class="w"> </span>add-apt-repository<span class="w"> </span>ppa:linuxuprising/java
+sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>oracle-java17-installer<span class="w"> </span>--install-recommends
+</code></pre></div></td></tr></table></div>
+<p>本教程就会使用这一版本。请使用<code>java -version</code>命令来确认 JDK 是否安装完成。</p>
+<p>你可以使用如下命令编译运行 Java 程序：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>javac<span class="w"> </span>YourProgram.java<span class="w">  </span><span class="c1"># 编译</span>
+java<span class="w"> </span>YourProgram<span class="w">        </span><span class="c1"># 运行</span>
+<span class="c1"># OR </span>
+java<span class="w"> </span>YourProgram.java<span class="w">   </span><span class="c1"># 编译 &amp; 运行</span>
+</code></pre></div></td></tr></table></div>
+<p>你也可以使用<code>jshell</code>这一命令行式窗口运行一些简单的<code>java</code>脚本（<del>玩具性质居多</del>）。</p>
+<p>建议使用 IntelliJ IDEA 这一广泛应用的 Java IDE 编写 Java 程序，可在 <a href="https://www.jetbrains.com/idea/">https://www.jetbrains.com/idea/</a> 下载。如果你是清华大学学生，可以使用清华邮箱（使用<code>mails.thu.edu.cn</code>后缀，而非<code>mails.tsinghua.edu.cn</code>），在 <a href="https://www.jetbrains.com.cn/community/education/#students">免费教育许可证 - 社区支持 (jetbrains.com.cn)</a> 注册学生包，获取功能更加强大的 Ultimate 版本。</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年7月11日</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年7月25日</span>
       
     
   </small>
@@ -1066,7 +1133,7 @@
     
         <div class="md-source-date">
             <small>
-                作者: <span class='git-page-authors git-authors'><a href='mailto:wangbw21@mails.tsinghua.edu.cn'>abmfy</a></span>
+                作者: <span class='git-page-authors git-authors'><a href='mailto:wangbw21@mails.tsinghua.edu.cn'>abmfy</a> (26.32%), <a href='mailto:zhuyz21@mails.tsinghua.edu.cn'>Zhu-Yuzhang</a> (73.68%)</span>
             </small>
         </div>
     

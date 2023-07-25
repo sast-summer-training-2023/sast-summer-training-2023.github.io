@@ -1832,6 +1832,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    作业 2
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3186,6 +3193,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    作业 2
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -3243,7 +3257,9 @@
 <p>下面放上一张 Rust 的可爱吉祥物 logo~</p>
 <p><img src="/images/cuddlyferris.png" alt="avatar" style="zoom: 67%;" /></p>
 <p><img alt="🎥" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f3a5.svg" title=":movie_camera:" /> <a href="https://www.bilibili.com/video/BV1sc411w7LP">课程回放 (1)</a></p>
+<p><img alt="🎥" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f3a5.svg" title=":movie_camera:" /> <a href="https://www.bilibili.com/video/BV1Tc411F7co">课程回放 (2)</a></p>
 <p><img alt="📚" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4da.svg" title=":books:" /> <a href="#1">作业 (1)</a></p>
+<p><img alt="📚" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4da.svg" title=":books:" /> <a href="https://github.com/sast-summer-training-2023/sast2023-rust/tree/main/hw2">作业 (2)</a></p>
 <h2 id="_1">课前准备<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>听说成为贵系大佬的第一步是能够熟练地配置各种环境.jpg</p>
@@ -5268,7 +5284,7 @@ Hello<span class="w"> </span>world!
 </code></pre></div></td></tr></table></div>
 <p>上述例子中，小王和小李都想开一家饭馆，于是他们各自实现了 <code>Restaurant</code> 特征。</p>
 <p>但因为小李是富哥，所以他有北京三环内的十套房子，因此他的房子需要用数组存储。在提供开业证明的时候，他决定随便挑里面的一座进行报备。这里的 <code>Vec</code> 相当于 C++ 的动态数组，发挥的作用与数组类似。</p>
-<p>调用特征的方法和调用普通方法的做法完全一致，如使用 <code>.</code> 调用，故不在此复述。</p>
+<p>调用特征的方法和调用普通方法的做法完全一致，即使用 <code>.</code> 调用，故不在此复述。</p>
 <h3 id="_79">特征的默认实现<a class="headerlink" href="#_79" title="Permanent link">&para;</a></h3>
 <p>有时候，我们可以为特征方法提供默认实现，这时候如果实现特征的类型不额外定义，就采用默认实现。</p>
 <p>用上文的例子，像小李一样的富哥明显不多，大部分人的房子位置比较偏僻，所以我们可以给他提供一个默认实现。</p>
@@ -5453,7 +5469,7 @@ Hello<span class="w"> </span>world!
 <h3 id="_85">引入<a class="headerlink" href="#_85" title="Permanent link">&para;</a></h3>
 <p>经过最近两节课的讲解，大家掌握的知识已经可以用来开发简单的 Rust 应用了，那么请来完成 Rust 的第一个大作业吧。</p>
 <p>等等，似乎有些奇怪 qwq</p>
-<p><img alt="image-20230703205846641" src="https://raw.githubusercontent.com/Azure-stars/Figure-Bed/main/image-20230703205846641.png" /></p>
+<p><img alt="avatar" src="" title="../images/rust-6.png" /></p>
 <p>是的，我们似乎忘了多文件编程。</p>
 <h3 id="rust_2">Rust 的模块关系<a class="headerlink" href="#rust_2" title="Permanent link">&para;</a></h3>
 <p>在进入这个章节前，请大家先了解以下几个概念：</p>
@@ -5471,6 +5487,20 @@ Hello<span class="w"> </span>world!
 </ul>
 <h5 id="_86">使用第三方包<a class="headerlink" href="#_86" title="Permanent link">&para;</a></h5>
 <p>使用第三方库，需要修改 <code>Cargo.toml</code> 文件，在 <code>[dependencies]</code> 区域对应的包名和版本信息，如引入随机数包时，需要在 <code>Cargo.toml</code> 文件添加 <code>rand = "0.8.3"</code>。然后就可以和正常的模块一样使用。</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">use</span><span class="w"> </span><span class="n">rand</span>::<span class="p">{</span><span class="n">thread_rng</span><span class="p">,</span><span class="w"> </span><span class="n">Rng</span><span class="p">};</span>
+
+<span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">thread_rng</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">val</span>: <span class="kt">u32</span> <span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="p">.</span><span class="n">gen</span><span class="p">();</span>
+<span class="w">    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&quot;val: {}&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">val</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
 <h4 id="module">Module（模块）<a class="headerlink" href="#module" title="Permanent link">&para;</a></h4>
 <h5 id="_87">模块的定义<a class="headerlink" href="#_87" title="Permanent link">&para;</a></h5>
 <p>模块可以理解为一个独立的代码空间，在这个空间中，程序有自己的命名自由，实现了一系列的功能函数。</p>
@@ -5823,13 +5853,16 @@ $<span class="w"> </span>cargo<span class="w"> </span>run<span class="w"> </span
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <p>本次作业不设置 DDL，并没有标准答案。大家只要能够通过编译并且输出预期值即算通过。若有问题欢迎随时在暑培群中提问~</p>
+<h3 id="2">作业 2<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>代码地址：<a href="https://github.com/sast-summer-training-2023/sast2023-rust/tree/main/hw2">HW2</a></p>
+<p>作业说明：详见 README.md</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年7月23日</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年7月25日</span>
       
     
   </small>
@@ -5891,7 +5924,7 @@ $<span class="w"> </span>cargo<span class="w"> </span>run<span class="w"> </span
     
         <div class="md-source-date">
             <small>
-                作者: <span class='git-page-authors git-authors'><a href='mailto:zyj578335934@gmail.com'>Azure_Stars</a> (76.37%), <a href='mailto:wangbw21@mails.tsinghua.edu.cn'>abmfy</a> (23.63%)</span>
+                作者: <span class='git-page-authors git-authors'><a href='mailto:zyj578335934@gmail.com'>Azure_Stars</a> (76.46%), <a href='mailto:wangbw21@mails.tsinghua.edu.cn'>abmfy</a> (23.54%)</span>
             </small>
         </div>
     
