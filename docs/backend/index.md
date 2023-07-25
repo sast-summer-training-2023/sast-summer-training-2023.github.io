@@ -11,9 +11,13 @@
 ### 课前准备
 
 请参考 [Rust](/backend/rust/#_1)。
-### 课程讲义
+### 课程讲义 & 课后作业
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1Tc411F7co)
 
 :memo: [讲义](/backend/rust)
+
+:books: [作业](https://github.com/sast-summer-training-2023/sast2023-rust/tree/main/hw2)
 
 ## :crab: 7 月 23 日：Rust (1)
 

@@ -32,7 +32,11 @@ Rust 可以带给你：
 
 :movie_camera: [课程回放 (1)](https://www.bilibili.com/video/BV1sc411w7LP)
 
+:movie_camera: [课程回放 (2)](https://www.bilibili.com/video/BV1Tc411F7co)
+
 :books: [作业 (1)](#1)
+
+:books: [作业 (2)](https://github.com/sast-summer-training-2023/sast2023-rust/tree/main/hw2)
 
 ## 课前准备
 
