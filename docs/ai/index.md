@@ -18,6 +18,12 @@
 pip install torch
 ```
 
+### 课程讲义
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1oV4y1t7fg)
+
+:memo: [讲义](/pdfs/torch.pdf)
+
 ## :hammer_and_wrench: 7 月 21 日：数据分析 & NumPy
 
 ### 课前准备

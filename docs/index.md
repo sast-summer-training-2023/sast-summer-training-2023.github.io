@@ -26,6 +26,12 @@
 pip install torch
 ```
 
+### 课程讲义
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1oV4y1t7fg)
+
+:memo: [讲义](/pdfs/torch.pdf)
+
 ## :crab: 7 月 23 日：Rust (1)
 
 ### 课前准备
