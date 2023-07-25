@@ -14,6 +14,15 @@
 
 -----
 
+## :crab: 7 月 25 日：Rust (2)
+
+### 课前准备
+
+请参考 [Rust](/backend/rust/#_1)。
+### 课程讲义
+
+:memo: [讲义](/backend/rust)
+
 ## :flashlight: 7 月 24 日：神经网络 & PyTorch
 
 ### 课前准备
