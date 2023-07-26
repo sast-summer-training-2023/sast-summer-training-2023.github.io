@@ -431,29 +431,33 @@ public class Worker {
 #### Engineer.java
 
 ```java
-package javacourseofclancy.part2; //using package to organize classes
 public class Engineer extends Worker {
     private String speciality;
-    public Engineer(String name, String surname, int age, String speciality) {
-        super(name, surname, age); // since super class has private fields, we need to use constructor
+
+    public Engineer(String name, int age, int salary, String position, String speciality) {
+        super(name, age, salary, position); // since super class has private fields, we need to use constructor
         this.speciality = speciality;
     }
+
     public String getSpeciality() {
         return speciality;
     }
+
     public void setSpeciality(String speciality) {
         this.speciality = speciality;
-        if(speciality == "CS") {
+        if (speciality == "CS") {
             this.position = "Software Engineer"; // 'position' is a protected field of the parent class
         }
     }
+
     // override has the same signature and parameters as the parent class
     @Override
     public void work() {
-        System.out.println(this.name + "is working as an "+ this.speciality+" engineer");
+        System.out.println(this.getName() + "is working as an " + this.speciality + " engineer");
     }
+
     public void fixBug() {
-        System.out.println(this.name + "is fixing a bug");
+        System.out.println(this.getName() + "is fixing a bug");
     }
 }
 ```
@@ -461,27 +465,31 @@ public class Engineer extends Worker {
 #### Company.java
 
 ```java
-package javacourseofclancy.part2;
 import java.util.ArrayList;
-public class Company{
+
+public class Company {
     private ArrayList<Worker> workers;
-    public employ(Worker worker){
+
+    public void employ(Worker worker) {
         workers.add(worker); // upcasting
     }
-    public onBusiness(){
-        for(int i=0; i<workers.length; i++){
-            workers[i].work(); // polymorphism
-            if(workers[i] instanceof Engineer){
-                ((Engineer)workers[i]).fixBug(); // downcasting
+
+    public void onBusiness() {
+        for (int i = 0; i < workers.size(); i++) {
+            workers.get(i).work(); // polymorphism
+            if (workers.get(i) instanceof Engineer) {
+                ((Engineer) workers.get(i)).fixBug(); // downcasting
             }
-            /* or
-             *  if(workers[i] instanceof Engineer engineer){
-             *      engineer.fixBug();
-             *  }
+            /*
+             * or
+             * if(workers.get(i) instanceof Engineer engineer){
+             * engineer.fixBug();
+             * }
              */
-            /* even
-             *  if(!(workers[i] instanceof Engineer engineer)){
-             *     continue;
+            /*
+             * even
+             * if(!(workers.get(i) instanceof Engineer engineer)){
+             * continue;
              * }
              * engineer.fixBug();
              */
