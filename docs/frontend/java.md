@@ -10,8 +10,6 @@
 
 尽管近年来面临一些新兴语言的挑战，Java 由于它的跨平台性、良好的安全性、前向兼容性以及不算差的性能，仍是一门历史地位和业界地位都极其崇高的语言。庞大的 Java 社区和海量的 Java 项目使得对任何想要接触业界的贵系同学来说，你也许可以不精通它，但至少应当对这门简单、强大、通用的语言有一些了解。此外，本课程还会简单介绍 Kotlin, Scala 等基于 Java 虚拟机的（更现代化的）语言。
 
-
-
 ## 课前准备
 
 **本课程需要先修《面向对象程序设计》（OOP）。**
@@ -31,15 +29,13 @@ sudo apt install oracle-java17-installer --install-recommends
 ```bash
 javac YourProgram.java  # 编译
 java YourProgram        # 运行
-# OR 
+# OR
 java YourProgram.java   # 编译 & 运行
 ```
 
 你也可以使用`jshell`这一命令行式窗口运行一些简单的`java`脚本（~~玩具性质居多~~）。
 
 建议使用 IntelliJ IDEA 这一广泛应用的 Java IDE 编写 Java 程序，可在 https://www.jetbrains.com/idea/ 下载。如果你是清华大学学生，可以使用清华邮箱（使用`mails.thu.edu.cn`后缀，而非`mails.tsinghua.edu.cn`），在 [免费教育许可证 - 社区支持 (jetbrains.com.cn)](https://www.jetbrains.com.cn/community/education/#students) 注册学生包，获取功能更加强大的 Ultimate 版本。
-
-
 
 ## Java 的历史 & 设计理念
 
@@ -52,8 +48,6 @@ Java 在设计上注重安全性。它提供了安全管理器（Security Manage
 Java 是一种面向对象（OOP）语言。如果你还不知道 OOP 是什么，可以理解为使用类和对象的编程范式：类是对象的模板，定义了一系列行为相同的对象；对象是类的实例化。如果这很难理解，你可以认为：人是一个类，“某个特定的人”是一个对象。面向对象的程序是以一系列对象的方法（函数），而非一系列过程来驱动的。
 
 关于 Java 的 OOP 特性将在后面详细介绍。
-
-
 
 ## 从例子学 Java 语法
 
@@ -984,3 +978,9 @@ println(result)
 ```
 
 Scala 的灵活性使其成为构建**领域特定语言**（Domain-Specific Language，DSL）的理想选择。也就是说，Scala 很适合编写代码生成器（尽量不要将它用于其他**任何**领域）。所以我就不在这里过多介绍了（~~如果你真的对这个语言有兴趣，来跟我私聊吧~~）。
+
+## 致谢
+
+部分内容参考了[徐晨曦学长去年的讲义](../pdfs/java-2022-xcx.pdf)。
+
+~~部分代码由 ChatGPT 生成，在此对 OpenAI 表示感谢。~~
