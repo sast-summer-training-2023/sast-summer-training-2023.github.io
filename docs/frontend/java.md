@@ -334,10 +334,10 @@ public class Car {
         System.out.println("I initialize before the constructor");
     }
     private String brand;
-    private String model;
+    private final String model;
     private String color = "black"; // default value
     private int currentSpeed;
-    private int price;
+    private final int price;
     private final int maxSpeed = 200; // final means constant
     public static int numberOfCars = 0; // static means shared between all objects
     public Car(String brand, String model, int price) {
@@ -468,7 +468,7 @@ public class Engineer extends Worker {
 import java.util.ArrayList;
 
 public class Company {
-    private ArrayList<Worker> workers;
+    private ArrayList<Worker> workers = new ArrayList<>();
 
     public void employ(Worker worker) {
         workers.add(worker); // upcasting
@@ -560,15 +560,17 @@ class Circle implements Shape { // you can implement multiple interfaces
 ```java
 public class Socket {
     private int voltage;
+    TwoPinPlug twoPinPlug;
+    ThreePinPlug threePinPlug;
 
     public Socket(int voltage) {
         this.voltage = voltage;
     }
     public void plugIn() {
         System.out.println("You are using a " + voltage + "V socket.");
-        TwoPinPlug twoPinPlug = new TwoPinPlug();
+        twoPinPlug = new TwoPinPlug();
         twoPinPlug.connect();
-        ThreePinPlug threePinPlug = new ThreePinPlug();
+        threePinPlug = new ThreePinPlug();
         threePinPlug.connect();
     }
     private class TwoPinPlug {
@@ -582,6 +584,7 @@ public class Socket {
         }
     }
 }
+
 
 ```
 
@@ -604,6 +607,8 @@ public class SortName {
         names.add("Lambda");
 		// lambda expression
         Collections.sort(names, (String a, String b) -> a.compareTo(b));
+        // or Collections.sort(names, String::compareTo);
+        // or names.sort(String::compareTo);
 
         for (String name : names) {
             System.out.println(name);
@@ -617,7 +622,7 @@ public class SortName {
 #### Day.java
 
 ```java
-public enum class Day {
+public enum Day {
     SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
     public boolean isWeekend() {
         return this == SATURDAY || this == SUNDAY;
