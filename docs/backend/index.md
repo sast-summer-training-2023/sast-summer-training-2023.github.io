@@ -6,6 +6,33 @@
 
 无论是想要在软工等课堂让自己的网站快人一步，亦或是将来纵横职场，还是单纯兴趣驱动，你，都值得拥有！
 
+## :crab: 7 月 25 日：Rust (2)
+
+### 课前准备
+
+请参考 [Rust](/backend/rust/#_1)。
+### 课程讲义 & 课后作业
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1Tc411F7co)
+
+:memo: [讲义](/backend/rust)
+
+:books: [作业](https://github.com/sast-summer-training-2023/sast2023-rust/tree/main/hw2)
+
+## :crab: 7 月 23 日：Rust (1)
+
+### 课前准备
+
+请参考 [Rust](/backend/rust/#_1)。
+
+### 课程讲义 & 课后作业
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1sc411w7LP)
+
+:memo: [讲义](/backend/rust)
+
+:books: [作业](/backend/rust/#1)
+
 ## :blue_heart: 7 月 22 日：Django
 
 ### 课前准备
@@ -16,3 +43,9 @@
 ```shell
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django
 ```
+
+### 课程讲义
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1WV411L7mq)
+
+:memo: [课程讲义](/backend/django)

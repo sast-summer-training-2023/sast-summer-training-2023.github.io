@@ -14,6 +14,56 @@
 
 -----
 
+## :coffee: 7 月 26 日：Java
+
+### 课前准备
+
+请参考 [Java](/frontend/java/#_1)。
+
+## :crab: 7 月 25 日：Rust (2)
+
+### 课前准备
+
+请参考 [Rust](/backend/rust/#_1)。
+### 课程讲义 & 课后作业
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1Tc411F7co)
+
+:memo: [讲义](/backend/rust)
+
+:books: [作业](https://github.com/sast-summer-training-2023/sast2023-rust/tree/main/hw2)
+
+## :flashlight: 7 月 24 日：神经网络 & PyTorch
+
+### 课前准备
+
+请参考 [Start Locally | PyTorch](https://pytorch.org/get-started/locally/) 安装 PyTorch。请注意你需要根据自己的操作系统、包管理器和计算平台选择合适的安装方式。
+
+如果你不清楚应该如何选取，我们在课程中会介绍大致的安装流程，你可以先使用 `pip` 安装 CPU 版本的 PyTorch：
+
+```shell
+pip install torch
+```
+
+### 课程讲义
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1oV4y1t7fg)
+
+:memo: [讲义](/pdfs/torch.pdf)
+
+## :crab: 7 月 23 日：Rust (1)
+
+### 课前准备
+
+请参考 [Rust](/backend/rust/#_1)。
+### 课程讲义 & 课后作业
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1sc411w7LP)
+
+:memo: [讲义](/backend/rust)
+
+:books: [作业](/backend/rust/#1)
+
 ## :blue_heart: 7 月 22 日：Django
 
 ### 课前准备
@@ -24,6 +74,12 @@
 ```shell
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django
 ```
+
+### 课程讲义
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1WV411L7mq)
+
+:memo: [课程讲义](/backend/django)
 
 ## :hammer_and_wrench: 7 月 21 日：数据分析 & NumPy
 

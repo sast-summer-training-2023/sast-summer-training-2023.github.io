@@ -30,7 +30,13 @@ Rust 可以带给你：
 
 <img src="/images/cuddlyferris.png" alt="avatar" style="zoom: 67%;" />
 
+:movie_camera: [课程回放 (1)](https://www.bilibili.com/video/BV1sc411w7LP)
 
+:movie_camera: [课程回放 (2)](https://www.bilibili.com/video/BV1Tc411F7co)
+
+:books: [作业 (1)](#1)
+
+:books: [作业 (2)](https://github.com/sast-summer-training-2023/sast2023-rust/tree/main/hw2)
 
 ## 课前准备
 
@@ -1926,7 +1932,7 @@ fn sample<T: Copy>(val: &[T]) -> T {
     x
 }
 ```
-可以看到这里用 Copy 特征来约束泛型T，保证 T 泛型必须支持拷贝功能，就解决了上述矛盾。
+可以看到这里用 Copy 特征来约束泛型 T，保证 T 泛型必须支持拷贝功能，就解决了上述矛盾。
 
 ### 泛型的使用场景
 
@@ -2703,12 +2709,13 @@ fn main() {
 ```
 
 ## 作业
-### 作业1
-> 本作业形式借鉴于cs61a，在此鸣谢
 
-代码地址：[SAST-4.0-Rust/hw1 at main · Azure-stars/SAST-4.0-Rust (github.com)](https://github.com/Azure-stars/SAST-4.0-Rust/tree/main/hw1)
+### 作业 1
+> 本作业形式借鉴于 CS61A，在此鸣谢
 
-请在对应的region进行代码修改，使得可以正常通过编译并且输出预期想要达到的结果。
+代码地址：[HW1](https://github.com/sast-summer-training-2023/sast2023-rust/blob/main/hw1/src/main.rs)
+
+请在对应的 region 进行代码修改，使得可以正常通过编译并且输出预期想要达到的结果。
 
 示例：
 
@@ -2717,7 +2724,7 @@ fn task1() {
     // region 1 start
     // region 1 end
 
-    // 输出: x = 4
+    // 输出：x = 4
     println!("x = {}", x);
 }
 ```
@@ -2730,21 +2737,21 @@ fn task1() {
     let x = 4;
     // region 1 end
 
-    // 输出: x = 4
+    // 输出：x = 4
     println!("x = {}", x);
 }
 ```
 
 
 
-本次作业不设置DDL，并没有标准答案。大家只要能够通过编译并且输出预期值即算通过。若有问题欢迎随时在暑培群中提问~
+本次作业不设置 DDL，并没有标准答案。大家只要能够通过编译并且输出预期值即算通过。若有问题欢迎随时在暑培群中提问~
 
 
 
 
 
-### 作业2
+### 作业 2
 
-代码地址：[sast2023-rust/hw2 at main · sast-summer-training-2023/sast2023-rust (github.com)](https://github.com/sast-summer-training-2023/sast2023-rust/tree/main/hw2)
+代码地址：[HW2](https://github.com/sast-summer-training-2023/sast2023-rust/tree/main/hw2)
 
-作业说明：详见README.md
+作业说明：详见 README.md
