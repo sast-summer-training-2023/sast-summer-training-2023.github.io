@@ -619,9 +619,74 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          NLP
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         NLP
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    课前准备
+  </a>
+  
+    <nav class="md-nav" aria-label="课前准备">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    软件准备
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    硬件准备
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    数据准备
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    思想准备（可选）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -975,6 +1040,55 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    课前准备
+  </a>
+  
+    <nav class="md-nav" aria-label="课前准备">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    软件准备
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    硬件准备
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    数据准备
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    思想准备（可选）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1016,13 +1130,63 @@
 <p>在学习完计算机视觉课程后，尝试使用多模态模型完成文本 &amp; 图像任务。</p>
 </li>
 </ol>
+<h2 id="_1">课前准备<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>理论部分建议先修 <a href="https://oi-wiki.org/math/linear-algebra/">Mathematical Foundations of Machine Learning</a></p>
+<p>实践部分建议了解 Python, PyTorch。</p>
+<h3 id="_2">软件准备<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>建议使用 Linux 🐧 </p>
+<p>安装以下 package:</p>
+<p><a href="https://pytorch.org/">PyTorch</a></p>
+<p><a href="https://huggingface.co/docs/transformers/installation">🤗 Transformers</a></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt<span class="w"> </span>-i<span class="w"> </span>https://pypi.tuna.tsinghua.edu.cn/simple
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">requirements.txt</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">protobuf</span>
+<span class="n">transformers</span>
+<span class="n">cpm_kernels</span>
+<span class="n">torch</span>
+<span class="n">gradio</span>
+<span class="n">mdtex2html</span>
+<span class="n">sentencepiece</span>
+<span class="n">accelerate</span>
+<span class="n">sse</span><span class="o">-</span><span class="n">starlette</span>
+<span class="n">streamlit</span>
+<span class="n">datasets</span>
+<span class="n">peft</span>
+<span class="n">tqdm</span>
+<span class="n">bitsandbytes</span>
+</code></pre></div></td></tr></table></div>
+<p>下载以下模型权重（可选）：</p>
+<p><a href="https://huggingface.co/gpt2/tree/main">gpt2 at main (huggingface.co)</a></p>
+<p><a href="https://huggingface.co/bert-base-chinese/tree/main">bert-base-chinese at main (huggingface.co)</a></p>
+<p><a href="https://huggingface.co/THUDM/chatglm2-6b-int4/tree/main">THUDM/chatglm2-6b-int4 at main (huggingface.co)</a></p>
+<p>如果希望使用 CPU 推理 ChatGLM，可以下载：</p>
+<p><a href="https://huggingface.co/THUDM/chatglm-6b-int4/tree/main">THUDM/chatglm-6b-int4 at main (huggingface.co)</a></p>
+<h3 id="_3">硬件准备<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>本次课程的实践中的部分内容需要 GPU 资源，如果缺少本地算力，可以尝试 <a href="https://colab.research.google.com/">Google Colab</a>，或者尝试使用 CPU 进行训练。</p>
+<h3 id="_4">数据准备<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>请提前下载：<a href="https://huggingface.co/datasets/openchat/openchat_sharegpt4_dataset/tree/main">openchat/openchat_sharegpt4_dataset at main (huggingface.co)</a> 中的<code>sharegpt_gpt4.json</code>。</p>
+<h3 id="_5">思想准备（可选）<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>阅读 <a href="https://arxiv.org/pdf/1706.03762.pdf">Attention Is All You Need</a></p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年7月11日</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年7月26日</span>
       
     
   </small>
