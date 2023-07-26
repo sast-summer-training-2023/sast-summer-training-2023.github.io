@@ -20,6 +20,14 @@
 
 请参考 [Java](/frontend/java/#_1)。
 
+### 课程讲义
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1Wm4y1j7KJ)
+
+:memo: [PDF](/pdfs/java-handout.pdf)
+
+:link: [在线版](/frontend/java)
+
 ## :crab: 7 月 25 日：Rust (2)
 
 ### 课前准备
