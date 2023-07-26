@@ -2335,7 +2335,7 @@ struct Li {
 
 等等，似乎有些奇怪 qwq
 
-![avatar]("../images/rust-6.png")
+![avatar](/images/rust-6.png)
 
 是的，我们似乎忘了多文件编程。
 
