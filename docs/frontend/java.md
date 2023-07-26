@@ -81,7 +81,7 @@ public class Variables {
         myNumber = 42;
         long myPhone = 12345678900L;
 		float myGPAf = 4.0f; // or (float) 4.0
-        float myGPAf = 4.0f;
+        double myGPA = 4.0;
         boolean javaIsCool = true;
         char myGrade = 'A';  // Unicode. 16 bits
         String myName = "Clancy";
@@ -133,7 +133,7 @@ public class Operators {
             	   """;
         System.out.println("e + f = " + (e + f));
         System.out.println("e == f = " + (e == f));
-        System.out.println("e != f = " + (e != f)); 
+        System.out.println("e != f = " + (e != f));
         System.out.println("e.compareTo(f) = " + (e.compareTo(f)));
         System.out.println("e.equalsIgnoreCase(f) = " + (e.equalsIgnoreCase(f)));
         System.out.println("e.contains(f) = " + (e.contains(f)));
@@ -229,7 +229,7 @@ public class ClassWithFunctions {
         );
     }
     public static void main(String[] args) {
-        ClassWithFunction obj = new ClassWithFunction();
+        ClassWithFunctions obj = new ClassWithFunctions();
         obj.function(1, 5);
         System.out.println("a + b = " + obj.functionWithReturn(1, 5));
         System.out.println("a " + obj.functionWithIf(1, 5) + " b");
@@ -266,9 +266,9 @@ public class HashMapExample{
         // Create a hash map
         var hm = new HashMap(); // or HashMap<String, Double>
         // Put elements to the map
-        hm.put("Clancy", new Double(3434.34));
-        hm.put("abmfy", new Double(123.22));
-        hm.put("kaiming", new Double(1378.00));
+        hm.put("Clancy", 3434.34);
+        hm.put("abmfy", 123.22);
+        hm.put("kaiming", 1378.00);
         // Get a set of the entries
         Set set = hm.entrySet();
         // Get an iterator
@@ -281,8 +281,8 @@ public class HashMapExample{
         }
         System.out.println();
         // Deposit 1000 into Clancy's account
-        double balance = ((Double)hm.get("Clancy")).doubleValue();
-        hm.put("Clancy", new Double(balance + 1000));
+        double balance = (Double)hm.get("Clancy");
+        hm.put("Clancy", balance + 1000);
         System.out.println("Clancy's new balance: " + hm.get("Clancy"));
     }
 }
@@ -321,7 +321,7 @@ public class ExceptionHandeling {
 
 Java 最初的设计目标之一就是成为一种纯粹的面向对象语言。所有的代码都必须包含在类（class）中，基本上所有元素都是对象（基本数据类型除外）。它支持封装、继承和多态等面向对象的核心概念，并鼓励开发者使用这些概念构建模块化和可重用的代码。具体地说，**所有的 Java 代码都需要封装在类里，每一个 .java 文件恰有一个与其同名的 `public`类**。
 
-> ⾯向对象编程的基本流程为： 
+> ⾯向对象编程的基本流程为：
 >
 > 1. 设计类 `class Car { /* ... */ } `
 > 2. 创建/实例化对象 `var myCar = new Car(); `
@@ -352,8 +352,8 @@ public class Car {
         this.price = price;
         numberOfCars++;
     }
-    
-    // You can have multiple constructors with different parameters 
+
+    // You can have multiple constructors with different parameters
     public Car(String brand, String model, String color, int price) {
         this(brand, model, price);
         this.color = color;
@@ -368,7 +368,7 @@ public class Car {
     public double move(double time) {
         return currentSpeed * time;
     }
-    /* 
+    /*
      * Getters and Setters
      * They are used to access private fields
      * You can generate them automatically in many IDEs
@@ -384,7 +384,7 @@ public class Car {
         return "Car [brand=" + brand + ", model=" + model + ", color=" + color + ", currentSpeed=" + currentSpeed
                 + ", price=" + price + ", maxSpeed=" + maxSpeed + "]";
     }
-    public static void main(){
+    public static void main(String[] args){
         Car car = new Car("BMW", "X5", 100000); // create a new object
         System.out.println(car);
         car.setBrand("Mercedes"); // car.brand = "Mercedes" is not allowed
@@ -484,7 +484,7 @@ public class Company{
              *  if(workers[i] instanceof Engineer engineer){
              *      engineer.fixBug();
              *  }
-             */ 
+             */
             /* even
              *  if(!(workers[i] instanceof Engineer engineer)){
              *     continue;
@@ -522,7 +522,7 @@ class Circle extends Shape {
 }
 ```
 
-**Java 只允许单重继承，假如你想要实现类似多重继承的写法，需要使用“接口”**。interface 实际上是 abstract class 的进⼀步抽象形式。abstract class 允许含有抽象方法和非抽象方法，而 interface 只定义了抽象方法，并且 也不被允许有成员域。接口允许类似 C++ 的“多重继承”。接口中的方法都为 public abstract，无需再次声明。Java 允许接口内存在带有实现的 default 方法或 static 方法。
+**Java 只允许单重继承，假如你想要实现类似多重继承的写法，需要使用“接口”**。interface 实际上是 abstract class 的进⼀步抽象形式。 abstract class 允许含有抽象方法和非抽象方法，而 interface 只定义了抽象方法，并且 也不被允许有成员域。接口允许类似 C++ 的“多重继承”。接口中的方法都为 public abstract ，无需再次声明。Java 允许接口内存在带有实现的 default 方法或 static 方法。
 
 #### Shape.java (ver 2)
 
@@ -549,7 +549,7 @@ class Circle implements Shape { // you can implement multiple interfaces
 }
 ```
 
-注意，如果类实现了两个具有相同 default 方法的接口，会出现实现歧义。在 Java 中，如果出现这种情况，你必须通过 `<interface>.super.<function>(args)` ⼿动指定使用的接口。
+注意，如果类实现了两个具有相同 default 方法的接口，会出现实现歧义。 在 Java 中，如果出现这种情况，你必须通过 `<interface>.super.<function>(args)` ⼿动指定使用的接口。
 
 **内部类**是定义在另一个类内部的类。它们在外部类的范围内，可以访问外部类的成员，包括私有成员。内部类使得代码更加清晰和模块化，并且通过内部类的继承，允许实现类似多重继承的功能。你可以在任意的作用域内定义内部类。
 
@@ -860,21 +860,21 @@ Kotlin 是一种现代化的静态类型编程语言，它可以运行在 Java �
 
 ### Scala
 
-Scala 始于 2001 年，由洛桑联邦理工学院 (EPFL) 的编程方法实验室研发。它是纯面向对象的（意味着 1 这样的常值也是对象），结合了面向对象编程和函数式编程的特性。Scala 源代码被编译成 Java 字节码，所以它可以运行于 JVM 之上，并可以调用现有的 Java 类库。Scala 的设计秉承一项事实，即在实践中，某个领域特定的应用程序开发往往需要特定于该领域的语言扩展。Scala 提供了许多独特的语言机制，可以以库的形式轻易无缝添加新的语言结构。
+Scala 始于 2001 年，由洛桑联邦理工学院(EPFL)的编程方法实验室研发。它是纯面向对象的（意味着 1 这样的常值也是对象），结合了面向对象编程和函数式编程的特性。Scala 源代码被编译成 Java 字节码，所以它可以运行于 JVM 之上，并可以调用现有的 Java 类库。Scala 的设计秉承一项事实，即在实践中，某个领域特定的应用程序开发往往需要特定于该领域的语言扩展。Scala 提供了许多独特的语言机制，可以以库的形式轻易无缝添加新的语言结构。
 
 Kotlin 和 Scala 可以直接调用 Java 类和方法，也可以被 Java 代码调用。这意味着开发人员可以逐步将现有的 Java 代码迁移到这些语言，而无需一次性地进行全面改写。
 
-我将用几个例子表现 Kotlin、Scala 和 Java 的区别（优势）。首先，最显明的一点是，Kotlin、Scala 代码不需要仅包含一个 public 类，而是可以含有很多 public 类和**函数**（Java：函数是什么？），当然也就不用命名为 public 类了。其次，Kotlin 和 Scala 都是变量类型在变量名后方，而且语句不用加分号。
+我将用几个例子表现 Kotlin、Scala 和 Java 的区别（优势）。首先，最显明的一点是，Kotlin、Scala 代码不需要仅包含一个 public 类，而是可以含有很多 public 类和**函数**（ Java：函数是什么？），当然也就不用命名为 public 类了。其次，Kotlin 和 Scala 都是变量类型在变量名后方，而且语句不用加分号。
 
 #### Hello.kt
 
 ```kotlin
 class Greeter(val name: String) {
-   fun greet() { 
+   fun greet() {
       println("Hello, $name")
    }
 }
- 
+
 fun main(args: Array<String>) {
    Greeter("World!").greet()  // yes, no 'new' required!
 }
@@ -907,7 +907,7 @@ Kotlin 提供了一些简化集合操作的语法糖，如 filter、map、reduce
 #### ListExample.kt
 
 ```kotlin
-data class Person(val name: String, val age: Int) 
+data class Person(val name: String, val age: Int)
 
 fun main() {
     val people = listOf(
