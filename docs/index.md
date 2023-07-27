@@ -14,6 +14,10 @@
 
 -----
 
+## :mage_light_skin_tone: 7 月 28 日：Rust Web 生态
+
+---
+
 ## :hugging: 7 月 27 日：NLP
 
 ### 课前准备
