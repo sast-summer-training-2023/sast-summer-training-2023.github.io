@@ -20,6 +20,14 @@
 
 请参考 [NLP](/ai/nlp/#_1)。
 
+### 课程讲义
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1kc411w7N5)
+
+:memo: [讲义](/pdfs/nlp.pdf)
+
+:books: [作业](https://github.com/sast-summer-training-2023/sast2023-nlp/tree/main)
+
 ## :coffee: 7 月 26 日：Java
 
 ### 课前准备

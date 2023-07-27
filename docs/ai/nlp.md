@@ -22,6 +22,12 @@
 
 5. 在学习完计算机视觉课程后，尝试使用多模态模型完成文本 & 图像任务。
 
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1kc411w7N5)
+
+:memo: [讲义](/pdfs/nlp.pdf)
+
+:books: [作业](https://github.com/sast-summer-training-2023/sast2023-nlp/tree/main)
+
 ## 课前准备
 
 理论部分建议先修 [Mathematical Foundations of Machine Learning](https://oi-wiki.org/math/linear-algebra/)
