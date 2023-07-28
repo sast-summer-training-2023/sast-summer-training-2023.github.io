@@ -15,7 +15,7 @@
         <link rel="next" href="../docker/">
       
       <link rel="icon" href="../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.0, mkdocs-material-9.1.20">
+      <meta name="generator" content="mkdocs-1.5.1, mkdocs-material-9.1.21">
     
     
       
@@ -734,9 +734,211 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Rust Web 生态
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Rust Web 生态
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    叠甲与前言
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    「服务端渲染」与「客户端渲染」
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    框架和语言的选择
+  </a>
+  
+    <nav class="md-nav" aria-label="框架和语言的选择">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    「开发速度」与「运行速度」
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    常用后端语言与框架介绍
+  </a>
+  
+    <nav class="md-nav" aria-label="常用后端语言与框架介绍">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-djangoflask" class="md-nav__link">
+    Python + Django/Flask
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#java-spring" class="md-nav__link">
+    Java + Spring
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascript-nodejs-expressjsnestjs" class="md-nav__link">
+    JavaScript + Node.js + Express.js/Nest.js
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#go" class="md-nav__link">
+    Go
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rust-actix-web-axum" class="md-nav__link">
+    Rust + Actix Web / Axum
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    数据库的选择
+  </a>
+  
+    <nav class="md-nav" aria-label="数据库的选择">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgresql-mysql" class="md-nav__link">
+    PostgreSQL 与 MySQL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redis" class="md-nav__link">
+    Redis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rust" class="md-nav__link">
+    Rust 数据库客户端选择
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    走向分布式
+  </a>
+  
+    <nav class="md-nav" aria-label="走向分布式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    垂直拓展能力
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    水平拓展能力
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    负载均衡和网关
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    消息队列
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    微服务
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    结语
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    参考
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -975,6 +1177,192 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    叠甲与前言
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    「服务端渲染」与「客户端渲染」
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    框架和语言的选择
+  </a>
+  
+    <nav class="md-nav" aria-label="框架和语言的选择">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    「开发速度」与「运行速度」
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    常用后端语言与框架介绍
+  </a>
+  
+    <nav class="md-nav" aria-label="常用后端语言与框架介绍">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-djangoflask" class="md-nav__link">
+    Python + Django/Flask
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#java-spring" class="md-nav__link">
+    Java + Spring
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascript-nodejs-expressjsnestjs" class="md-nav__link">
+    JavaScript + Node.js + Express.js/Nest.js
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#go" class="md-nav__link">
+    Go
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rust-actix-web-axum" class="md-nav__link">
+    Rust + Actix Web / Axum
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    数据库的选择
+  </a>
+  
+    <nav class="md-nav" aria-label="数据库的选择">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgresql-mysql" class="md-nav__link">
+    PostgreSQL 与 MySQL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redis" class="md-nav__link">
+    Redis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rust" class="md-nav__link">
+    Rust 数据库客户端选择
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    走向分布式
+  </a>
+  
+    <nav class="md-nav" aria-label="走向分布式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    垂直拓展能力
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    水平拓展能力
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    负载均衡和网关
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    消息队列
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    微服务
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    结语
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    参考
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -997,39 +1385,110 @@
 <p><img alt="🎓" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f393.svg" title=":mortar_board:" /> 讲师：黄俊尧 @r1ntaro</p>
 <p><img alt="📅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4c5.svg" title=":date:" /> 日期：7 月 28 日星期五</p>
 <hr />
-<p>分为三个部分：</p>
-<ol>
-<li>
-<p>目前国内主流的 Web 后端技术栈简介</p>
-<ol>
-<li>
-<p>Java (Spring Boot)、JS (Node.js)、Go</p>
-</li>
-<li>
-<p>SQL (MySQL、PostgreSQL)、NoSQL (Redis)</p>
-</li>
-<li>
-<p>网关 (nginx)、消息队列 (RocketMQ)</p>
-</li>
-<li>
-<p>特殊服务：搜索 (Elasticsearch)、对象存储</p>
-</li>
-</ol>
-</li>
-<li>
-<p>Rust 写 Web 后端的好与不好</p>
-</li>
-<li>
-<p>Rust 编写 Web 后端常用库的介绍</p>
-</li>
-</ol>
+<h2 id="_1">叠甲与前言<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><strong>我不是专业的 WEB 开发人员</strong>，而只是一个臭本科生。也不计划未来去做 WEB 开发，而打算去做独立游戏。本篇文档以学习的态度与大家交流，如果有错误欢迎指正。</p>
+<p>现在，假如你是一个初创互联网公司的 CTO，贵司正在筹划开发上线一个 Web 应用，现在需要你带领手下的程序猿们着手开发这款应用。作为技术部门的老大，显然需要您亲自部署技术栈的选择。</p>
+<h2 id="_2">「服务端渲染」与「客户端渲染」<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>在大家都在用 PHP、ASP 写网站的远古年代，网页没有什么花里胡哨的 CSS 和现在动辄几兆的大 JS，几乎全部的网站都是「服务端渲染」。后来大家用来上网的电脑和手机性能越来越好，互联网大潮也随之来临，所以前端的渲染和交互变得越来越复杂，前后端分离去做「客户端渲染」的开发模式也就变得越来越流行，几乎一统江湖。</p>
+<p>在您决定我们要采用「服务端渲染」还是「客户端渲染」之前，让我来给您回顾一下二者的优劣：</p>
+<p>服务端渲染：</p>
+<ul>
+<li>天然对爬虫友好，有利于 SEO，但话说回来，现在新生代似乎不怎么用搜索引擎了，大家都在用 APP</li>
+<li>客户端不需要先下个几兆的 CSS 和 JS 才能看到页面，有利于首屏性能</li>
+<li>可以给用户的手机省电，当然用户很可能不会感激我们</li>
+</ul>
+<p>客户端渲染</p>
+<ul>
+<li>节约我们的服务器成本，后端服务器不需要浪费时间在填充 DOM 上，前端页面可以扔在便宜的 CDN 上</li>
+<li>前后端代码分离，可以减慢屎山的生成速度，但是对于小团队来讲，需要更多的人力维护前后端通信的部分</li>
+<li>移动端 APP、小程序可以共用后端</li>
+</ul>
+<p>当然，由于这节课是讲后端开发的，我就帮您选择了「客户端渲染」（</p>
+<p>另外，最近几年「同构渲染」正在变得流行，即页面的初始渲染由服务器端完成，然后在客户端加载时，再进行补充性的渲染和交互，减轻服务器压力的同时兼顾 SEO 的需求，如果您有兴趣，可以了解一下<code>next.js</code>。</p>
+<h2 id="_3">框架和语言的选择<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">「开发速度」与「运行速度」<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>对我个人来讲，在开发应用程序选择编程语言和框架时，主要是在两个指标间平衡「开发速度」与「运行速度」。对绝大多数应用程序而言，相较于运行速度，大家更加侧重于开发速度。对很多客户端程序来讲，没有什么计算负担很大的任务；而对一些服务端程序，根本不会服务太多用户，对延时和吞吐量也没有什么要求，对企业来讲，一个会写 Rust 的程序员的工资能够多租十几台服务器。</p>
+<p>考虑开发速度，一个语言最重要的是它的生态和框架的易用性。这点很好理解，如果能把本来大量需要自己编写的功能使用可靠的第三方库或者框架本身附带的工具替代（例如<code>Django</code>有自带的 ORM、认证系统、后台管理等功能），就能大大降低我们的工作量。其次是语言是否是动态类型语言，动态类型语言使得你在快速迭代的时候不用花时间在反复修改类型定义上，代码可以直接复用而非编写复杂的泛型或者模版约束。当然，「动态类型一时爽，代码重构火葬场。」尽管很多动态类型语言现在都可以做类型标注，但是在开发不够规范时后期可能经常会遇到一个函数，传入的参数全部是<code>any</code>，传出的东西也是<code>any</code>，写代码时智能提示和静态检查几乎废掉（经常写代码的时候遇到某个 Python 库的函数参数跟着<code>*args</code> <code>**kwargs</code>，需要在文档里翻半天才能知道传什么东西进去），每次运行半天出了一个类型错误。最后是代码是否是解释运行，解释型语言不用在修改代码后等半天编译才能检查效果，对很多复杂的 C++项目来讲，编译几个小时是非常正常的事情，有些公司会专门组建自己的服务器集群用于代码编译。</p>
+<p>考虑运行速度，最重要的是执行模式，一般来说，像<code>Rust</code> <code>C++</code>这种直接编译成二进制程序的语言的速度，大于像<code>Java</code> <code>C#</code> 这种需要运行时虚拟机来执行的语言，大于像<code>Python</code> <code>Javascript</code>这种解释型语言，<a href="https://github.com/frol/completely-unscientific-benchmarks">这里</a>是一份不同语言运行速度的基准测试。其次是你选用的后端框架它本身的性能，<a href="https://www.techempower.com/benchmarks/#section=data-r21">这里</a>是一份不同后端框架性能的基准测试，可以看出<code>Rust</code>还是非常值得信赖的，绝大多数框架都有非常不错的性能（尽管第一名是<code>C++</code>框架）。</p>
+<p>当然，在实际情况下，更多情况下选什么语言还是主要依赖于开发人员「会什么」，您可能觉得学一门的语言的语法对于 CS 科班学生来讲不过几天时间，但是这离可靠的生产实践是非常远的。如果选择开发人员熟悉的技术，他们了解非常多所谓「Best Practice」，就能够在开发过程中避免大量的坑，节省非常多的时间。</p>
+<h3 id="_5">常用后端语言与框架介绍<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>对于语言大战爱好者，推荐 JetBrains 的<a href="https://www.jetbrains.com/zh-cn/resources/industry-reports/">调查报告</a>。</p>
+<h4 id="python-djangoflask">Python + Django/Flask<a class="headerlink" href="#python-djangoflask" title="Permanent link">&para;</a></h4>
+<p><code>Django</code>和<code>Flask</code>都是 Python 的后端框架，<code>Django</code>在之前的课程有过详细介绍，特点是它本身就有非常多官方维护的开箱即用的功能，比如说上面提到的 ORM、认证系统、后台管理，而且是贵系《软件工程》后端唯一指定后端框架。而<code>Flask</code>就不像<code>Django</code>大而全，自带的功能并不多，需要自己安装一些第三方拓展实现功能，就显得比较灵活。</p>
+<p>缺点就是在没有优化的情况下速度真的非常慢，QPS 很低，但是很多用它们写的服务也不会服务太多人就是了（）。当然，虽然经常有人说这套玩意写不了大型服务之类的，但实际上 Airbnb 和 Pinterest 是使用这套技术栈开发的。</p>
+<h4 id="java-spring">Java + Spring<a class="headerlink" href="#java-spring" title="Permanent link">&para;</a></h4>
+<p>国内某大厂 + 众多培训班唯一指定技术栈（逃</p>
+<p>因为国内很多大厂选择了 Java + Spring，所以其生态异常繁荣，有大量可靠的轮子可以用。据知乎帐号「阿里巴巴大淘宝技术」的回答，阿里的绝大多数中间件、服务端、内部工具都是 Java 写的。</p>
+<p>Spring 有两个主要的特性「依赖注入」和「面向切面编程」，所有 Spring 教程都会在前几节课就介绍这个概念，选择了这套技术栈也就意味着接受了这套编程范式，需要复杂的配置或者注解去做这些事情，有一定上手成本。这同时是它的优点和缺点，优点是这套编程范式确实久经考验，解决了很多实际问题，强迫你这么做确实降低了耦合度；缺点是很多时候这些设计模式会把一些本来很简单的问题搞的非常复杂。（对我个人来讲，和讨厌 Rust 狂信徒一样讨厌设计模式狂信徒）。</p>
+<p>当然也有 JVM 典中典之吃很多内存的问题。另外一个常见的误解是现代 GC 仍然非常缓慢，事实上已经不慢了，感兴趣的朋友可以搜索<code>ZGC</code>了解一下（<code>Unity</code> 因为早期 C++代码和运行时过渡耦合，运行时的版本升级非常缓慢，仍然在用非常古老而缓慢的 GC 算法，所以需要非常注意 GC 的问题）。</p>
+<h4 id="javascript-nodejs-expressjsnestjs">JavaScript + Node.js + Express.js/Nest.js<a class="headerlink" href="#javascript-nodejs-expressjsnestjs" title="Permanent link">&para;</a></h4>
+<p>首先很多朋友不太清楚三者之间的关系，<code>Javascript</code>是一门动态类型、解释运行的编程语言，<code>Node.js</code>是一个在服务端运行<code>Javascript</code>代码的运行时环境，<code>Express.js</code>和<code>Nest.js</code>是在<code>Node.js</code>基础上构建的后端框架。</p>
+<p>使用这套技术栈很大的一个好处是让前端也可以写后端程序了（逃</p>
+<p>简单来说<code>Express.js</code>历史更悠久一点，生态系统更加繁荣，插件更多，上手也比较容易。<code>Nest.js</code>有内置的依赖注入，可能更适合大型应用。</p>
+<p>值得一提的是，在<code>Node.js</code>只有一个线程（主线程）在运行你编写的<code>Javascript</code>代码，这听起来非常糟糕和缓慢，但实际上性能并不差。第一点是 Web 服务是一个 IO 密集型的操作，程序大部分时间都在等网络、等数据库，主线程上其实根本不会跑什么复杂计算，而 IO 操作都是异步的，在等网络发包的时候 CPU 可以去干点其他事情而不是在原地等待；第二点是<code>Node.js</code>会把 IO 操作扔到它的线程池上跑。</p>
+<h4 id="go">Go<a class="headerlink" href="#go" title="Permanent link">&para;</a></h4>
+<p>这里不提框架一方面是我没有写过 Go，另一方面 GO 的历史还不够悠久，WEB 框架还没有卷到只剩一个两个（）。</p>
+<p>Go 是一门原生支持并发编程的、自动垃圾回收的、静态类型的、直接编译成二进制可执行文件的语言。性能非常好，在应用领域经常被拿来与<code>Rust</code>比较。在国内的 WEB 后端开发以后或许可以与 Java 掰掰手腕，哔哩哔哩早期是 PHP，再向着 Node.js 和 Java 转，最后拿 Go 整个重写了一遍（当然您可以怀疑用 Go 重写纯粹是技术部门刷 KPI。同时字节跳动也比较喜欢 Go。</p>
+<p>在 Web 端的生态很不错，在我用 Rust 写一个 Web 服务的时候寻找第三方库经常只能找到 Go 版本的，非常玉玉。但是因为大家都是拿它用来写 Web，在其他方面的生态就稍微差了一些，不像 Rust 有很多相对底层的三方库，Python 的什么都有。</p>
+<h4 id="rust-actix-web-axum">Rust + Actix Web / Axum<a class="headerlink" href="#rust-actix-web-axum" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>Rust 是编程语言中的原神，孝子多，而且到处碰瓷，所以路人缘差。Go 是编程语言中的明日方舟，诞生得比 Rust 早，早几年跟 Rust 一样，不过随着 Rust 孝子的增多路人缘开始回暖。CPP 是编程语言中的王者荣耀，历史悠久，用户量巨大，CPP 孝子曾有过一段巅峰期，那时候 CPP 孝子最喜欢碰瓷的就是 C。C 是编程语言中的英雄联盟，由于历史悠久和粉丝群体极高的攻击性（指 Linus Torvalds）已经获得了 ky 豁免权（指成为 abi 标准）</p>
+<p>作者：芙卡洛斯
+链接：<a href="https://www.zhihu.com/question/432640008/answer/3129568556">https://www.zhihu.com/question/432640008/answer/3129568556</a>
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+</blockquote>
+<p>相信大家已经知道 Rust 是一门什么样的语言了.jpg。因为我们今天要讲 Rust，所以我也帮您做了决定选 Rust 作为开发语言。</p>
+<p>Rust 上手曲线很糟糕，一些 Rust 的入门概念「生命周期」「所有权」等相同程度的概念在 CPP 的新手教程里是找不到的，同时编译器非常严格，没有隐式类型转换，刚上手经常发生过不了编译玉玉的情况。但我要说明的是，<strong>它没有 CPP 难</strong>。正是因为编译器有更严格的约束，编写它才比 CPP 容易，经验不足的 CPP 开发人员是写不出生产可用的 CPP 代码的，经常会发生无意义的拷贝、内存泄漏、野指针等一堆问题，而 Rust 的初级开发人员就能写出没那么糟糕的代码。如果一个 CPP 开发团队里有一个人的水平不够，可能就要拖累整个团队，莫名其妙的内存泄漏是极难调试和定位的。另外 Rust 有非常成熟的包管理器和构建系统，而不用单独去学<code>Cmake</code> <code>Xmake</code>之类的东西。</p>
+<p>但同时，也不要当 Rust 孝子，强制的单所有权概念并不能解决一切问题，比如说不使用<code>unsafe</code>写一个链表。还有一些情况编译器无法形式化的验证代码的单所有权，但是你作为编写者其实是知道这段代码的所有权一定是没有问题的，于是您要么选择把这段代码挪到<code>unsafe</code>里面，要么使用有运行时成本的<code>Rc</code> + <code>RefCell</code>。</p>
+<p>框架的话现在比较流行两个，<code>Actix Web</code>与<code>Axum</code>。<code>Axum</code>比较新，是<code>Tokio</code>官方搞的，直到现在 API 还不太稳定。<code>Actix Web</code>相对老而稳定一点，而且已经有很多生产实践案例。</p>
+<h3 id="_6">数据库的选择<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h4 id="postgresql-mysql">PostgreSQL 与 MySQL<a class="headerlink" href="#postgresql-mysql" title="Permanent link">&para;</a></h4>
+<p>MySQL 应该在国内用的人更多一些，但是在<a href="https://survey.stackoverflow.co/2023/">StackOverflow Survey 2023</a>，和上面提到的 JetBrains 的调查中，PostgreSQL 在 2023 年已经取代 MySQL 成为最受欢迎的数据库。同时 PostgreSQL 功能更多一些，对我个人而言比较重要的是支持 JSON 数据格式、多种语言编写存储过程（甚至 Python）。</p>
+<h4 id="redis">Redis<a class="headerlink" href="#redis" title="Permanent link">&para;</a></h4>
+<p>Redis 是一个 KV 数据库而不是关系型数据库，特点是把数据存在内存中，同时约束相对传统关系型数据库没那么多，因此 QPS 远远高于在磁盘上读写内容的关系型数据库，经常被拿来用作缓存，架构设计大概是配一个在磁盘上的数据库负责读写，前面挂一个 Redis 做缓存，读之前先看看 Redis 里有没有，写的时候顺便把 Redis 里的内容改了。</p>
+<p>因为早年 Redis 使用的非常广泛，所以现在大部分在磁盘上的、不在磁盘上的 KV 数据库也都兼容了 Redis 协议，你可以使用 Redis 客户端去读写它们。</p>
+<h4 id="rust">Rust 数据库客户端选择<a class="headerlink" href="#rust" title="Permanent link">&para;</a></h4>
+<p>Rust 有很多连接数据库的第三方库，选择上无非从「速度」与「易用性」两方面考虑。</p>
+<p>速度上主要看两方面，第一个是「异步」支持，第二个是「连接池」。不支持异步意味着程序在等待数据库返回结果的时候需要傻乎乎的原地等待，异步的接口可以让 CPU 在这段等待时间去做点其他事情。连接池主要是重用到数据库的连接，不需要每次数据库操作的时候重新建立连接。但小一点的应用程序来讲，数据库客户端跑太快也不是什么好事，因为数据库端往往没有充足的服务器资源部署，跑的不快（）</p>
+<p>易用性上主要看是否是 ORM，是否有编译期的检查。编译期检查就是在编写代码的时候就连接到数据库上，根据数据库中的内容来判断代码中编写的 SQL 语句或者声明的返回类型是否正确。</p>
+<p>对于关系型数据库，我个人强力推荐<code>sqlx</code>以及在其基础上构建的<code>sea-orm</code>，满足我上面提到的所有特性。</p>
+<p>对于 Redis，rust 已经有很多异步客户端，但是连接池需要自行构建，我之前使用了<code>mobc</code>这个库构建自己的连接池。</p>
+<h2 id="_7">走向分布式<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="_8">垂直拓展能力<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>恭喜你，有了数据库和后端，我们已经能构建一个单体的 WEB 后端了，也就是只在一台机器上运行的 WEB 后端。虽然你可能觉得一台机器非常拉跨，这才能服务多少用户啊！但其实得益于构建我们在<code>Tokio</code>之上的<code>Actix-Web</code>和<code>sqlx</code>全异步在线程池上跑的后端，我们有足够的「垂直拓展能力」，也就是说，我们只要暴力增加后端和数据库端单体服务器核心数，我们就能够得到越来越强的性能，据传 AMD 和 INTEL 下一代 CPU 都会是 128 核或者更多！我相信它提供给你的 QPS 足够让你的公司走到 B 轮、C 轮（当然，如果您的公司到了那个时候，应该就有钱招一些 Doctor 帮你改成分布式架构了）。而且这种单体后端能够极大地降低开发和运维复杂度，节约开发成本。</p>
+<h3 id="_9">水平拓展能力<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>好消息是，对于绝大多数的 WEB 后端，改成分布式架构并不困难，因为它们是「无状态」的，简单来说就是后端服务上面没有任何的状态，仅仅是接受用户请求，然后从数据库拉取数据计算后返回结果。（对一些基于<code>WebSocket</code>的应用，由于需要与用户保持连接，它就是有状态的。）所以我们可以直接增加后端服务器，它们只要连接同一个数据库，你无论向哪个后端发起请求得到的结果都应该是一致的。我们把这种增加服务器数量提升性能的能力称为「水平拓展能力」。</p>
+<p>下面这张图展示了一个目前非常经典的 WEB 服务后端架构：</p>
+<p><img alt="后端架构" src="/images/rust-backend-1.png" /></p>
+<p>图片来源：<a href="https://nullcc.github.io/2017/08/09/%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/">后端架构设计的一些想法</a></p>
+<h3 id="_10">负载均衡和网关<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>现在你有了许多台后端服务器，那么用户怎么知道该连接到哪一个呢？我们显然是希望能够把许多用户的请求均匀分布在多个服务器上的，这也就是所谓的「负载均衡」。</p>
+<p>「负载均衡」一般做在两层上，第一层是 DNS 轮询，用户通常是使用域名访问我们的网站的，你只要对你的域名配置多条 A 记录，DNS 服务器就轮流返回你提供的 A 记录。缺点也是显而易见的，由于 DNS 服务器并不知道你各个服务器的运行状况，它只会机械式的轮流返回你提供的记录，不会考虑各个服务器的实际处理能力，一旦一个记录指向的服务器挂掉了，由于 DNS 记录修改的扩散需要时间，你很难及时修正，所以仅靠这一层提供的「负载均衡」是显然不够的。当然，现在很多域名解析服务的提供者还提供所谓的「智能 DNS 轮询」，就是在你提供的 IP 列表里返回一个离用户最近或者说连接速度最快的 IP。</p>
+<p>第二层是在接入层，我们可以让所有接入到一个 IP 的请求都走一个「网关」，一般使用<code>Nginx</code>，当然您也可以自己编写。它把经过的请求按照我们的配置分配到不同的后端服务器上，它是我们高度可配置的，甚至就是我们自己编写的，因此比较自由，不像 DNS 轮询那样难以控制。比如说，我们可以在网关上定时检测各个服务的状态，一旦一个服务挂掉就撤掉对它的分流。网关还能提供很多好处，比如说可以统一记录收到的请求，写入日志；直接进行流量清洗，把恶意攻击在接入层全部屏蔽掉，而不用在编写后端服务时考虑攻击防范的问题；还有很多 WEB 服务直接把权限控制也做在接入层上，权限不足的请求会被直接拒绝掉。</p>
+<h3 id="_11">消息队列<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>假如说你在上一门 Rust 课程，这门课要求你写一个「在线评测系统」，简单来说它可以从 WEB 端上传用户的代码文件，然后你在某台服务器上编译并执行它。显然，你不能够在你的 WEB 服务后端去执行用户的代码，一方面是用户的代码可能非常危险，你的权限控制没有做到位的话用户通过一份代码直接干掉了你的整个服务；另一方面用户的代码可能非常消耗系统资源，你肯定也不希望一份 TLE 代码导致你的 OJ 无法访问长达半分钟。所以你需要把用户的代码从 WEB 端发送到另外一台机器上（评测机）去执行。</p>
+<p>那么问题来了，你的 WEB 后端如何与你的评测机通信？使用消息队列。</p>
+<p>使用消息队列主要有两个好处，第一个是「削峰」，第二个是「降低耦合度」。假设，你的学校正在开一门关于面向对象的编程课程，这门课的期末考试需要大家提交代码到在线评测系统上实时评测代码，你的评测系统承担了这个任务。可以预见的是，短时间将会有大量的评测请求涌入你的 OJ，如果你的 WEB 后端全部接受了这些请求并全部发送给评测机，评测机短时间无法处理这些请求就很可能会挂掉，这样无法拿到实时评测结果的考试学生对你的态度可能不会非常好。而使用消息队列后，WEB 后端可以把直接请求一股脑塞入队列，由于队列本身没有什么操作，它只是个容器，因此它能容纳非常多的消息，而你的评测机则可以按照自身的处理能力，慢慢处理队列内的消息。你也可以非常轻松的增加评测机数量，因为这无非是增加了一个从队列里拿出消息的机器。而消息类型本身是抽象的，你甚至可以编写不同的评测端代码来从队列里拿出消息。</p>
+<p>另外一个比较直接的好处就是「失败重试」，当一个消息被处理失败之后，我们可以直接让它再次入队，重新尝试。</p>
+<h3 id="_12">微服务<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>我们曾经因为前端过于复杂，而把前端从我们伟大的后端中踢掉，让前端自己与每天都要改交互需求的产品经理扯皮。但其实后端也可以这么干，我们可以把类似支付、推送等比较复杂的模块单独编写成一个服务端，分离开发团队与代码，实现关注点分离。</p>
+<p>当然缺点是需要更多的人手开发，运营和维护极其麻烦，想象一下，用户的一个请求经过了一台网关服务器、一层 API 接入层服务器，三台微服务服务器，然后出了问题，现在需要你部署一个本地环境进行调试（</p>
+<p>理论上这里应该介绍一下<code>k8s</code>和<code>docker</code>，大家可以关注后续课程~</p>
+<h2 id="_13">结语<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<p>写到最后似乎忘了开头的设定了，不过我相信大家也忘了。</p>
+<p>课后作业可能会有，如果有的话应该会与<code>React</code>、<code>Django</code>一起发布。</p>
+<h2 id="_14">参考<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<p><a href="https://nullcc.github.io/2017/08/09/%E5%90%8E%E7%AB%AF%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/">后端架构设计的一些想法</a></p>
+<p><a href="https://nullcc.github.io/2017/11/23/Web%E5%90%8E%E7%AB%AF%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E6%BC%AB%E8%B0%88(1)%E2%80%94%E2%80%94%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/">Web 后端系统架构漫谈 (1)——负载均衡</a></p>
+<p><a href="https://developer.aliyun.com/topic/devops">阿里巴巴 DevOps 实践手册</a></p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年7月11日</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年7月28日</span>
       
     
   </small>
@@ -1091,7 +1550,7 @@
     
         <div class="md-source-date">
             <small>
-                作者: <span class='git-page-authors git-authors'><a href='mailto:wangbw21@mails.tsinghua.edu.cn'>abmfy</a></span>
+                作者: <span class='git-page-authors git-authors'><a href='mailto:wangbw21@mails.tsinghua.edu.cn'>abmfy</a> (32.61%), <a href='mailto:rintaro@foxmail.com'>r1ntaro</a> (67.39%)</span>
             </small>
         </div>
     
