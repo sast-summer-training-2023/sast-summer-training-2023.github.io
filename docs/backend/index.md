@@ -8,7 +8,9 @@
 
 ## :mage_light_skin_tone: 7 月 28 日：Rust Web 生态
 
----
+### 课程讲义
+
+:memo: [讲义](/backend/rust-web)
 
 ## :crab: 7 月 25 日：Rust (2)
 
