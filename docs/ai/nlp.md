@@ -21,3 +21,71 @@
 4. 对预训练语言模型进行微调，完成简单的文本任务。
 
 5. 在学习完计算机视觉课程后，尝试使用多模态模型完成文本 & 图像任务。
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1kc411w7N5)
+
+:memo: [讲义](/pdfs/nlp.pdf)
+
+:books: [作业](https://github.com/sast-summer-training-2023/sast2023-nlp/tree/main)
+
+## 课前准备
+
+理论部分建议先修 [Mathematical Foundations of Machine Learning](https://oi-wiki.org/math/linear-algebra/)
+
+实践部分建议了解 Python, PyTorch。
+
+### 软件准备
+
+建议使用 Linux 🐧 
+
+安装以下 package:
+
+[PyTorch](https://pytorch.org/)
+
+[🤗 Transformers](https://huggingface.co/docs/transformers/installation)
+
+```shell
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+```python title="requirements.txt"
+protobuf
+transformers
+cpm_kernels
+torch
+gradio
+mdtex2html
+sentencepiece
+accelerate
+sse-starlette
+streamlit
+datasets
+peft
+tqdm
+bitsandbytes
+
+```
+
+下载以下模型权重（可选）：
+
+[gpt2 at main (huggingface.co)](https://huggingface.co/gpt2/tree/main)
+
+[bert-base-chinese at main (huggingface.co)](https://huggingface.co/bert-base-chinese/tree/main)
+
+[THUDM/chatglm2-6b-int4 at main (huggingface.co)](https://huggingface.co/THUDM/chatglm2-6b-int4/tree/main)
+
+如果希望使用 CPU 推理 ChatGLM，可以下载：
+
+[THUDM/chatglm-6b-int4 at main (huggingface.co)](https://huggingface.co/THUDM/chatglm-6b-int4/tree/main)
+
+### 硬件准备
+
+本次课程的实践中的部分内容需要 GPU 资源，如果缺少本地算力，可以尝试 [Google Colab](https://colab.research.google.com/)，或者尝试使用 CPU 进行训练。
+
+### 数据准备
+
+请提前下载：[openchat/openchat_sharegpt4_dataset at main (huggingface.co)](https://huggingface.co/datasets/openchat/openchat_sharegpt4_dataset/tree/main) 中的`sharegpt_gpt4.json`。
+
+### 思想准备（可选）
+
+阅读 [Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf)

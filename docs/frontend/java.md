@@ -10,7 +10,9 @@
 
 尽管近年来面临一些新兴语言的挑战，Java 由于它的跨平台性、良好的安全性、前向兼容性以及不算差的性能，仍是一门历史地位和业界地位都极其崇高的语言。庞大的 Java 社区和海量的 Java 项目使得对任何想要接触业界的贵系同学来说，你也许可以不精通它，但至少应当对这门简单、强大、通用的语言有一些了解。此外，本课程还会简单介绍 Kotlin, Scala 等基于 Java 虚拟机的（更现代化的）语言。
 
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1Wm4y1j7KJ)
 
+:memo: [讲义 PDF](/pdfs/java-handout.pdf)
 
 ## 课前准备
 
@@ -31,7 +33,7 @@ sudo apt install oracle-java17-installer --install-recommends
 ```bash
 javac YourProgram.java  # 编译
 java YourProgram        # 运行
-# OR 
+# OR
 java YourProgram.java   # 编译 & 运行
 ```
 
@@ -39,11 +41,9 @@ java YourProgram.java   # 编译 & 运行
 
 建议使用 IntelliJ IDEA 这一广泛应用的 Java IDE 编写 Java 程序，可在 https://www.jetbrains.com/idea/ 下载。如果你是清华大学学生，可以使用清华邮箱（使用`mails.thu.edu.cn`后缀，而非`mails.tsinghua.edu.cn`），在 [免费教育许可证 - 社区支持 (jetbrains.com.cn)](https://www.jetbrains.com.cn/community/education/#students) 注册学生包，获取功能更加强大的 Ultimate 版本。
 
-
-
 ## Java 的历史 & 设计理念
 
-Java 发明于20世纪90年代初，由 Sun Microsystems（后来被 Oracle 收购）的工程师团队开发。最初的目标是创建一种用于家电设备的编程语言。1995年，Java 1.0 正式发布，带来了跨平台的能力，也就是 "Write Once, Run Anywhere"（一次编写，随处运行）。这一特性是通过将 Java 代码编译为中间表示形式（字节码）实现的，然后在任何支持 Java 虚拟机（JVM）的平台上运行。随着时间的推移，Java 不仅仅成为一种用于嵌入式系统的语言，它还发展成为一种强大的服务器端、企业级应用、Web和移动应用的开发语言。
+Java 发明于 20 世纪 90 年代初，由 Sun Microsystems（后来被 Oracle 收购）的工程师团队开发。最初的目标是创建一种用于家电设备的编程语言。1995 年，Java 1.0 正式发布，带来了跨平台的能力，也就是 "Write Once, Run Anywhere"（一次编写，随处运行）。这一特性是通过将 Java 代码编译为中间表示形式（字节码）实现的，然后在任何支持 Java 虚拟机（JVM）的平台上运行。随着时间的推移，Java 不仅仅成为一种用于嵌入式系统的语言，它还发展成为一种强大的服务器端、企业级应用、Web 和移动应用的开发语言。
 
 Java 的设计亮点是 Java 虚拟机（Java Virtual Machine，JVM）和字节码（Bytecode）。JVM 提供一个跨平台的运行环境，使得 Java 程序可以在不同的操作系统和硬件平台上运行。字节码是 Java 源代码编译生成的中间表示形式，它是一种与平台无关的低级指令集，使得 Java 实现了跨平台的能力。这两个概念是 Java 的关键组成部分，为 Java 的跨平台性和可移植性提供了基础。
 
@@ -52,8 +52,6 @@ Java 在设计上注重安全性。它提供了安全管理器（Security Manage
 Java 是一种面向对象（OOP）语言。如果你还不知道 OOP 是什么，可以理解为使用类和对象的编程范式：类是对象的模板，定义了一系列行为相同的对象；对象是类的实例化。如果这很难理解，你可以认为：人是一个类，“某个特定的人”是一个对象。面向对象的程序是以一系列对象的方法（函数），而非一系列过程来驱动的。
 
 关于 Java 的 OOP 特性将在后面详细介绍。
-
-
 
 ## 从例子学 Java 语法
 
@@ -81,7 +79,7 @@ public class Variables {
         myNumber = 42;
         long myPhone = 12345678900L;
 		float myGPAf = 4.0f; // or (float) 4.0
-        float myGPAf = 4.0f;
+        double myGPA = 4.0;
         boolean javaIsCool = true;
         char myGrade = 'A';  // Unicode. 16 bits
         String myName = "Clancy";
@@ -133,7 +131,7 @@ public class Operators {
             	   """;
         System.out.println("e + f = " + (e + f));
         System.out.println("e == f = " + (e == f));
-        System.out.println("e != f = " + (e != f)); 
+        System.out.println("e != f = " + (e != f));
         System.out.println("e.compareTo(f) = " + (e.compareTo(f)));
         System.out.println("e.equalsIgnoreCase(f) = " + (e.equalsIgnoreCase(f)));
         System.out.println("e.contains(f) = " + (e.contains(f)));
@@ -229,7 +227,7 @@ public class ClassWithFunctions {
         );
     }
     public static void main(String[] args) {
-        ClassWithFunction obj = new ClassWithFunction();
+        ClassWithFunctions obj = new ClassWithFunctions();
         obj.function(1, 5);
         System.out.println("a + b = " + obj.functionWithReturn(1, 5));
         System.out.println("a " + obj.functionWithIf(1, 5) + " b");
@@ -266,9 +264,9 @@ public class HashMapExample{
         // Create a hash map
         var hm = new HashMap(); // or HashMap<String, Double>
         // Put elements to the map
-        hm.put("Clancy", new Double(3434.34));
-        hm.put("abmfy", new Double(123.22));
-        hm.put("kaiming", new Double(1378.00));
+        hm.put("Clancy", 3434.34);
+        hm.put("abmfy", 123.22);
+        hm.put("kaiming", 1378.00);
         // Get a set of the entries
         Set set = hm.entrySet();
         // Get an iterator
@@ -281,8 +279,8 @@ public class HashMapExample{
         }
         System.out.println();
         // Deposit 1000 into Clancy's account
-        double balance = ((Double)hm.get("Clancy")).doubleValue();
-        hm.put("Clancy", new Double(balance + 1000));
+        double balance = (Double)hm.get("Clancy");
+        hm.put("Clancy", balance + 1000);
         System.out.println("Clancy's new balance: " + hm.get("Clancy"));
     }
 }
@@ -321,7 +319,7 @@ public class ExceptionHandeling {
 
 Java 最初的设计目标之一就是成为一种纯粹的面向对象语言。所有的代码都必须包含在类（class）中，基本上所有元素都是对象（基本数据类型除外）。它支持封装、继承和多态等面向对象的核心概念，并鼓励开发者使用这些概念构建模块化和可重用的代码。具体地说，**所有的 Java 代码都需要封装在类里，每一个 .java 文件恰有一个与其同名的 `public`类**。
 
-> ⾯向对象编程的基本流程为： 
+> ⾯向对象编程的基本流程为：
 >
 > 1. 设计类 `class Car { /* ... */ } `
 > 2. 创建/实例化对象 `var myCar = new Car(); `
@@ -340,10 +338,10 @@ public class Car {
         System.out.println("I initialize before the constructor");
     }
     private String brand;
-    private String model;
+    private final String model;
     private String color = "black"; // default value
     private int currentSpeed;
-    private int price;
+    private final int price;
     private final int maxSpeed = 200; // final means constant
     public static int numberOfCars = 0; // static means shared between all objects
     public Car(String brand, String model, int price) {
@@ -352,8 +350,8 @@ public class Car {
         this.price = price;
         numberOfCars++;
     }
-    
-    // You can have multiple constructors with different parameters 
+
+    // You can have multiple constructors with different parameters
     public Car(String brand, String model, String color, int price) {
         this(brand, model, price);
         this.color = color;
@@ -368,7 +366,7 @@ public class Car {
     public double move(double time) {
         return currentSpeed * time;
     }
-    /* 
+    /*
      * Getters and Setters
      * They are used to access private fields
      * You can generate them automatically in many IDEs
@@ -384,7 +382,7 @@ public class Car {
         return "Car [brand=" + brand + ", model=" + model + ", color=" + color + ", currentSpeed=" + currentSpeed
                 + ", price=" + price + ", maxSpeed=" + maxSpeed + "]";
     }
-    public static void main(){
+    public static void main(String[] args){
         Car car = new Car("BMW", "X5", 100000); // create a new object
         System.out.println(car);
         car.setBrand("Mercedes"); // car.brand = "Mercedes" is not allowed
@@ -437,29 +435,33 @@ public class Worker {
 #### Engineer.java
 
 ```java
-package javacourseofclancy.part2; //using package to organize classes
 public class Engineer extends Worker {
     private String speciality;
-    public Engineer(String name, String surname, int age, String speciality) {
-        super(name, surname, age); // since super class has private fields, we need to use constructor
+
+    public Engineer(String name, int age, int salary, String position, String speciality) {
+        super(name, age, salary, position); // since super class has private fields, we need to use constructor
         this.speciality = speciality;
     }
+
     public String getSpeciality() {
         return speciality;
     }
+
     public void setSpeciality(String speciality) {
         this.speciality = speciality;
-        if(speciality == "CS") {
+        if (speciality == "CS") {
             this.position = "Software Engineer"; // 'position' is a protected field of the parent class
         }
     }
+
     // override has the same signature and parameters as the parent class
     @Override
     public void work() {
-        System.out.println(this.name + "is working as an "+ this.speciality+" engineer");
+        System.out.println(this.getName() + "is working as an " + this.speciality + " engineer");
     }
+
     public void fixBug() {
-        System.out.println(this.name + "is fixing a bug");
+        System.out.println(this.getName() + "is fixing a bug");
     }
 }
 ```
@@ -467,27 +469,31 @@ public class Engineer extends Worker {
 #### Company.java
 
 ```java
-package javacourseofclancy.part2;
 import java.util.ArrayList;
-public class Company{
-    private ArrayList<Worker> workers;
-    public employ(Worker worker){
+
+public class Company {
+    private ArrayList<Worker> workers = new ArrayList<>();
+
+    public void employ(Worker worker) {
         workers.add(worker); // upcasting
     }
-    public onBusiness(){
-        for(int i=0; i<workers.length; i++){
-            workers[i].work(); // polymorphism
-            if(workers[i] instanceof Engineer){
-                ((Engineer)workers[i]).fixBug(); // downcasting
+
+    public void onBusiness() {
+        for (int i = 0; i < workers.size(); i++) {
+            workers.get(i).work(); // polymorphism
+            if (workers.get(i) instanceof Engineer) {
+                ((Engineer) workers.get(i)).fixBug(); // downcasting
             }
-            /* or
-             *  if(workers[i] instanceof Engineer engineer){
-             *      engineer.fixBug();
-             *  }
-             */ 
-            /* even
-             *  if(!(workers[i] instanceof Engineer engineer)){
-             *     continue;
+            /*
+             * or
+             * if(workers.get(i) instanceof Engineer engineer){
+             * engineer.fixBug();
+             * }
+             */
+            /*
+             * even
+             * if(!(workers.get(i) instanceof Engineer engineer)){
+             * continue;
              * }
              * engineer.fixBug();
              */
@@ -522,7 +528,7 @@ class Circle extends Shape {
 }
 ```
 
-**Java 只允许单重继承，假如你想要实现类似多重继承的写法，需要使用“接口”**。interface 实际上是 abstract class 的进⼀步抽象形式。 abstract class 允许含有抽象方法和非抽象方法，而 interface 只定义了抽象方法，并且 也不被允许有成员域。接口允许类似 C++ 的“多重继承”。接口中的方法都为 public abstract ，无需再次声明。Java允许接口内存在带有实现的 default 方法或 static 方法。
+**Java 只允许单重继承，假如你想要实现类似多重继承的写法，需要使用“接口”**。interface 实际上是 abstract class 的进⼀步抽象形式。 abstract class 允许含有抽象方法和非抽象方法，而 interface 只定义了抽象方法，并且 也不被允许有成员域。接口允许类似 C++ 的“多重继承”。接口中的方法都为 public abstract ，无需再次声明。Java 允许接口内存在带有实现的 default 方法或 static 方法。
 
 #### Shape.java (ver 2)
 
@@ -558,15 +564,17 @@ class Circle implements Shape { // you can implement multiple interfaces
 ```java
 public class Socket {
     private int voltage;
+    TwoPinPlug twoPinPlug;
+    ThreePinPlug threePinPlug;
 
     public Socket(int voltage) {
         this.voltage = voltage;
     }
     public void plugIn() {
         System.out.println("You are using a " + voltage + "V socket.");
-        TwoPinPlug twoPinPlug = new TwoPinPlug();
+        twoPinPlug = new TwoPinPlug();
         twoPinPlug.connect();
-        ThreePinPlug threePinPlug = new ThreePinPlug();
+        threePinPlug = new ThreePinPlug();
         threePinPlug.connect();
     }
     private class TwoPinPlug {
@@ -580,6 +588,7 @@ public class Socket {
         }
     }
 }
+
 
 ```
 
@@ -602,6 +611,8 @@ public class SortName {
         names.add("Lambda");
 		// lambda expression
         Collections.sort(names, (String a, String b) -> a.compareTo(b));
+        // or Collections.sort(names, String::compareTo);
+        // or names.sort(String::compareTo);
 
         for (String name : names) {
             System.out.println(name);
@@ -615,7 +626,7 @@ public class SortName {
 #### Day.java
 
 ```java
-public enum class Day {
+public enum Day {
     SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
     public boolean isWeekend() {
         return this == SATURDAY || this == SUNDAY;
@@ -714,9 +725,9 @@ class MathUtils {
 }
 ```
 
-**异步编程**是一种处理并发和并行任务的常见方式。它允许程序在执行某个任务时不必等待该任务的完成，而是继续执行其他任务。Java提供了多种机制来实现异步编程，我在这里介绍其中一种使用 `Runnable` 接口的方法，有兴趣的同学请自行搜索其他~~（不那么好看的）~~写法。
+**异步编程**是一种处理并发和并行任务的常见方式。它允许程序在执行某个任务时不必等待该任务的完成，而是继续执行其他任务。Java 提供了多种机制来实现异步编程，我在这里介绍其中一种使用 `Runnable` 接口的方法，有兴趣的同学请自行搜索其他~~（不那么好看的）~~写法。
 
-`Runnable`接口是Java多线程编程中的一个核心接口。它定义了一个单一方法`run()`，用于封装线程的执行逻辑。通过实现`Runnable`接口并重写`run()`方法，可以创建可在多个线程中执行的任务。
+`Runnable`接口是 Java 多线程编程中的一个核心接口。它定义了一个单一方法`run()`，用于封装线程的执行逻辑。通过实现`Runnable`接口并重写`run()`方法，可以创建可在多个线程中执行的任务。
 
 匿名可执行类实现了`Runnable`接口的`run()`方法，定义了线程的具体行为。我们创建一个`Thread`对象，将可执行类的对象作为参数传递给`Thread`的构造函数。通过调用`Thread`对象的`start()`方法，线程开始执行并运行匿名可执行类的代码。我们在这里选择创建匿名`Runnable`实例，将线程的逻辑直接定义在线程创建的地方，避免显式地定义一个独立的类。这种写法更加紧凑和便捷。
 
@@ -856,11 +867,11 @@ public class GUIExample {
 
 ### Kotlin
 
-Kotlin是一种现代化的静态类型编程语言，它可以运行在Java虚拟机（JVM）上，也可以不在JVM上运行，而是编译为本地代码，从而在其他平台上运行，如iOS、Web和嵌入式系统。它由JetBrains开发，并于2011年首次公开发布。Kotlin引入了许多现代编程语言的特性，如类型推断、空安全、扩展函数等，从而减少了冗余代码的编写。
+Kotlin 是一种现代化的静态类型编程语言，它可以运行在 Java 虚拟机（JVM）上，也可以不在 JVM 上运行，而是编译为本地代码，从而在其他平台上运行，如 iOS、Web 和嵌入式系统。它由 JetBrains 开发，并于 2011 年首次公开发布。Kotlin 引入了许多现代编程语言的特性，如类型推断、空安全、扩展函数等，从而减少了冗余代码的编写。
 
 ### Scala
 
-Scala 始于 2001 年，由洛桑联邦理工学院(EPFL)的编程方法实验室研发。它是纯面向对象的（意味着 1 这样的常值也是对象），结合了面向对象编程和函数式编程的特性。Scala 源代码被编译成 Java 字节码，所以它可以运行于 JVM 之上，并可以调用现有的 Java 类库。Scala的设计秉承一项事实，即在实践中，某个领域特定的应用程序开发往往需要特定于该领域的语言扩展。Scala提供了许多独特的语言机制，可以以库的形式轻易无缝添加新的语言结构。
+Scala 始于 2001 年，由洛桑联邦理工学院(EPFL)的编程方法实验室研发。它是纯面向对象的（意味着 1 这样的常值也是对象），结合了面向对象编程和函数式编程的特性。Scala 源代码被编译成 Java 字节码，所以它可以运行于 JVM 之上，并可以调用现有的 Java 类库。Scala 的设计秉承一项事实，即在实践中，某个领域特定的应用程序开发往往需要特定于该领域的语言扩展。Scala 提供了许多独特的语言机制，可以以库的形式轻易无缝添加新的语言结构。
 
 Kotlin 和 Scala 可以直接调用 Java 类和方法，也可以被 Java 代码调用。这意味着开发人员可以逐步将现有的 Java 代码迁移到这些语言，而无需一次性地进行全面改写。
 
@@ -870,17 +881,17 @@ Kotlin 和 Scala 可以直接调用 Java 类和方法，也可以被 Java 代码
 
 ```kotlin
 class Greeter(val name: String) {
-   fun greet() { 
+   fun greet() {
       println("Hello, $name")
    }
 }
- 
+
 fun main(args: Array<String>) {
    Greeter("World!").greet()  // yes, no 'new' required!
 }
 ```
 
-Kotlin 对**空值处理**提供了内置的支持。在 Kotlin 中，通过在类型声明中使用可空性标志（?）来明确指示一个变量是否可以为null，从而减少了空指针异常的发生。使用安全调用操作符（?.），我们可以在获取对应属性时进行空值检查。如果原来的对象为`null`，表达式将返回`null`，否则将返回正常结果。使用非空断言操作符（!!）时，我们则断言对象不为`null`（注意，这可能会导致空指针异常）。
+Kotlin 对**空值处理**提供了内置的支持。在 Kotlin 中，通过在类型声明中使用可空性标志（?）来明确指示一个变量是否可以为 null，从而减少了空指针异常的发生。使用安全调用操作符（?.），我们可以在获取对应属性时进行空值检查。如果原来的对象为`null`，表达式将返回`null`，否则将返回正常结果。使用非空断言操作符（!!）时，我们则断言对象不为`null`（注意，这可能会导致空指针异常）。
 
 #### Nullable.kt
 
@@ -902,12 +913,12 @@ fun main() {
 }
 ```
 
-Kotlin提供了一些简化集合操作的语法糖，如filter、map、reduce等，使得对集合的操作更加简洁和流畅。
+Kotlin 提供了一些简化集合操作的语法糖，如 filter、map、reduce 等，使得对集合的操作更加简洁和流畅。
 
 #### ListExample.kt
 
 ```kotlin
-data class Person(val name: String, val age: Int) 
+data class Person(val name: String, val age: Int)
 
 fun main() {
     val people = listOf(
@@ -984,3 +995,9 @@ println(result)
 ```
 
 Scala 的灵活性使其成为构建**领域特定语言**（Domain-Specific Language，DSL）的理想选择。也就是说，Scala 很适合编写代码生成器（尽量不要将它用于其他**任何**领域）。所以我就不在这里过多介绍了（~~如果你真的对这个语言有兴趣，来跟我私聊吧~~）。
+
+## 致谢
+
+部分内容参考了[徐晨曦学长去年的讲义](../pdfs/java-2022-xcx.pdf)。
+
+~~部分代码由 ChatGPT 生成，在此对 OpenAI 表示感谢。~~
