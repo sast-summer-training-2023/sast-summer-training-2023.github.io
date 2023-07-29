@@ -14,4 +14,4 @@
 
 感兴趣的同学，可以简要复习一下 [神经网络讲义](/pdfs/torch.pdf) 中的 CNN 部分和 [NLP 讲义](/pdfs/nlp.pdf) 中的 Transformer 部分，并自行查找资料了解一下常见生成模型如：VAE，GAN，Diffusion Models 的基本概念。
 
-在作业实践部分，我们会使用到 Python 语言和 PyTorch 库，为此你可以复习一下李轶凡 @ icera 的 [Python 讲义](/pdfs/python-handout.pdf) ，并在具体实践过程中参考我的 [PyTorch 入门笔记](pdfs/PyTorch-Kevin.pdf) （结合 [PyTorch 官方文档](https://pytorch.org/docs/stable/index.html) 和网上部分教程如 [知乎：PyTorch 学习笔记](https://zhuanlan.zhihu.com/p/265394674/) 整理，未完结）。
+在作业实践部分，我们会使用到 Python 语言和 PyTorch 库，为此你可以复习一下李轶凡 @ icera 的 [Python 讲义](/pdfs/python-handout.pdf) ，并在具体实践过程中参考我的 [PyTorch 入门笔记](/pdfs/PyTorch-Kevin.pdf) （结合 [PyTorch 官方文档](https://pytorch.org/docs/stable/index.html) 和网上部分教程如 [知乎：PyTorch 学习笔记](https://zhuanlan.zhihu.com/p/265394674/) 整理，未完结）。
