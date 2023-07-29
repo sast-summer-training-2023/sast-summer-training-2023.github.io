@@ -33,17 +33,17 @@ Android Studio 为开发人员提供了广泛的功能和工具，用于设计�
 
 只看讲义学习 Android 将会很痛苦。~~下图节选自笔者的大作业报告~~
 
-<img src="../images/android-1.png" alt="image-20230701033733364" style="zoom:50%;" />
+<img src="/images/android-1.png" alt="image-20230701033733364" style="zoom:67%;" />
 
 强烈建议你面向一些实际的代码（**而不只是我的样例玩具代码！**）学习，这样会使你更容易了解 Android 的设计模式，而且在 IDE 中可以用你的 shift 键直接跳转到你需要浏览的地方，这比看讲义看到不明白的地方再去百度/谷歌快太多了。在这份讲义的最后，我会给你提供几个例子。
 
-<img src="../images/android-2.jpg" alt="c7db56401a120f26b99f5d128a83c52" style="zoom:67%;" />
+<img src="/images/android-2.jpg" alt="c7db56401a120f26b99f5d128a83c52" style="zoom:67%;" />
 
 ## Android 项目的构成
 
 让我们从创建一个 Android 项目开始吧。在 Android Studio 中创建一个新**空**项目。
 
-<img src="../images/android-3.png" alt="image-20230701040919917" style="zoom: 67%;" />
+<img src="/images/android-3.png" alt="image-20230701040919917" style="zoom: 67%;" />
 
 上面的 app 部分包含你的程序的 manifest 文件、代码和资源。下面的部分用于构建，当你要引入第三方库的时候就需要更改这里的 build.gradle 文件（好像 Android Studio 会帮你做到）。
 
@@ -127,7 +127,7 @@ Android Studio 为开发人员提供了广泛的功能和工具，用于设计�
 
 得到的组件大概长这样。如你所见，前后两个 View 是上下占位边框，中间的部分是一组横向线性排列，权重为$2:1$；左边是两个文本框组成的，右边是一张图片。相信你逐一看上面的代码可以看懂，由于篇幅所限，我在这里就不再多写例子了。
 
-<img src="../images/android-4.png" alt="image-20230701043334811" style="zoom: 50%;" />
+<img src="/images/android-4.png" alt="image-20230701043334811" style="zoom: 50%;" />
 
 下面，我们就进入正式的程序编写环节了。
 
@@ -633,7 +633,7 @@ https://github.com/aritraroy/UltimateAndroidReference
 
 1. 棋盘：单人跳棋使用的棋盘如图所示，棋盘上有一系列交叉的线，形成许多交叉点。当然，初始的棋子布局不一定只有这一种，你可以自行设计合适的布局。
 
-   ![单人跳棋](D:\JFP\sast-summer-training-2023.github.io\docs\images\android-5.png)
+   ![单人跳棋](/images/android-5.png)
 
    图片来源：https://en.wikipedia.org/wiki/Peg_solitaire
 
@@ -659,7 +659,7 @@ https://github.com/aritraroy/UltimateAndroidReference
 
 1. 你需要支持在 App 内选择棋盘样式。一些可能的样式如下。
 
-   <img src="D:\JFP\sast-summer-training-2023.github.io\docs\images\android-6.png" alt="image-20230628061000788" style="zoom:67%;" />
+   <img src="/images/android-6.png" alt="image-20230628061000788" style="zoom:67%;" />
 
 2. 你需要将棋子的样式自定义为一张图片（请自行寻找合适的素材）。
 
