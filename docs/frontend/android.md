@@ -18,16 +18,16 @@
 
 **本课程需要先修 Java 语言。**
 
-虽说这是 Android 课程，但你不一定需要使用 Android 手机。请在[Download Android Studio & App Tools - Android Developers (google.cn)](https://developer.android.google.cn/studio/)下载 Android Studio 作为开发平台。
+虽说这是 Android 课程，但你不一定需要使用 Android 手机。请在 [Download Android Studio & App Tools - Android Developers (google.cn)](https://developer.android.google.cn/studio/) 下载 Android Studio 作为开发平台。
 
-Android Studio 为开发人员提供了广泛的功能和工具，用于设计、编写、调试和测试Android应用程序。我们在本课程需要用到的功能有：
+Android Studio 为开发人员提供了广泛的功能和工具，用于设计、编写、调试和测试 Android 应用程序。我们在本课程需要用到的功能有：
 
-1. Java 编程窗口：Android应用程序可以使用 Java 或 Kotlin 编写。我们在本课程选择 Java。
-2. 布局编辑器：Android Studio提供了一个可视化布局编辑器，用于设计应用程序的用户界面。开发人员可以直观地添加UI元素、调整布局和设置属性。
-3. 调试工具：Android Studio具有内置的调试工具，开发人员可以在代码中设置断点，跟踪变量的值，并执行逐行调试。
+1. Java 编程窗口：Android 应用程序可以使用 Java 或 Kotlin 编写。我们在本课程选择 Java。
+2. 布局编辑器：Android Studio 提供了一个可视化布局编辑器，用于设计应用程序的用户界面。开发人员可以直观地添加 UI 元素、调整布局和设置属性。
+3. 调试工具：Android Studio 具有内置的调试工具，开发人员可以在代码中设置断点，跟踪变量的值，并执行逐行调试。
 4. 虚拟设备管理器：Android Studio 包含一个虚拟设备管理器，用于创建和管理模拟的 Android 设备。这使开发人员能够在没有实际设备的情况下进行应用程序的测试和调试。
-5. APK构建工具：Android Studio 可以将应用程序打包为Android安装包（APK）。开发人员可以生成签名的APK文件，以便在设备上进行部署和分发。
-6. SDK管理器：Android Studio包含一个SDK（Software Development Kit）管理器，用于下载和管理 Android 平台的各种版本和附加组件。开发人员可以根据目标设备和最低支持版本来选择所需的SDK组件。
+5. APK 构建工具：Android Studio 可以将应用程序打包为 Android 安装包（APK）。开发人员可以生成签名的 APK 文件，以便在设备上进行部署和分发。
+6. SDK 管理器：Android Studio 包含一个 SDK（Software Development Kit）管理器，用于下载和管理 Android 平台的各种版本和附加组件。开发人员可以根据目标设备和最低支持版本来选择所需的 SDK 组件。
 
 ## 学习方法
 
@@ -202,7 +202,7 @@ public class MyActivity1 extends Activity {
 </LinearLayout>
 ```
 
-看见组件之后，你需要给组件定义实际的行为。每个 Activity 和 Fragment 都有其生命周期，描述了从创建到销毁的整个过程。在生命周期中，系统会调用特定的生命周期回调方法，以便程序可以在适当的时机执行相关操作。例如，在 `onCreate()` 中进行初始化，`onResume()` 中启动动画，`onPause()` 中保存数据等。 Activity 和 Fragment 可以响应用户的触摸事件、按键事件等，并执行相应的操作。开发者可以通过重写事件处理方法，如 `onTouch()`、`onKeyDown()` 等，来处理这些事件。下面就是一个重载`onTouch()`的 Fragment 的例子。
+看见组件之后，你需要给组件定义实际的行为。每个 Activity 和 Fragment 都有其生命周期，描述了从创建到销毁的整个过程。在生命周期中，系统会调用特定的生命周期回调方法，以便程序可以在适当的时机执行相关操作。例如，在 `onCreate()` 中进行初始化，`onResume()` 中启动动画，`onPause()` 中保存数据等。Activity 和 Fragment 可以响应用户的触摸事件、按键事件等，并执行相应的操作。开发者可以通过重写事件处理方法，如 `onTouch()`、`onKeyDown()` 等，来处理这些事件。下面就是一个重载`onTouch()`的 Fragment 的例子。
 
 #### CustomFragment.java
 
@@ -382,7 +382,7 @@ public class MusicPlayerService extends Service {
 
 制作一个应用程序，离不开数据的存储。对少量数据和大量结构化的数据，我们有不同的存储方式。
 
-笔者推荐对少量数据使用 Android 内置的 SharedPreferences 类进行存储。SharedPreferences使用键值对的形式来存储数据，每个键都必须是唯一的。可以使用字符串作为键来存储各种数据类型的值，如整数、浮点数、布尔值、字符串等。注意，它直接使用 .xml 文件存储所有内容，因此**请仅用于存储少量数据**。下面展示一个使用该类的 `onCreate()` 方法。
+笔者推荐对少量数据使用 Android 内置的 SharedPreferences 类进行存储。SharedPreferences 使用键值对的形式来存储数据，每个键都必须是唯一的。可以使用字符串作为键来存储各种数据类型的值，如整数、浮点数、布尔值、字符串等。注意，它直接使用 .xml 文件存储所有内容，因此**请仅用于存储少量数据**。下面展示一个使用该类的 `onCreate()` 方法。
 
 ```java
    protected void onCreate(Bundle savedInstanceState) {
@@ -549,7 +549,7 @@ public class MyModel extends LitePalSupport {
 
 ### 网络服务
 
-OkHttp3 是一个功能强大、灵活且高效的HTTP客户端库，适用于各种网络通信需求。它为开发者提供了便捷的网络请求和处理功能，简化了网络编程的复杂性。首先，你需要在项目中添加 OkHttp3 库的依赖，在build.gradle文件中添加：`implementation 'com.squareup.okhttp3:okhttp:版本号'`。然后我们来看一个例子：
+OkHttp3 是一个功能强大、灵活且高效的 HTTP 客户端库，适用于各种网络通信需求。它为开发者提供了便捷的网络请求和处理功能，简化了网络编程的复杂性。首先，你需要在项目中添加 OkHttp3 库的依赖，在 build.gradle 文件中添加：`implementation 'com.squareup.okhttp3:okhttp:版本号'`。然后我们来看一个例子：
 
 ```java
 import okhttp3.OkHttpClient;
@@ -598,7 +598,7 @@ public class OkHttpExample {
 
 ### 多媒体
 
-加载本地的图片是很容易的（自己试试看）。如果要通过 URL 加载图片，可以使用 Glide，它是一个开源图片加载和缓存库。首先我们要有一个 ImageView，然后通过 Glide 把给定URL的图片加载出来。
+加载本地的图片是很容易的（自己试试看）。如果要通过 URL 加载图片，可以使用 Glide，它是一个开源图片加载和缓存库。首先我们要有一个 ImageView，然后通过 Glide 把给定 URL 的图片加载出来。
 
 ```java
 ImageView imageView = view.findViewById(R.id.your_image);
