@@ -14,6 +14,16 @@
 
 -----
 
+## :robot: 7 月 29 日：Android
+
+### 课前准备
+
+请参考 [Android](/frontend/android/#_1)。
+
+### 课程讲义
+
+:memo: [讲义](/frontend/android)
+
 ## :mage_light_skin_tone: 7 月 28 日：Rust Web 生态
 
 ### 课程讲义
