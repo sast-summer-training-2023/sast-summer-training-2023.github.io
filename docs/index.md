@@ -22,7 +22,11 @@
 
 ### 课程讲义
 
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1rk4y137nu)
+
 :memo: [讲义](/frontend/android)
+
+:books: [作业](/frontend/android/#_10)
 
 ## :mage_light_skin_tone: 7 月 28 日：Rust Web 生态
 

@@ -12,7 +12,9 @@
 
 通过学习本课程，你将在我们提供的框架上实现一个简单的 Android 单人跳棋游戏。
 
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1rk4y137nu)
 
+:books: [作业](/frontend/android/#_10)
 
 ## 课前准备
 
