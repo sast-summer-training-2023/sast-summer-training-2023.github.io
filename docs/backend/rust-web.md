@@ -6,6 +6,8 @@
 
 :date: 日期：7 月 28 日星期五
 
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1Cc411F7ZH)
+
 ---
 
 ## 叠甲与前言
