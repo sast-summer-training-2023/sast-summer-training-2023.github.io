@@ -12,7 +12,9 @@
 
 请参考 [Android](/frontend/android/#_1)。
 
-### 课程讲义
+### 课程讲义 & 课后作业
+
+:hourglass_flowing_sand: DDL: 8 月 5 日星期六 23:59
 
 :movie_camera: [课程回放](https://www.bilibili.com/video/BV1rk4y137nu)
 
