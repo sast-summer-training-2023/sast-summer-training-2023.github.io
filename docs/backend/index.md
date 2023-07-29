@@ -10,6 +10,8 @@
 
 ### 课程讲义
 
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1Cc411F7ZH)
+
 :memo: [讲义](/backend/rust-web)
 
 ## :crab: 7 月 25 日：Rust (2)
