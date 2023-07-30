@@ -10,6 +10,12 @@
 
 最近两年来，你是否常常被 DALLE、Stable Diffusion 和 Midjourney 的画作刷屏？你是否也对这些令人惊艳的 AI 创作背后的原理感到好奇？本次课程将紧承前两次课对基本神经网络和 Transformer 的讲解，首先介绍 CNN 和 Vision Transformer 在图像分类等基础计算机视觉 (Computer Vision, CV) 任务上的应用，然后为大家介绍近年来最常用的生成模型 GAN 和 Diffusion Models 的基本原理，带领大家进行一场让计算机看见世界、创造世界的奇妙之旅。在课后我们也将联合 NLP 课程，在实际项目中加深对所学知识的理解，体验炼丹的痛与快乐。希望本课程会对你未来探索相关领域的科研提供一些初步经验，同时也会为计算机图形学基础、人工神经网络等课程大作业提供一定帮助。
 
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV16V411V7sJ)
+
+:memo: [讲义](/pdfs/CV_Kevin.pdf)
+
+:books: [作业](https://github.com/sast-summer-training-2023/sast2023-cv)
+
 ## 课前准备
 
 感兴趣的同学，可以简要复习一下 [神经网络讲义](/pdfs/torch.pdf) 中的 CNN 部分和 [NLP 讲义](/pdfs/nlp.pdf) 中的 Transformer 部分，并自行查找资料了解一下常见生成模型如：VAE，GAN，Diffusion Models 的基本概念。

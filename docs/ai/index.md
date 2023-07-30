@@ -40,6 +40,14 @@
 
 请参考 [CV](/ai/cv/#_1)。
 
+### 课程讲义 & 课后作业
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV16V411V7sJ)
+
+:memo: [讲义](/pdfs/CV_Kevin.pdf)
+
+:books: [作业](https://github.com/sast-summer-training-2023/sast2023-cv)
+
 ## :hugging: 7 月 27 日：NLP
 
 ### 课前准备
