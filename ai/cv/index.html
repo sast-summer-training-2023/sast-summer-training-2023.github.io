@@ -1044,6 +1044,9 @@
 <p><img alt="📅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4c5.svg" title=":date:" /> 日期：7 月 30 日星期日</p>
 <hr />
 <p>最近两年来，你是否常常被 DALLE、Stable Diffusion 和 Midjourney 的画作刷屏？你是否也对这些令人惊艳的 AI 创作背后的原理感到好奇？本次课程将紧承前两次课对基本神经网络和 Transformer 的讲解，首先介绍 CNN 和 Vision Transformer 在图像分类等基础计算机视觉 (Computer Vision, CV) 任务上的应用，然后为大家介绍近年来最常用的生成模型 GAN 和 Diffusion Models 的基本原理，带领大家进行一场让计算机看见世界、创造世界的奇妙之旅。在课后我们也将联合 NLP 课程，在实际项目中加深对所学知识的理解，体验炼丹的痛与快乐。希望本课程会对你未来探索相关领域的科研提供一些初步经验，同时也会为计算机图形学基础、人工神经网络等课程大作业提供一定帮助。</p>
+<p><img alt="🎥" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f3a5.svg" title=":movie_camera:" /> <a href="https://www.bilibili.com/video/BV16V411V7sJ">课程回放</a></p>
+<p><img alt="📝" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4dd.svg" title=":memo:" /> <a href="/pdfs/CV_Kevin.pdf">讲义</a></p>
+<p><img alt="📚" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4da.svg" title=":books:" /> <a href="https://github.com/sast-summer-training-2023/sast2023-cv">作业</a></p>
 <h2 id="_1">课前准备<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>感兴趣的同学，可以简要复习一下 <a href="/pdfs/torch.pdf">神经网络讲义</a> 中的 CNN 部分和 <a href="/pdfs/nlp.pdf">NLP 讲义</a> 中的 Transformer 部分，并自行查找资料了解一下常见生成模型如：VAE，GAN，Diffusion Models 的基本概念。</p>
 <p>在作业实践部分，我们会使用到 Python 语言和 PyTorch 库，为此你可以复习一下李轶凡 @ icera 的 <a href="/pdfs/python-handout.pdf">Python 讲义</a> ，并在具体实践过程中参考我的 <a href="/pdfs/PyTorch-Kevin.pdf">PyTorch 入门笔记</a> （结合 <a href="https://pytorch.org/docs/stable/index.html">PyTorch 官方文档</a> 和网上部分教程如 <a href="https://zhuanlan.zhihu.com/p/265394674/">知乎：PyTorch 学习笔记</a> 整理，未完结）。</p>
@@ -1053,7 +1056,7 @@
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年7月29日</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年7月30日</span>
       
     
   </small>
@@ -1115,7 +1118,7 @@
     
         <div class="md-source-date">
             <small>
-                作者: <span class='git-page-authors git-authors'><a href='mailto:wangbw21@mails.tsinghua.edu.cn'>abmfy</a> (64.71%), <a href='mailto:sze68zkw@gmail.com'>张凯文</a> (35.29%)</span>
+                作者: <span class='git-page-authors git-authors'><a href='mailto:wangbw21@mails.tsinghua.edu.cn'>abmfy</a> (73.91%), <a href='mailto:sze68zkw@gmail.com'>张凯文</a> (26.09%)</span>
             </small>
         </div>
     
@@ -1156,7 +1159,7 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.tabs", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.top", "navigation.tabs", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>

@@ -748,9 +748,67 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Docker
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Docker
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    课前准备
+  </a>
+  
+    <nav class="md-nav" aria-label="课前准备">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker_1" class="md-nav__link">
+    安装 Docker
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    更换镜像源
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hello-world" class="md-nav__link">
+    运行 hello-world
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -975,6 +1033,48 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    课前准备
+  </a>
+  
+    <nav class="md-nav" aria-label="课前准备">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#docker_1" class="md-nav__link">
+    安装 Docker
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    更换镜像源
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hello-world" class="md-nav__link">
+    运行 hello-world
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1000,13 +1100,117 @@
 <p>Docker 是一种应用容器化技术。通过将应用程序和它的依赖一起打包成为一个可移植的容器，我们可以在不同环境上快速、可靠地运行相同的程序。</p>
 <p>以上的描述可能略微有些抽象。简单来说，设想你需要跑一个别人发给你的代码，而此时你首先需要配置环境。然而，各种不同的硬件、操作系统、编译工具链使得在不同的地方配置环境极为复杂，这一点想必各位同学在各种课程上深有体会。Docker 解决的正是这一问题：通过直接将环境与程序打包在一起分发这种既暴力又优雅的方式，只需要下载容器，就能在不同的环境上完全一致地运行程序，免去了配置环境的麻烦以及环境不同带来的运行差异。在软件工程等课程上，你将会大量应用本节课所学到的知识，来将你的应用在不同的环境上一致地部署。</p>
 <p>通过学习本课程，你将能够利用 Docker 这一强大的工具来解决环境配置问题，并方便快速地分发你的应用。</p>
+<h2 id="_1">课前准备<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="docker_1">安装 Docker<a class="headerlink" href="#docker_1" title="Permanent link">&para;</a></h3>
+<p>你需要安装 Docker。</p>
+<p>你可以在下方的选项卡中选取你的操作系统以获得安装指南。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Linux</label><label for="__tabbed_1_2">Windows</label><label for="__tabbed_1_3">macOS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>使用 Docker 提供的自动安装脚本进行安装：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">DOWNLOAD_URL</span><span class="o">=</span><span class="s2">&quot;https://mirrors.tuna.tsinghua.edu.cn/docker-ce&quot;</span><span class="w"> </span><span class="c1"># (1)</span>
+curl<span class="w"> </span>-fsSL<span class="w"> </span>https://get.docker.com/<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>-E<span class="w"> </span>sh
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>在国内网络环境下，推荐将安装源设置为 TUNA 等镜像以加速下载。</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Docker 需要 root 权限才能够安装，这意味着上述代码可以对你的系统执行<strong>任何操作</strong>。如果你不信任上述代码，你可以按照 <a href="https://www.docker.com/get-started/">Get Started | Docker</a> 中的指引手动安装 Docker。</p>
+</div>
+<p>接下来，你需要将你的用户添加到 <code>docker</code> 用户组中：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>docker<span class="w"> </span><span class="nv">$USER</span>
+</code></pre></div></td></tr></table></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>只有在 <code>docker</code> 用户组中的用户才能够使用 Docker。默认情况下，只有 <code>root</code> 用户处于 <code>docker</code> 组中，因此若你不希望每次使用 Docker 时都需要输入 <code>sudo</code>，你需要将你的用户添加到 <code>docker</code> 组中。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>推荐做法为在 WSL 中安装 Docker，具体安装方法与 Linux 相同。</p>
+<p>如果你希望在 Windows 原生环境中使用 Docker，你需要安装 <a href="https://www.docker.com/products/docker-desktop/">Docker Desktop</a>。</p>
+</div>
+<div class="tabbed-block">
+<p>通过 <a href="https://brew.sh/">Homebrew</a> 安装 Docker Desktop：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>--cask<span class="w"> </span>docker
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<h3 id="_2">更换镜像源<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>在国内网络环境下，Docker 拉取镜像的速度非常慢，因此我们需要更换 Docker 镜像源来加速下载。国内可访问的公共镜像源的可用情况可以在 <a href="https://github.com/docker-practice/docker-registry-cn-mirror-test/actions">docker-registry-cn-mirror-test</a> 查看。</p>
+<p>这里我们以 USTC 源为例，演示如何更换镜像源：</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Linux</label><label for="__tabbed_2_2">Windows</label><label for="__tabbed_2_3">macOS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>在 <code>/etc/docker/daemon.json</code> 中添加以下内容：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;registry-mirrors&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;https://docker.mirrors.ustc.edu.cn&quot;</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>之后重启 Docker 服务：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>docker
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p>在菜单栏中右键单击 Docker Desktop 图标，选择 “Settings”，在 “Docker Engine” 标签页中添加以下内容：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;registry-mirrors&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;https://docker.mirrors.ustc.edu.cn&quot;</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>之后单击 “Apply &amp; restart”。</p>
+</div>
+<div class="tabbed-block">
+<p>在菜单栏中单击 Docker Desktop 图标，选择 “Settings”，在 “Docker Engine” 标签页中添加以下内容：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;registry-mirrors&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;https://docker.mirrors.ustc.edu.cn&quot;</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>之后单击 “Apply &amp; restart”。</p>
+</div>
+</div>
+</div>
+<h3 id="hello-world">运行 <code>hello-world</code><a class="headerlink" href="#hello-world" title="Permanent link">&para;</a></h3>
+<p><code>hello-world</code> 是 Docker 官方提供的一个简单的镜像，用于测试 Docker 是否正确安装。你可以通过以下命令运行 <code>hello-world</code>：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>hello-world
+</code></pre></div></td></tr></table></div>
+<p>如果看到以下输出，说明 Docker 安装成功：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>Hello from Docker!
+This message shows that your installation appears to be working correctly.
+...
+</code></pre></div></td></tr></table></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>如果你感到好奇的话，<code>--rm</code> 参数表示在容器退出后自动删除容器。由于 <code>hello-world</code> 镜像只是用于测试，因此我们不希望它留在我们的系统中。</p>
+</div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年7月11日</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年7月30日</span>
       
     
   </small>
@@ -1109,7 +1313,7 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.tabs", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.top", "navigation.tabs", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
