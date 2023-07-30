@@ -28,6 +28,8 @@
 
 ### 课程讲义 & 课后作业
 
+:hourglass_flowing_sand: DDL: 8 月 11 日星期五 23:59
+
 :movie_camera: [课程回放](https://www.bilibili.com/video/BV16V411V7sJ)
 
 :memo: [讲义](/pdfs/CV_Kevin.pdf)
