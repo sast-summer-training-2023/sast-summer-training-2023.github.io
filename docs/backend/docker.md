@@ -131,4 +131,4 @@ This message shows that your installation appears to be working correctly.
 
 !!! info
     
-    如果你感到好奇的话，`--rm` 参数表示在容器退出后自动删除容器。由于 `hello-world` 镜像只是用于测试，因此我们不希望它留在我们的系统中。
+    如果你感到好奇的话，`--rm` 参数表示在容器退出后自动删除容器。由于 `hello-world` 容器只是用于测试，因此我们不希望它留在我们的系统中。
