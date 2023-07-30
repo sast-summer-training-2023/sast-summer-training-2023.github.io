@@ -10,6 +10,7 @@ theme:
   logo: images/logo.png
   favicon: images/favicon.png
   features:
+    - content.code.annotate
     - navigation.top
     - navigation.tabs
     - navigation.indexes
@@ -56,6 +57,9 @@ markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde

@@ -6,6 +6,12 @@
 
 无论是想要在软工等课堂让自己的网站快人一步，亦或是将来纵横职场，还是单纯兴趣驱动，你，都值得拥有！
 
+## :whale: 7 月 31 日：Docker
+
+### 课前准备
+
+请参考 [Docker](/backend/docker/#_1)。
+
 ## :mage_light_skin_tone: 7 月 28 日：Rust Web 生态
 
 ### 课程讲义

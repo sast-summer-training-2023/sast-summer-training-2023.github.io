@@ -14,6 +14,12 @@
 
 -----
 
+## :whale: 7 月 31 日：Docker
+
+### 课前准备
+
+请参考 [Docker](/backend/docker/#_1)。
+
 ## :eyes: 7 月 30 日：CV
 
 ### 课前准备
