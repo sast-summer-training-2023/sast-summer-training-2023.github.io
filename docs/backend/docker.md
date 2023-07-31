@@ -6,6 +6,14 @@
 
 :date: 日期：7 月 31 日星期一
 
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1jX4y177ui)
+
+:memo: [讲义](https://summer23.net9.org/sast2023-docker)
+
+!!! note "讲义使用说明"
+
+    使用左右键切换动画，上下键换页。在 Demo 页可以通过演讲者模式下的注解查看该 Demo 的代码。
+
 ---
 
 Docker 是一种应用容器化技术。通过将应用程序和它的依赖一起打包成为一个可移植的容器，我们可以在不同环境上快速、可靠地运行相同的程序。

@@ -20,6 +20,16 @@
 
 请参考 [Docker](/backend/docker/#_1)。
 
+### 课程讲义
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1jX4y177ui)
+
+:memo: [讲义](https://summer23.net9.org/sast2023-docker)
+
+!!! note "讲义使用说明"
+
+    使用左右键切换动画，上下键换页。在 Demo 页可以通过演讲者模式下的注解查看该 Demo 的代码。
+
 ## :eyes: 7 月 30 日：CV
 
 ### 课前准备
