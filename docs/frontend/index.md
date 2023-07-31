@@ -6,6 +6,12 @@
 
 这之后，无论你是想在软工等课程中设计出精致而便利的页面，还是希望有一个漂亮的个人网站，我们都可以帮助你找到入门点。
 
+## :thinking_face: 8 月 1 日：JS & TS (1)
+
+### 课前准备
+
+你可以参考 [JavaScript 语言基础 - SAST Skill Docs](https://docs.net9.org/languages/javascript/) 进行预习。
+
 ## :robot: 7 月 29 日：Android
 
 ### 课前准备

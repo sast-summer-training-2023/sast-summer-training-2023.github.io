@@ -14,6 +14,12 @@
 
 -----
 
+## :thinking_face: 8 月 1 日：JS & TS (1)
+
+### 课前准备
+
+你可以参考 [JavaScript 语言基础 - SAST Skill Docs](https://docs.net9.org/languages/javascript/) 进行预习。
+
 ## :whale: 7 月 31 日：Docker
 
 ### 课前准备
