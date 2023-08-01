@@ -1,8 +1,8 @@
-#Unity 环境配置
+# Unity 环境配置
 
 ---
 
-Unity 自 2005 年推出以来，已经迭代了多个版本。与其他众多的开发项目一样， Unity 方案也需要各个协作者共用同一个 Unity 开发版本。类似于 Python 的 pip， Rust 的 Cargo， Node.js 的 npm/yarn， Unity 官方提供了一个 Unity 版本的管理工具 -- Unity Hub。
+Unity 自 2005 年推出以来，已经迭代了多个版本。与其他众多的开发项目一样，Unity 方案也需要各个协作者共用同一个 Unity 开发版本。类似于 Python 的 pip，Rust 的 Cargo，Node.js 的 npm/yarn，Unity 官方提供了一个 Unity 版本的管理工具 -- Unity Hub。
 
 ## Unity Hub 的配置
 
@@ -16,15 +16,16 @@ Unity 自 2005 年推出以来，已经迭代了多个版本。与其他众多�
 
 4. 注册 Unity 账号。 
 
-这里需要注意的是， Unity 账号类型按地区分为国内版和国外版，如果需要配置国外版，请自行搭建好相应的网络环境。
+这里需要注意的是，Unity 账号类型按地区分为国内版和国外版，如果需要配置国外版，请自行搭建好相应的网络环境。
 
 打开注册网页，把有关信息完善，完成注册后回到 Unity Hub，点击登录。
 
-这时，浏览器自动登录，把有关信息转移到 Unity Hub 内。登录完成后， Unity Hub 跳转到授权页面，选择个人版授权即可。
+这时，浏览器自动登录，把有关信息转移到 Unity Hub 内。登录完成后，Unity Hub 跳转到授权页面，选择个人版授权即可。
 
 ![Unity 用户授权] (/images/unity-hub-3.png)
 
-其后， Unity Hub 将询问是否安装 Unity IDE，跳过即可。
+其后，Unity Hub 将询问是否安装 Unity IDE，跳过即可。
+
 5. 下载 Unity IDE
 
 点击左侧栏 `Installs`，看到界面右上方有 `Locate` 和 `Install Editor` 两个按钮。
@@ -35,11 +36,11 @@ Unity 自 2005 年推出以来，已经迭代了多个版本。与其他众多�
 
 无论是直接安装 Unity IDE, 还是通过 Unity Hub 间接处理，读者都可以加入不同的子模块，支持日后的开发活动。下面列出两个比较常见的子模块：
 
-- WebGL。 Unity 可以用于网络游戏的开发。在 Unity 设计好游戏之后，可以对项目建置，Unity 基于 OpenGL 和 IL2CPP、emscripten 等工具生成 HTML 模块和与之配套的 JS 代码。把 WebGL 模块嵌入到 HTML 文件里，即可做出一个网络游戏。
+- WebGL。Unity 可以用于网络游戏的开发。在 Unity 设计好游戏之后，可以对项目建置，Unity 基于 OpenGL 和 IL2CPP、emscripten 等工具生成 HTML 模块和与之配套的 JS 代码。把 WebGL 模块嵌入到 HTML 文件里，即可做出一个网络游戏。
 
 ![Unity WebGL 套件] (/images/unity-hub-5.png)
 
-- Android。一方面，Unity 具有跨平台能力，可以直接应用于手机游戏开发。著名的原神、崩铁等游戏都是基于 Unity 技术的，另一方面， Oculus Quest 等虚拟现实平台背后运行的也是 Android 操作系统，配合 ADB 和 Oculus 提供的套件工具，将极大加速 XR 项目的开发进度。
+- Android。一方面，Unity 具有跨平台能力，可以直接应用于手机游戏开发。著名的原神、崩铁等游戏都是基于 Unity 技术的，另一方面，Oculus Quest 等虚拟现实平台背后运行的也是 Android 操作系统，配合 ADB 和 Oculus 提供的套件工具，将极大加速 XR 项目的开发进度。
 
 另一方面，Unity 默认的代码编辑器为 Visual Studio，而不是传统的 Visual Studio Code。虽然 VSCode 比 VS 轻量的多，但是 Visual Studio 提供更完善的自动代码补全和库中继信息的查询服务。如果读者没有安装，可以按需配置。 
 
