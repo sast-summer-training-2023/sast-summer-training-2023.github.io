@@ -20,6 +20,12 @@
 
 你可以参考 [JavaScript 语言基础 - SAST Skill Docs](https://docs.net9.org/languages/javascript/) 进行预习。
 
+### 课程讲义
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1Ep4y1V7k7)
+
+:memo: [讲义](https://docs.net9.org/languages/javascript/)
+
 ## :whale: 7 月 31 日：Docker
 
 ### 课前准备
