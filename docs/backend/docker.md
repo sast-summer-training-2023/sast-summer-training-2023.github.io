@@ -12,7 +12,7 @@
 
 !!! note "讲义使用说明"
 
-    使用左右键切换动画，上下键换页。在 Demo 页可以通过演讲者模式下的注解查看该 Demo 的代码。
+    使用左右键切换动画，上下键换页。在 Demo 页可以通过演讲者模式下的注解查看该 Demo 的代码。Demo 所用代码可以在 [这里](https://github.com/sast-summer-training-2023/sast2023-docker/tree/main/src) 查看。
 
 ---
 
