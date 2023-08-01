@@ -113,4 +113,4 @@ nav:
   - 游戏:
     - game/index.md
     - Unity: game/unity.md
-    - 环节配置: game/env.md
+    - 环境配置: game/env.md
