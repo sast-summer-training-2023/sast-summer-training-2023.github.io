@@ -14,6 +14,12 @@
 
 -----
 
+## :space_invader: 8 月 2 日：Unity 基本概念
+
+### 课前准备
+
+请参考 [Unity 环境配置](/game/env) 配置 Unity 环境。
+
 ## :thinking_face: 8 月 1 日：JS & TS (1)
 
 ### 课前准备
