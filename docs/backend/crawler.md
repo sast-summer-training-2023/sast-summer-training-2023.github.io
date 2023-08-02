@@ -21,17 +21,20 @@
 ### 1. 预备知识
 
 我们期待您已经掌握了 Python 的使用，了解了 Web 的基本知识，如果您对这两方面有疑惑，可以参考：
+
 - [2023 科协暑培 Web 部分](https://summer23.net9.org/basic/web/)
 - [2023 科协暑培 Python 部分](https://summer23.net9.org/basic/python/)
 
 HTTP 基本知识：
-- HTTP 入门: [https://www.ruanyifeng.com/blog/2016/08/http.html](https://www.ruanyifeng.com/blog/2016/08/http.html)
-- HTTP 方法: [https://www.w3schools.com/tags/ref_httpmethods.asp](https://www.w3schools.com/tags/ref_httpmethods.asp)
-- HTTP Status Code: [https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status)
-- HTTP Cookie: [https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies)
+
+- HTTP 入门：[HTTP 协议入门 - 阮一峰的网络日志](https://www.ruanyifeng.com/blog/2016/08/http.html)
+- HTTP 方法：[HTTP Request Methods](https://www.w3schools.com/tags/ref_httpmethods.asp)
+- HTTP Status Code: [响应状态码 - HTTP | MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status)
+- HTTP Cookie: [Cookie - HTTP | MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies)
 
 Route yourself in XML:
-- XPATH: [https://www.w3schools.com/xml/xpath_intro.asp](https://www.w3schools.com/xml/xpath_intro.asp)
+
+- XPath: [XPath Tutorial](https://www.w3schools.com/xml/xpath_intro.asp)
 
 ### 2. 环境准备
 
