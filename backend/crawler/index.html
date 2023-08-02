@@ -15,7 +15,7 @@
         <link rel="next" href="../../frontend/">
       
       <link rel="icon" href="../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.1, mkdocs-material-9.1.21">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
@@ -762,9 +762,74 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          爬虫
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         爬虫
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    一、什么是爬虫
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    二、课前准备
+  </a>
+  
+    <nav class="md-nav" aria-label="二、课前准备">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 预备知识
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 环境准备
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    三、授课计划
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -991,6 +1056,55 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    一、什么是爬虫
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    二、课前准备
+  </a>
+  
+    <nav class="md-nav" aria-label="二、课前准备">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 预备知识
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 环境准备
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    三、授课计划
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1013,15 +1127,49 @@
 <p><img alt="🎓" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f393.svg" title=":mortar_board:" /> 讲师：刘铠铭 @kaiming</p>
 <p><img alt="📅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4c5.svg" title=":date:" /> 日期：8 月 3 日星期四</p>
 <hr />
-<p>你经历过五月天大麦网抢票点烂屏幕也抢不到的难过么？你经历过看着清华云盘的百余张图片却因为太大无法打包而只能一张张下载的痛苦么？你经历过一时兴起想要混剪却往往连视频都不知道怎么下载而倒在第一步么？本课程将通过以上三种场景的实际应用，带你领略爬虫这一工具在互联网信息化中的魅力。</p>
-<p>通过学习本课程，你将有能力自行编写一些爬虫工具来辅助完成简单的任务（例如批量下载网络学堂文件，大批量下载网站检索信息等），你也有可能初步了解 Scrapy 等更高级的爬虫框架，了解如何应对现代网络中对爬虫常见防范手段，以满足更进阶的需求。</p>
+<p>通过学习本课程，你将有能力自行编写一些爬虫工具来辅助完成简单的任务（例如批量下载网络学堂文件，大批量下载网站检索信息，下载 Bilibili 视频等），你也有可能初步了解 Scrapy 等更高级的爬虫框架，了解如何应对现代网络中对爬虫常见防范手段，以满足更进阶的需求。</p>
+<h2 id="_2">一、什么是爬虫<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>不考虑复杂的内容，我们可以简单的将“上网”概括为“浏览器向服务器按照用户意愿发送一系列请求，并将服务器的响应呈现给用户“的过程。而爬虫便是一种可以模拟网页浏览器向网站发送、处理请求的自动化脚本，帮助我们获得服务器的数据，进而用于其他需求。</p>
+<p>那么爬虫可以做什么呢？可以认为一切与网络请求相关的内容爬虫都可以按照我们的需要进行处理。</p>
+<h2 id="_3">二、课前准备<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1">1. 预备知识<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p>我们期待您已经掌握了 Python 的使用，了解了 Web 的基本知识，如果您对这两方面有疑惑，可以参考：</p>
+<ul>
+<li><a href="https://summer23.net9.org/basic/web/">2023 科协暑培 Web 部分</a></li>
+<li><a href="https://summer23.net9.org/basic/python/">2023 科协暑培 Python 部分</a></li>
+</ul>
+<p>HTTP 基本知识：</p>
+<ul>
+<li>HTTP 入门：<a href="https://www.ruanyifeng.com/blog/2016/08/http.html">HTTP 协议入门 - 阮一峰的网络日志</a></li>
+<li>HTTP 方法：<a href="https://www.w3schools.com/tags/ref_httpmethods.asp">HTTP Request Methods</a></li>
+<li>HTTP Status Code: <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status">响应状态码 - HTTP | MDN</a></li>
+<li>HTTP Cookie: <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies">Cookie - HTTP | MDN</a></li>
+</ul>
+<p>Route yourself in XML:</p>
+<ul>
+<li>XPath: <a href="https://www.w3schools.com/xml/xpath_intro.asp">XPath Tutorial</a></li>
+</ul>
+<h3 id="2">2. 环境准备<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>请通过 <a href="https://cloud.tsinghua.edu.cn/f/59a49e6c2eaa4d0fb8c3/?dl=1">清华云盘</a> 下载 requirements.txt 并执行：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>crawler<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10
+conda<span class="w"> </span>activate<span class="w"> </span>crawler
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</code></pre></div></td></tr></table></div>
+<h2 id="_4">三、授课计划<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<ol>
+<li>建议爬虫构建；</li>
+<li>Scrapy 初探；</li>
+<li>作业说明。</li>
+</ol>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年7月11日</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年8月2日</span>
       
     
   </small>
@@ -1083,7 +1231,7 @@
     
         <div class="md-source-date">
             <small>
-                作者: <span class='git-page-authors git-authors'><a href='mailto:wangbw21@mails.tsinghua.edu.cn'>abmfy</a></span>
+                作者: <span class='git-page-authors git-authors'><a href='mailto:wangbw21@mails.tsinghua.edu.cn'>abmfy</a> (20.75%), <a href='mailto:lkm20@mails.tsinghua.edu.cn'>kaiming</a> (79.25%)</span>
             </small>
         </div>
     
