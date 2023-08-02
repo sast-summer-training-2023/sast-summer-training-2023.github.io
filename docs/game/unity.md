@@ -15,3 +15,21 @@ Unity 是一款现代游戏引擎，应用在很多游戏开发中。在本次�
 ## 课前准备
 
 请参考 [Unity 环境配置](/game/env) 进行环境配置。
+
+## 课程回放
+
+:movie_camera: [第一节课](https://www.bilibili.com/video/BV1rM4y1H7C1)
+
+## 课程讲义
+
+### Unity
+
+:memo: [Unity (1) 讲义](/pdfs/unity-1.pdf)
+
+### C#
+
+:memo: [C# (1) 讲义](/pdfs/csharp-1.pdf)
+
+## 课程作业
+
+:books: 作业仓库链接将尽快发布。

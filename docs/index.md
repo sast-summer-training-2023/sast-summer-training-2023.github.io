@@ -26,6 +26,16 @@
 
 请参考 [Unity 环境配置](/game/env) 配置 Unity 环境。
 
+### 课程讲义 & 课后作业
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1rM4y1H7C1)
+
+:memo: [Unity 讲义](/pdfs/unity-1.pdf)
+
+:memo: [C# 讲义](/pdfs/csharp-1.pdf)
+
+:books: 作业仓库链接将尽快发布。
+
 ## :thinking_face: 8 月 1 日：JS & TS (1)
 
 ### 课前准备
