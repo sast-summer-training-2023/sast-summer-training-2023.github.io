@@ -6,6 +6,12 @@
 
 :date: 日期：8 月 3 日星期四
 
+:hourglass_flowing_sand: DDL: 8 月 15 日星期二 23:59
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1kK4y1H7ZU)
+
+:books: [作业](/backend/crawler/#_5)
+
 ---
 
 通过学习本课程，你将有能力自行编写一些爬虫工具来辅助完成简单的任务（例如批量下载网络学堂文件，大批量下载网站检索信息，下载 Bilibili 视频等），你也有可能初步了解 Scrapy 等更高级的爬虫框架，了解如何应对现代网络中对爬虫常见防范手段，以满足更进阶的需求。

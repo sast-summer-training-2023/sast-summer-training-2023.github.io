@@ -12,6 +12,16 @@
 
 请参考 [爬虫](/backend/crawler/#_3)。
 
+### 课程讲义 & 课后作业
+
+:hourglass_flowing_sand: DDL: 8 月 15 日星期二 23:59
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1kK4y1H7ZU)
+
+:memo: [讲义](/backend/crawler)
+
+:books: [作业](/backend/crawler/#_5)
+
 ## :whale: 7 月 31 日：Docker
 
 ### 课前准备
