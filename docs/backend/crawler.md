@@ -253,13 +253,13 @@ scrapy genspider hotpage zhihu.com/hot
 
 **ddl：2023.08.15**
 
-当你遇到困难时，**请随时在群中询问**，你也可以参考 [](https://github.com/KMing-L/crawler) 中的实现。
+当你遇到困难时，**请随时在群中询问**，你也可以参考 [参考实现](https://github.com/KMing-L/crawler) 中的实现。
 
 只需在以下任务选择列表中选择任意一个任务的基本功能完成即可获得满分。
 
 ### 1. 提交方式
 
-请将你的代码上传至 [TsinghuaGit](https://git.tsinghua.edu.cn)，要求仓库中必须包含代码的使用说明，请将其写在 `readme.md` 中。之后请将你的`姓名+学号+仓库链接`提交至 [](https://github.com/sast-summer-training-2023/sast2023-crawler/issues)，如担心隐私泄漏，可通过其他方式告知讲师。
+请将你的代码上传至 [TsinghuaGit](https://git.tsinghua.edu.cn)，要求仓库中必须包含代码的使用说明，请将其写在 `readme.md` 中。之后请将你的`姓名+学号+仓库链接`提交至 [该 git 仓库的 issue 中](https://github.com/sast-summer-training-2023/sast2023-crawler/issues)，如担心隐私泄漏，可通过其他方式告知讲师。
 
 ### 2. 任务列表
 
@@ -267,13 +267,13 @@ scrapy genspider hotpage zhihu.com/hot
 
 #### 2.1 清华云盘爬虫
 
-Input：某个清华云盘共享文件夹链接，例如 [](https://cloud.tsinghua.edu.cn/d/ba64d0debd0e4ad4bf92/)；
+Input：某个清华云盘共享文件夹链接，例如 [https://cloud.tsinghua.edu.cn/d/ba64d0debd0e4ad4bf92/](https://cloud.tsinghua.edu.cn/d/ba64d0debd0e4ad4bf92/)；
 
 Output：下载该文件夹内所有文件，且按照原文件的组织方式组织文件。
 
 #### 2.2 清华大学教参平台爬虫
 
-Input：某本教参详情页的 URL，例如 [](http://reserves.lib.tsinghua.edu.cn/Search/BookDetail?bookId=11ad92b1-d4f1-4ea9-8d2c-310640ba96b1)；
+Input：某本教参详情页的 URL，例如 [http://reserves.lib.tsinghua.edu.cn/Search/BookDetail?bookId=11ad92b1-d4f1-4ea9-8d2c-310640ba96b1](http://reserves.lib.tsinghua.edu.cn/Search/BookDetail?bookId=11ad92b1-d4f1-4ea9-8d2c-310640ba96b1)；
 
 Output：包含该本书的所有图片的 PDF。
 
