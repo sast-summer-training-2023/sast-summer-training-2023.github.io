@@ -14,6 +14,14 @@
 
 -----
 
+## :thinking_face: 8 月 4 日：JS & TS (2)
+
+### 课前准备
+
+请参照 [TypeScript 语言基础 - SAST Skill Docs](https://docs.net9.org/languages/typescript/#_3) 进行开发环境的配置。
+
+配置完成后，你应当能够参照该文「Hello World」章节编写 TypeScript 版本的 Hello World。
+
 ## :bug: 8 月 3 日：爬虫
 
 ### 课前准备
