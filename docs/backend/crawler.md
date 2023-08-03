@@ -55,11 +55,11 @@ pip install -r requirements.txt
 构建爬虫的关键在于分析服务器请求，分析我们期望获得的数据在哪个或哪些请求中，进而构建“API Chains”。
 
 网络请求的响应往往有三种类型：
-- Json
+- JSON
 - HTML
 - 二进制文件
 
-对于 Json，我们直接使用 `Json` 分析即可；对于 HTML，我们则需要使用 `BeautifulSoup4` 搭配 HTML 解析器进行分析；对于二进制文件，我们可以直接保存。
+对于 JSON，我们直接使用 `json` 分析即可；对于 HTML，我们则需要使用 `BeautifulSoup4` 搭配 HTML 解析器进行分析；对于二进制文件，我们可以直接保存。
 
 之后我们将通过对 [知乎](https://www.zhihu.com) 的爬取实践来熟悉构建爬虫的整个流程。
 
@@ -166,9 +166,9 @@ from selenium.webdriver.chrome.options import Options as ChromeOptions
 import selenium
 
 
-chrome_opetions = ChromeOptions()
-chrome_opetions.binary_location = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-driver = selenium.webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_opetions)
+chrome_options = ChromeOptions()
+chrome_options.binary_location = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+driver = selenium.webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
 driver.get(f"https://www.zhihu.com/question/613681273")
 
 
@@ -281,7 +281,7 @@ Output：包含该本书的所有图片的 PDF。
 
 Input：某个视频的 BV 号，例如 `BV1C14y1z7xh`；
 
-Output：下载该视频，需要支持下载 1080P(若有)，可以不合并视频&音频。
+Output：下载该视频，需要支持下载 1080P (若有)，可以不合并视频 & 音频。
 
 ## 六、写在最后
 
