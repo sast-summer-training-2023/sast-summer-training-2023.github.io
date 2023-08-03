@@ -18,7 +18,7 @@
 
 ### 课前准备
 
-请参考 [爬虫](/backend/crawler/#_2)。
+请参考 [爬虫](/backend/crawler/#_3)。
 
 ## :space_invader: 8 月 2 日：Unity 基本概念
 

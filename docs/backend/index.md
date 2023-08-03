@@ -10,7 +10,7 @@
 
 ### 课前准备
 
-请参考 [爬虫](/backend/crawler/#_2)。
+请参考 [爬虫](/backend/crawler/#_3)。
 
 ## :whale: 7 月 31 日：Docker
 

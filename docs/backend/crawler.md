@@ -38,7 +38,19 @@ Route yourself in XML:
 
 ### 2. 环境准备
 
-请通过 [清华云盘](https://cloud.tsinghua.edu.cn/f/59a49e6c2eaa4d0fb8c3/?dl=1) 下载 requirements.txt 并执行：
+请保存下面的 requirements.txt 并执行：
+
+```plaintext title="requirements.txt"
+beautifulsoup4
+requests
+lxml
+tqdm
+notebook
+jupyter
+webdriver-manager
+selenium
+scrapy
+```
 
 ```shell
 conda create -n crawler python=3.10
