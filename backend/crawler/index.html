@@ -1396,6 +1396,9 @@
 <p><img alt="🧀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f9c0.svg" title=":cheese_wedge:" /> 前置知识：Web, Python</p>
 <p><img alt="🎓" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f393.svg" title=":mortar_board:" /> 讲师：刘铠铭 @kaiming</p>
 <p><img alt="📅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4c5.svg" title=":date:" /> 日期：8 月 3 日星期四</p>
+<p><img alt="⏳" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/23f3.svg" title=":hourglass_flowing_sand:" /> DDL: 8 月 15 日星期二 23:59</p>
+<p><img alt="🎥" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f3a5.svg" title=":movie_camera:" /> <a href="https://www.bilibili.com/video/BV1kK4y1H7ZU">课程回放</a></p>
+<p><img alt="📚" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4da.svg" title=":books:" /> <a href="/backend/crawler/#_5">作业</a></p>
 <hr />
 <p>通过学习本课程，你将有能力自行编写一些爬虫工具来辅助完成简单的任务（例如批量下载网络学堂文件，大批量下载网站检索信息，下载 Bilibili 视频等），你也有可能初步了解 Scrapy 等更高级的爬虫框架，了解如何应对现代网络中对爬虫常见防范手段，以满足更进阶的需求。</p>
 <h2 id="_2">一、什么是爬虫<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
@@ -1420,7 +1423,25 @@
 <li>XPath: <a href="https://www.w3schools.com/xml/xpath_intro.asp">XPath Tutorial</a></li>
 </ul>
 <h3 id="2">2. 环境准备<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
-<p>请通过 <a href="https://cloud.tsinghua.edu.cn/f/59a49e6c2eaa4d0fb8c3/?dl=1">清华云盘</a> 下载 requirements.txt 并执行：</p>
+<p>请保存下面的 requirements.txt 并执行：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">requirements.txt</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>beautifulsoup4
+requests
+lxml
+tqdm
+notebook
+jupyter
+webdriver-manager
+selenium
+scrapy
+</code></pre></div></td></tr></table></div>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>crawler<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10
@@ -1810,7 +1831,7 @@ scrapy<span class="w"> </span>genspider<span class="w"> </span>hotpage<span clas
     
         <div class="md-source-date">
             <small>
-                作者: <span class='git-page-authors git-authors'><a href='mailto:wangbw21@mails.tsinghua.edu.cn'>abmfy</a> (3.79%), <a href='mailto:lkm20@mails.tsinghua.edu.cn'>kaiming</a> (96.21%)</span>
+                作者: <span class='git-page-authors git-authors'><a href='mailto:wangbw21@mails.tsinghua.edu.cn'>abmfy</a> (9.74%), <a href='mailto:lkm20@mails.tsinghua.edu.cn'>kaiming</a> (90.26%)</span>
             </small>
         </div>
     
