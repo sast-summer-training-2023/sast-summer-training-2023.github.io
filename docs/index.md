@@ -22,6 +22,12 @@
 
 配置完成后，你应当能够参照该文「Hello World」章节编写 TypeScript 版本的 Hello World。
 
+### 课程讲义 & 课后作业
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1Gh4y1w7Ng)
+
+:memo: [讲义](https://docs.net9.org/languages/typescript/)
+
 ## :bug: 8 月 3 日：爬虫
 
 ### 课前准备
