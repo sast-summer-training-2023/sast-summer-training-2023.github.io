@@ -20,6 +20,8 @@
 
 :memo: [讲义](https://docs.net9.org/languages/typescript/)
 
+:books: 课程作业将尽快发布。
+
 ## :thinking_face: 8 月 1 日：JS & TS (1)
 
 ### 课前准备

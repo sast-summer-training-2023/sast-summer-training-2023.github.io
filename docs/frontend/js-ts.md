@@ -35,3 +35,7 @@
 ## TypeScript 课程讲义
 
 :memo: [TypeScript 语言基础 - SAST Skill Docs](https://docs.net9.org/languages/typescript/)
+
+## 课程作业
+
+课程作业将尽快发布。
