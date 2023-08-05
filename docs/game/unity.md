@@ -32,4 +32,4 @@ Unity 是一款现代游戏引擎，应用在很多游戏开发中。在本次�
 
 ## 课程作业
 
-:books: 作业仓库链接将尽快发布。
+:books: [作业](https://github.com/sast-summer-training-2023/sast2023-unity)

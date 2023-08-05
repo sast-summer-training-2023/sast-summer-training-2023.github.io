@@ -32,6 +32,8 @@
 
 :memo: [讲义](https://docs.net9.org/languages/typescript/)
 
+:books: 课程作业将尽快发布。
+
 ## :bug: 8 月 3 日：爬虫
 
 ### 课前准备
@@ -62,7 +64,7 @@
 
 :memo: [C# 讲义](/pdfs/csharp-1.pdf)
 
-:books: 作业仓库链接将尽快发布。
+:books: [作业](https://github.com/sast-summer-training-2023/sast2023-unity)
 
 ## :thinking_face: 8 月 1 日：JS & TS (1)
 
