@@ -875,9 +875,60 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          React
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         React
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    课前准备
+  </a>
+  
+    <nav class="md-nav" aria-label="课前准备">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    环境配置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    替换代码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -991,6 +1042,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    课前准备
+  </a>
+  
+    <nav class="md-nav" aria-label="课前准备">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    环境配置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    替换代码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1014,13 +1100,27 @@
 <p><img alt="📅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4c5.svg" title=":date:" /> 日期：8 月 7 日星期一</p>
 <hr />
 <p>Web 应用已经从简单的显示文字进化到展示图片等多媒体资源，乃至到如今复杂多样的高交互性内容展示。在这种进化的背后，是 Web 应用的开发方式的一轮轮迭代更新。本课程希望为大家介绍当下流行的 Web 应用前端开发框架之一——React 的基本使用方式，并希望大家利用 React 编写简单的 Web 应用前端。</p>
+<h2 id="_1">课前准备<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">环境配置<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>如果你未参与过 TypeScript 语言课程，可以参考 <a href="/frontend/js-ts/#_1">其课前准备部分</a> 配置 TypeScript 语言环境以及 Yarn 包管理器。</p>
+<p>在此基础上，你可以尝试建立一个 React 起步项目。只需要在某个你想要建立该项目的目录下，运行 React 官方提供的脚手架：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>yarn<span class="w"> </span>create<span class="w"> </span>react-app<span class="w"> </span>learn-react<span class="w"> </span>--template<span class="w"> </span>typescript
+</code></pre></div></td></tr></table></div>
+<p>正确创建完毕后，你可以进入该项目并运行：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>learn-react
+yarn<span class="w"> </span>start
+</code></pre></div></td></tr></table></div>
+<p>之后在浏览器中访问 <code>http://localhost:3000</code> 就应当能看到 React 的 Logo 和提示，这样你就启动了你的第一个 React 应用。</p>
+<h3 id="_3">替换代码<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>然而由于 React 官方脚手架提供的起始文件并不都是必要的。我们提供了一个最小化的 React 应用代码，你可以从 <a href="../../../static/src.zip" target="_blank" download="src.zip">该链接</a> 下载一个压缩包，解压后用内部的 <code>src</code> 目录替换掉刚刚 React 项目中的 <code>src</code> 目录。如果你此时还没有用 Ctrl+C 中止 React 应用，只要保存代码修改，就应当能看到浏览器中的页面刷新，并且仅有一行 <code>Hello, React!</code> 提示文字。如果你已经中止 React 应用，重新使用 <code>yarn start</code> 启动即可。</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年7月11日</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年8月6日</span>
       
     
   </small>
@@ -1082,7 +1182,7 @@
     
         <div class="md-source-date">
             <small>
-                作者: <span class='git-page-authors git-authors'><a href='mailto:wangbw21@mails.tsinghua.edu.cn'>abmfy</a></span>
+                作者: <span class='git-page-authors git-authors'><a href='mailto:wangbw21@mails.tsinghua.edu.cn'>abmfy</a> (27.78%), <a href='mailto:qhd19@mails.tsinghua.edu.cn'>Ashitemaru</a> (72.22%)</span>
             </small>
         </div>
     
