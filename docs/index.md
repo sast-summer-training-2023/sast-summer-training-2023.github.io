@@ -16,7 +16,13 @@
 
 ## :space_invader: 8 月 5 日：Unity 坐标系统与材质
 
----
+### 课程讲义 & 课后作业
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1nu411p7kt)
+
+:memo: [讲义](/pdfs/unity-2.pdf)
+
+:books: [作业](https://github.com/sast-summer-training-2023/sast2023-unity)
 
 ## :thinking_face: 8 月 4 日：JS & TS (2)
 

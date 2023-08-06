@@ -18,7 +18,9 @@ Unity 是一款现代游戏引擎，应用在很多游戏开发中。在本次�
 
 ## 课程回放
 
-:movie_camera: [第一节课](https://www.bilibili.com/video/BV1rM4y1H7C1)
+:movie_camera: [(1) 基本概念](https://www.bilibili.com/video/BV1rM4y1H7C1)
+
+:movie_camera: [(2) 坐标系统与材质](https://www.bilibili.com/video/BV1nu411p7kt)
 
 ## 课程讲义
 
@@ -26,7 +28,9 @@ Unity 是一款现代游戏引擎，应用在很多游戏开发中。在本次�
 
 :memo: [Unity (1) 讲义](/pdfs/unity-1.pdf)
 
-### C#
+:memo: [Unity (2) 讲义](/pdfs/unity-2.pdf)
+
+### C\#
 
 :memo: [C# (1) 讲义](/pdfs/csharp-1.pdf)
 
