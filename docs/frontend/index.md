@@ -26,7 +26,7 @@
 
 :memo: [讲义](https://docs.net9.org/languages/typescript/)
 
-:books: 课程作业将尽快发布。
+:books: [作业](https://github.com/sast-summer-training-2023/sast-ts)
 
 ## :thinking_face: 8 月 1 日：JS & TS (1)
 

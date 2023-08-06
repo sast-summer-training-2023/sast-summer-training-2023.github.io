@@ -44,7 +44,7 @@
 
 :memo: [讲义](https://docs.net9.org/languages/typescript/)
 
-:books: 课程作业将尽快发布。
+:books: [作业](https://github.com/sast-summer-training-2023/sast-ts)
 
 ## :bug: 8 月 3 日：爬虫
 

@@ -38,4 +38,4 @@
 
 ## 课程作业
 
-课程作业将尽快发布。
+:books: [作业](https://github.com/sast-summer-training-2023/sast-ts)
