@@ -14,6 +14,12 @@
 
 -----
 
+## :atom_symbol: 8 月 7 日：React
+
+### 课前准备
+
+请参考 [React](/frontend/react/#_1)。
+
 ## :space_invader: 8 月 5 日：Unity 坐标系统与材质
 
 ### 课程讲义 & 课后作业
