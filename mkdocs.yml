@@ -37,6 +37,10 @@ plugins:
       show_contribution: true
       show_line_count: true
 
+validation:
+  absolute_links: ignore
+  unrecognized_links: ignore
+
 markdown_extensions:
   - attr_list
   - admonition

@@ -20,6 +20,14 @@
 
 请参考 [React](/frontend/react/#_1)。
 
+### 课程讲义 & 课后作业
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1K44y1A7vv)
+
+:memo: [讲义](/frontend/react)
+
+:books: 作业将与后端作业一同将于近日发布。
+
 ## :space_invader: 8 月 5 日：Unity 坐标系统与材质
 
 ### 课程讲义 & 课后作业
