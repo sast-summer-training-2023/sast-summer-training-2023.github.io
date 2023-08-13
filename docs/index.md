@@ -14,9 +14,26 @@
 
 -----
 
+## :space_invader: 8 月 13 日：Unity 脚本
+
+### 课前准备
+
+学习 Unity 的同志们，请在明天上课前阅读：
+
+- [Monobehavior Flowchart](https://docs.unity3d.com/2017.3/Documentation/uploads/Main/monobehaviour_flowchart.svg)
+- [A Simple Explanation of What a WebSocket is](https://www.wallarm.com/what/a-simple-explanation-of-what-a-websocket-is)
+
+另请了解 JSON 文件是如何记录信息的，有哪些层次关系。
+
 ## :space_invader: 8 月 9 日：Unity 动画
 
----
+### 课程讲义 & 课后作业
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1hj411z7y3)
+
+:memo: [讲义](/pdfs/unity-3.pdf)
+
+:books: [作业](https://github.com/sast-summer-training-2023/sast2023-unity)
 
 ## :atom_symbol: 8 月 7 日：React
 

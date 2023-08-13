@@ -16,11 +16,22 @@ Unity 是一款现代游戏引擎，应用在很多游戏开发中。在本次�
 
 请参考 [Unity 环境配置](/game/env) 进行环境配置。
 
+### Unity (4) 脚本 课前准备
+
+学习 Unity 的同志们，请在明天上课前阅读：
+
+- [Monobehavior Flowchart](https://docs.unity3d.com/2017.3/Documentation/uploads/Main/monobehaviour_flowchart.svg)
+- [A Simple Explanation of What a WebSocket is](https://www.wallarm.com/what/a-simple-explanation-of-what-a-websocket-is)
+
+另请了解 JSON 文件是如何记录信息的，有哪些层次关系。
+
 ## 课程回放
 
 :movie_camera: [(1) 基本概念](https://www.bilibili.com/video/BV1rM4y1H7C1)
 
 :movie_camera: [(2) 坐标系统与材质](https://www.bilibili.com/video/BV1nu411p7kt)
+
+:movie_camera: [(3) 界面与动画](https://www.bilibili.com/video/BV1hj411z7y3)
 
 ## 课程讲义
 
@@ -29,6 +40,8 @@ Unity 是一款现代游戏引擎，应用在很多游戏开发中。在本次�
 :memo: [Unity (1) 讲义](/pdfs/unity-1.pdf)
 
 :memo: [Unity (2) 讲义](/pdfs/unity-2.pdf)
+
+:memo: [Unity (3) 讲义](/pdfs/unity-3.pdf)
 
 ### C\#
 
