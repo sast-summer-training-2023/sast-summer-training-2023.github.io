@@ -16,6 +16,14 @@
 
 另请了解 JSON 文件是如何记录信息的，有哪些层次关系。
 
+### 课程讲义 & 课后作业
+
+:movie_camera: [课程回放](https://www.bilibili.com/video/BV1344y1c78H)
+
+:memo: [讲义](/pdfs/unity-4.pdf)
+
+:books: [作业](https://github.com/sast-summer-training-2023/sast2023-unity)
+
 ## :space_invader: 8 月 9 日：Unity 动画
 
 ### 课程讲义 & 课后作业
