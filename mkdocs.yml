@@ -15,8 +15,8 @@ theme:
     - navigation.tabs
     - navigation.indexes
   palette:
-    - primary: white
     - scheme: default
+      primary: white
       toggle:
         icon: material/weather-night
         name: Switch to dark mode

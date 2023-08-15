@@ -1,8 +1,15 @@
 <script>
-let meta = document.createElement('meta');
-meta.name = "color-schema";
-meta.content = "dark";
-document.getElementsByTagName('head')[0].appendChild(meta);
+window.onload = () => document.querySelector('[data-md-component=palette]')[1].click();
+document.addEventListener('DOMContentLoaded', () => {
+    const palette = {
+        scheme: 'slate',
+        primary: 'indigo',
+        accent: 'indigo',
+    };
+    for (const key in palette) {
+        document.body.setAttribute('data-md-color-' + key, palette[key]);
+    };
+});
 </script>
 
 # :warning: BOSS 关：前后端联合作业
