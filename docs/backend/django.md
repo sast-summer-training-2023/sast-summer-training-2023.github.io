@@ -18,6 +18,8 @@ Django: The web framework for perfectionists with deadlines.
 
 :movie_camera: [课程回放](https://www.bilibili.com/video/BV1WV411L7mq)
 
+:books: [作业](https://github.com/sast-summer-training-2023/sast2023-django)
+
 
 ## 课前准备
 

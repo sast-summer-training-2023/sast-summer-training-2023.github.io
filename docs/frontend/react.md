@@ -12,7 +12,7 @@ Web 应用已经从简单的显示文字进化到展示图片等多媒体资源�
 
 :movie_camera: [课程回放](https://www.bilibili.com/video/BV1K44y1A7vv)
 
-:books: 作业将与后端作业一同将于近日发布。
+:books: [作业](https://github.com/sast-summer-training-2023/sast-react)
 
 ## 课前准备
 

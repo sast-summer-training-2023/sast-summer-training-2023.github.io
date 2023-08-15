@@ -84,8 +84,10 @@
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django
 ```
 
-### 课程讲义
+### 课程讲义 & 课后作业
 
 :movie_camera: [课程回放](https://www.bilibili.com/video/BV1WV411L7mq)
 
 :memo: [课程讲义](/backend/django)
+
+:books: [作业](https://github.com/sast-summer-training-2023/sast2023-django)

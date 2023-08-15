@@ -18,7 +18,7 @@
 
 :memo: [讲义](/frontend/react)
 
-:books: 作业将与后端作业一同将于近日发布。
+:books: [作业](https://github.com/sast-summer-training-2023/sast-react)
 
 ## :thinking_face: 8 月 4 日：JS & TS (2)
 

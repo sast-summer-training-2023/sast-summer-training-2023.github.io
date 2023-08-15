@@ -14,6 +14,14 @@
 
 -----
 
+## :warning: BOSS 关：前后端联合作业
+
+:smiling_imp: [Django](https://github.com/sast-summer-training-2023/sast2023-django)
+
+:imp: [React](https://github.com/sast-summer-training-2023/sast-react)
+
+:innocent: Actix 作业还在路上...
+
 ## :space_invader: 8 月 13 日：Unity 脚本
 
 ### 课前准备
@@ -55,7 +63,7 @@
 
 :memo: [讲义](/frontend/react)
 
-:books: 作业将与后端作业一同将于近日发布。
+:books: [作业](https://github.com/sast-summer-training-2023/sast-react)
 
 ## :space_invader: 8 月 5 日：Unity 坐标系统与材质
 
@@ -266,11 +274,13 @@ pip install torch
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django
 ```
 
-### 课程讲义
+### 课程讲义 & 课后作业
 
 :movie_camera: [课程回放](https://www.bilibili.com/video/BV1WV411L7mq)
 
 :memo: [课程讲义](/backend/django)
+
+:books: [作业](https://github.com/sast-summer-training-2023/sast2023-django)
 
 ## :hammer_and_wrench: 7 月 21 日：数据分析 & NumPy
 
