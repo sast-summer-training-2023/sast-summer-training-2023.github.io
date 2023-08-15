@@ -16,11 +16,9 @@
 
 ## :warning: BOSS 关：前后端联合作业
 
-:smiling_imp: [Django](https://github.com/sast-summer-training-2023/sast2023-django)
+惴惴不安的黑夜笼罩着，寂静中弥漫着一股莫名的不安。突然，一段文字在你的眼前如鬼魅般出现，如同夜幕中的一抹刺眼之光，令人毛骨悚然。
 
-:imp: [React](https://github.com/sast-summer-training-2023/sast-react)
-
-:innocent: Actix 作业还在路上...
+[:old_key: 开启奇妙冒险](/final-hw){ .md-button }
 
 ## :space_invader: 8 月 13 日：Unity 脚本
 

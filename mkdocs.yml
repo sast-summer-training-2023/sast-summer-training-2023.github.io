@@ -88,6 +88,7 @@ markdown_extensions:
 nav:
   - 首页:
     - index.md
+    - 前后端联合作业: final-hw.md
     - 资源链接: links.md
   - 基础:
     - basic/index.md
